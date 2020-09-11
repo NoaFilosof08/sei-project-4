@@ -9,7 +9,7 @@ from django.contrib.auth import get_user_model
 from django.conf import settings
 import jwt
 
-from .serializers import UserSerializer
+from .serializers import UserSerializer, PopulatedUserSerializer
 User = get_user_model()
 
 class RegisterView(APIView):
@@ -55,7 +55,7 @@ class UserDetailView(APIView):
 
     def get(self, _request, pk):
         user = User.objects.get(pk=pk)
-        serialized_user = UserSerializer(user)
+        serialized_user = PopulatedUserSerializer(user)
         return Response(serialized_user.data, status=status.HTTP_200_OK)
 
 class ProfileView(APIView):
@@ -64,5 +64,5 @@ class ProfileView(APIView):
 
     def get(self, request):
         user = User.objects.get(pk=request.user.id)
-        serialized_user = UserSerializer(user)
+        serialized_user = PopulatedUserSerializer(user)
         return Response(serialized_user.data)
