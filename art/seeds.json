@@ -1,0 +1,24 @@
+[
+{
+  "model": "art.art",
+  "pk": 1,
+  "fields": {
+    "name": "Noa F",
+    "description": "pretty gyal",
+    "price": 9,
+    "image": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMTEhUTEhMWFhUWGR4aGBgWGBgfIBgXHxgaHRcYHRgfHSghGBolGx0aIjEhJSkrLi4uHx8zODMtNygtLisBCgoKDg0OGhAQGyslHyUtKy0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tL",
+    "owner": 2
+  }
+},
+{
+  "model": "art.art",
+  "pk": 2,
+  "fields": {
+    "name": "Eliza Thompson",
+    "description": "woo",
+    "price": 1,
+    "image": "https://cimg2.ibsrv.net/cimg/www.fodors.com/500x500_60/662/5a328f2a8bbef-312662.jpg",
+    "owner": 2
+  }
+}
+]

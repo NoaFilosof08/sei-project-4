@@ -19,5 +19,6 @@ from django.urls import path, include
 # prefix all urls with 'api/'
 urlpatterns = [
     path('api/admin/', admin.site.urls),
-    path('api/auth/', include('jwt_auth.urls'))
+    path('api/auth/', include('jwt_auth.urls')),
+    path('api/arts/', include('art.urls'))
 ]
