@@ -29,6 +29,7 @@ ALLOWED_HOSTS = []
 
 
 # Application definition
+AUTH_USER_MODEL = 'jwt_auth.User'
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -37,9 +38,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
+    'jwt_auth'
 ]
 
-AUTH_USER_MODEL = 'jwt_auth.User'
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

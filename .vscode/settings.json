@@ -7,5 +7,6 @@
     "titleBar.inactiveForeground": "#000",
     "titleBar.activeForeground": "#000",
   },
-  "window.title": "BACKEND"
+  "window.title": "BACKEND",
+  "python.pythonPath": "/Users/elizathompson/.local/share/virtualenvs/sei-project-4-WbI3A5Ut/bin/python"
 }
