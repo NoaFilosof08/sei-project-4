@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from enquiries.serializers import EnquirySerializer
+from enquiries.serializers import PopulatedEnquirySerializer
 from .models import Art
 
 class ArtSerializer(serializers.ModelSerializer):
@@ -10,4 +10,4 @@ class ArtSerializer(serializers.ModelSerializer):
 
 class PopulatedArtSerializer(ArtSerializer):
 
-    enquiries = EnquirySerializer(many=True)
+    enquiries = PopulatedEnquirySerializer(many=True)
