@@ -8,4 +8,8 @@ class User(AbstractUser):
     cover_image = models.CharField(max_length=500, blank=True)
     name = models.CharField(max_length=80, blank=True)
     bio = models.CharField(max_length=500,blank=True)
+    types = models.ManyToManyField(
+        'artist_types.Type',
+        related_name='users'
+    )
 

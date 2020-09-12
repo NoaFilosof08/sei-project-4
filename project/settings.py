@@ -41,7 +41,8 @@ INSTALLED_APPS = [
     'rest_framework',
     'jwt_auth',
     'art',
-    'enquiries'
+    'enquiries',
+    'artist_types'
 ]
 
 

@@ -62,12 +62,6 @@ class ProfileView(APIView):
 
     permission_classes = (IsAuthenticated, )
 
-    # def get_user(self, request):
-    #     try:
-    #         return User.objects.get(pk=request.user.id)
-    #     except User.DoesNotExist:
-    #         raise NotFound()
-
     def get(self, request):
         user = User.objects.get(pk=request.user.id)
         serialized_user = PopulatedUserSerializer(user)
