@@ -2,14 +2,14 @@
 from datetime import datetime, timedelta
 from rest_framework.views import APIView
 from rest_framework.response import Response
-from rest_framework.exceptions import PermissionDenied
+from rest_framework.exceptions import PermissionDenied, NotFound
 from rest_framework import status
 from rest_framework.permissions import IsAuthenticatedOrReadOnly, IsAuthenticated
 from django.contrib.auth import get_user_model
 from django.conf import settings
 import jwt
 
-from .serializers import UserSerializer, PopulatedUserSerializer
+from .serializers import UserSerializer, PopulatedUserSerializer, UpdateSerializer
 User = get_user_model()
 
 class RegisterView(APIView):
@@ -62,7 +62,21 @@ class ProfileView(APIView):
 
     permission_classes = (IsAuthenticated, )
 
+    # def get_user(self, request):
+    #     try:
+    #         return User.objects.get(pk=request.user.id)
+    #     except User.DoesNotExist:
+    #         raise NotFound()
+
     def get(self, request):
         user = User.objects.get(pk=request.user.id)
         serialized_user = PopulatedUserSerializer(user)
         return Response(serialized_user.data)
+
+    def put(self, request):
+        user_to_edit = User.objects.get(pk=request.user.id)
+        updated_user = UpdateSerializer(user_to_edit, data=request.data)
+        if updated_user.is_valid():
+            updated_user.save()
+            return Response(updated_user.data, status=status.HTTP_202_ACCEPTED)
+        return Response(updated_user._errors, status=status.HTTP_422_UNPROCESSABLE_ENTITY)
