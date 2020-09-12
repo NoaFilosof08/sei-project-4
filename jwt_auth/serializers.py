@@ -27,13 +27,19 @@ class UserSerializer(serializers.ModelSerializer):
         model = User
         fields = '__all__'
 
-class PopulatedUserSerializer(UserSerializer):
-    created_art = ArtSerializer(many=True)
-    types = TypeSerializer(many=True)
-
 class UpdateSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = User
         exclude = ('password', 'username', 'email')
 
+class FavouriteSerializer(UserSerializer):
+
+    class Meta:
+        model = User
+        fields = ('username', 'id')
+
+class PopulatedUserSerializer(UserSerializer):
+    created_art = ArtSerializer(many=True)
+    types = TypeSerializer(many=True)
+    favourite = FavouriteSerializer(many=True)

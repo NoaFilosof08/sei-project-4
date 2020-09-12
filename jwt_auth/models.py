@@ -12,4 +12,8 @@ class User(AbstractUser):
         'artist_types.Type',
         related_name='users'
     )
+    favourites = models.ManyToManyField(
+        'jwt_auth.User',
+        related_name="favourite"
+    )
 
