@@ -17,6 +17,10 @@ export const getSingleProfile = () => {
   return axios.get(`${baseUrl}/auth/profile/`, withHeaders())
 }
 
+export const getSingleUnpopulatedProfile = () => {
+  return axios.get(`${baseUrl}/auth/profile/unpopulated/`, withHeaders())
+}
+
 export const getArtistProfile = (pk) => {
   return axios.get(`${baseUrl}auth/artists/${pk}`)
 }

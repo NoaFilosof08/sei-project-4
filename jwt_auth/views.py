@@ -74,3 +74,12 @@ class ProfileView(APIView):
             updated_user.save()
             return Response(updated_user.data, status=status.HTTP_202_ACCEPTED)
         return Response(updated_user._errors, status=status.HTTP_422_UNPROCESSABLE_ENTITY)
+
+class ProfileUnpopulatedView(APIView):
+
+    permission_classes = (IsAuthenticated, )
+
+    def get(self, request):
+        user = User.objects.get(pk=request.user.id)
+        serialized_user = UserSerializer(user)
+        return Response(serialized_user.data)
