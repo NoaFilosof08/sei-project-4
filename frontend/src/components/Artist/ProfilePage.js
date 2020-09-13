@@ -1,6 +1,7 @@
 import React from 'react'
 import { getSingleProfile } from '../../lib/api'
 
+
 class ProfilePage extends React.Component {
 
   state = {
@@ -19,6 +20,10 @@ class ProfilePage extends React.Component {
 
   capitalizeFirstLetter = (string) => {
     return string.charAt(0).toUpperCase() + string.slice(1)
+  }
+
+  handleEditProfile = () => {
+    this.props.history.push('/editprofile')
   }
 
 
