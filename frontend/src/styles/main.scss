@@ -1,0 +1,20 @@
+@import '~bulma/bulma.sass';
+
+$primaryPink: #fab1be;
+$primaryRed: #c42f33;
+$primaryYellow: #fffb6e;
+$primaryGray: #383838;
+$primaryNavy: #00063b;
+$primaryTitleFont: 'Amatic SC', cursive;
+$primaryMainFont: 'Josefin Slab', serif;
+
+h1 {
+  font-family: $primaryTitleFont;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+h2 {
+  font-family: $primaryMainFont;
+}
+
