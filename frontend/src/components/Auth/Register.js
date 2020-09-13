@@ -2,7 +2,7 @@ import React from 'react'
 // import ImageUpload from '../../lib/imageUpload'
 import { registerUser } from '../../lib/apiAuth'
 import { Link } from 'react-router-dom'
-// import Select from 'react-select'
+import Select from 'react-select'
 
 class Register extends React.Component {
   state = {
@@ -19,6 +19,34 @@ class Register extends React.Component {
     errors: {}
   }
 
+  options = [
+    { value: 'Abstract Expressionism', label: 'Abstract Expressionism'},
+    { value: 'Art Noveau', label: 'Art Noveau'},
+    { value: 'Avant-garde', label: 'Avant-garde'},
+    { value: 'Baroque', label: 'Baroque'},
+    { value: 'Classicism', label: 'Classicism'},
+    { value: 'Conceptualism', label: 'Conceptualism'},
+    { value: 'Constructivism', label: 'Constructivism'},
+    { value: 'Cubism', label: 'Cubism'},
+    { value: 'Dadaism', label: 'Dadaism'},
+    { value: 'Expressionism', label: 'Expressionism'},
+    { value: 'Fauvism', label: 'Fauvism'},
+    { value: 'Futurism', label: 'Futurism'},
+    { value: 'Impressionism', label: 'Impressionism'},
+    { value: 'istallation Art', label: 'istallation Art'},
+    { value: 'Land Art/Earth Art', label: 'Land Art/Earth Art'},
+    { value: 'Minimalism', label: 'Minimalism'},
+    { value: 'Neo-Impressionalism', label: 'Neo-Impressionalism'},
+    { value: 'Neo-Classicism', label: 'Neo-Classicism'},
+    { value: 'Performance Art', label: 'Performance Art'},
+    { value: 'Pointillism', label: 'Pointillism'},
+    { value: 'Pop Art', label: 'Pop Art'},
+    { value: 'Post-Impressionism', label: 'Post-Impressionism'},
+    { value: 'Rococo', label: 'Rococo'},
+    { value: 'Surrealism', label: 'Surrealism'},
+    { value: 'Supermatism', label: 'Supermatism'}
+  ]
+
   handleChange = e => {
     const data = { ...this.state.data, [e.target.name]: e.target.value }
     const errors = { ...this.state.errors, [e.target.name]: ''}
@@ -32,7 +60,6 @@ class Register extends React.Component {
       this.props.history.push('/login')
     } catch (err) {
       this.setState({ errors: err.response.data })
-      console.log(this.state.errors)
     }
   }
 
@@ -40,6 +67,13 @@ class Register extends React.Component {
     const formData = { ...this.state.data, profilePicture: url }
     this.setState({ data: formData })
   }
+
+  handleSelectCategories = selected => {
+    const selectedCategories = selected ? selected.map(category => category.value) : []
+    const data = { ...this.state.data, type: selectedCategories }
+    this.setState({ data })
+  }
+
 
   render(){
     return (
@@ -114,6 +148,20 @@ class Register extends React.Component {
                         <span></span>
                       </div>
                     </div> */}
+
+                  <div className="field">
+                    <label className="label">Pick what type of Art you are interested in</label>
+                    <div className="control">
+                      <div className="control">
+                      <Select
+                      options={this.options}
+                      onChange={this.handleSelectCategories}
+                      isMulti
+                      placeholder="please select a type from the list"
+                      />
+                    </div>
+                  </div>
+              </div>
                 </div>
                 <div className="field">
                   <button type="submit" className="button is-fullwidth is-warning" onSubmit={this.handleSubmit}>Register Me</button>

@@ -24,3 +24,7 @@ export const getArtistProfile = (pk) => {
 export const favoriteToggle = (id) => {
   return axios.post(`${baseUrl}auth/profile}`, {}, withHeaders())
 }
+
+export const editProfile = data => {
+  return axios.put(`${baseUrl}auth/profile/`, data, withHeaders())
+}
