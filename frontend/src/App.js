@@ -10,6 +10,8 @@ import ArtistViewPage from './components/Artist/ArtistViewPage'
 import Register from './components/Auth/Register'
 import Login from './components/Auth/Login'
 import EditProfile from './components/Auth/EditProfile'
+import CreateArt from './components/Artist/CreateArt'
+import EditArt from './components/Artist/EditArt'
 
 
 const App = () => (
@@ -18,10 +20,13 @@ const App = () => (
       <NavBar />
       <Switch>
         <Route exact path="/" component={Splash} />
+        <Route path="/art/edit/:id" component={EditArt} />
+        <Route path="/artist/:id" component={ArtistViewPage} />
         <Route path="/home" component={Home} />
         <Route path="/profile" component={ProfilePage} />
         <Route path="/editprofile" component={EditProfile} />
-        <Route path="/artist/:id" component={ArtistViewPage} />
+        {/* <Route path="/art/:id" component={ArtShow}/> */}
+        <Route path="/createart" component={CreateArt} />
         <Route path="/register" component={Register} />
         <Route path="/login" component={Login} />
         <Route path="/*" component={NotFound} />

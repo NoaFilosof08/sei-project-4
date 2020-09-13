@@ -32,3 +32,11 @@ export const favoriteToggle = (id) => {
 export const editProfile = data => {
   return axios.put(`${baseUrl}auth/profile/`, data, withHeaders())
 }
+
+export const createArt = data => {
+  return axios.post(`${baseUrl}arts/`, data, withHeaders())
+}
+
+export const editArt = (pk, data) => {
+  return axios.put(`${baseUrl}arts/${pk}/`, data, withHeaders())
+}

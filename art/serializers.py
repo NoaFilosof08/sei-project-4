@@ -16,6 +16,12 @@ class ArtSerializer(serializers.ModelSerializer):
         model = Art
         fields = '__all__'
 
+class UpdateArtSerializer(serializers.ModelSerializer):
+
+    class Meta:
+        model = Art
+        exclude = ('owner', )
+
 class PopulatedArtSerializer(ArtSerializer):
 
     enquiries = PopulatedEnquirySerializer(many=True)

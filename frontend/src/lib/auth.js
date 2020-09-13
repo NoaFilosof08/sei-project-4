@@ -3,7 +3,7 @@ export const setToken = token => {
 }
 
 export const getToken = () => {
-  return localStorage.getItem('token')
+  return window.localStorage.getItem('token')
 }
 
 export const logout = () => {

@@ -70,6 +70,7 @@ class EditProfile extends React.Component {
     try {
       const res = await editProfile(this.state.data)
       this.setState({ data: res.data })
+      this.props.history.push('/profile')
     } catch (err) {
       console.log(err.response.data)
     }
@@ -90,7 +91,6 @@ class EditProfile extends React.Component {
 
   render() {
     console.log(this.state.data)
-    const isArtist = this.checkIsArtist()
     return (
       <section className="hero is-fullheight-with-navbar">
         <div className="hero-body">
