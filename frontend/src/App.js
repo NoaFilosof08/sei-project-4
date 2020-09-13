@@ -8,11 +8,6 @@ import Splash from './components/Common/Splash'
 import ProfilePage from './components/Artist/ProfilePage'
 import ArtistViewPage from './components/Artist/ArtistViewPage'
 import Register from './components/Auth/Register'
-
-import ProfilePage from './components/Artist/ProfilePage'
-import ArtistViewPage from './components/Artist/ArtistViewPage'
-
-import Register from './components/Auth/Register'
 import Login from './components/Auth/Login'
 
 
