@@ -1,6 +1,6 @@
 
 import React from 'react'
-import { getArtistProfile, getSingleProfile } from '../../lib/api'
+import { getArtistProfile, getSingleProfile, editProfile } from '../../lib/api'
 
 class ArtistViewPage extends React.Component {
 
@@ -31,18 +31,21 @@ class ArtistViewPage extends React.Component {
     this.props.history.push('/profile/edit')
   }
 
-  async handleFavourite = () => {
-    console.log('fave click')
+  handleFavourite = async () => {
     const favouritedArtist = this.state.artist
     console.log('faved:', favouritedArtist)
     const currentFaves = this.state.user.favourites
     const updatedFavourites = [ ...currentFaves, this.state.artist.id]
     console.log(updatedFavourites)
+    const updatedUser = {...this.state.user, favourites : updatedFavourites }
+    await this.setState({ user: updatedUser })
+    const data = this.state.user
+    console.log(data)
     try {
-      await this.handleEditProfile(this.state.user.id, `favourites: ${updatedFavourites}`)
-      console.log('sucess')
-    } catch {
-      console.log(err.Response.data)
+      const res = await editProfile(data)
+      console.log(res.data)
+    } catch(err) {
+      console.log(err.response.data)
     }
   }
 
