@@ -6,7 +6,7 @@ from rest_framework.exceptions import NotFound
 from rest_framework.permissions import IsAuthenticated, IsAuthenticatedOrReadOnly
 
 from .models import Art
-from .serializers import PopulatedArtSerializer, ArtSerializer
+from .serializers import PopulatedArtSerializer, ArtSerializer, UpdateArtSerializer
 
 class ArtListView(APIView):
 
@@ -42,7 +42,7 @@ class ArtDetailView(APIView):
 
     def put(self, request, pk):
         art_to_update = self.get_art(pk=pk)
-        updated_art = ArtSerializer(art_to_update, data=request.data)
+        updated_art = UpdateArtSerializer(art_to_update, data=request.data)
         if updated_art.is_valid():
             updated_art.save()
             return Response(updated_art.data, status=status.HTTP_202_ACCEPTED)
