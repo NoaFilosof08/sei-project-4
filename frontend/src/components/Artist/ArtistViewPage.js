@@ -31,20 +31,20 @@ class ArtistViewPage extends React.Component {
     this.props.history.push('/profile/edit')
   }
 
-  async handleFavourite = () => {
-    console.log('fave click')
-    const favouritedArtist = this.state.artist
-    console.log('faved:', favouritedArtist)
-    const currentFaves = this.state.user.favourites
-    const updatedFavourites = [ ...currentFaves, this.state.artist.id]
-    console.log(updatedFavourites)
-    try {
-      await this.handleEditProfile(this.state.user.id, `favourites: ${updatedFavourites}`)
-      console.log('sucess')
-    } catch {
-      console.log(err.Response.data)
-    }
-  }
+  // async handleFavourite = () => {
+  //   console.log('fave click')
+  //   const favouritedArtist = this.state.artist
+  //   console.log('faved:', favouritedArtist)
+  //   const currentFaves = this.state.user.favourites
+  //   const updatedFavourites = [ ...currentFaves, this.state.artist.id]
+  //   console.log(updatedFavourites)
+  //   try {
+  //     await this.handleEditProfile(this.state.user.id, `favourites: ${updatedFavourites}`)
+  //     console.log('sucess')
+  //   } catch {
+  //     console.log(err.Response.data)
+  //   }
+  // }
 
   render() {
     if (!this.state.artist) {
