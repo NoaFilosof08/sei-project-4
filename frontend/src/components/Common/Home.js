@@ -36,13 +36,11 @@ class Home extends React.Component {
           <h1 className="title">Hello World</h1>
         </div>
       </div>
-
       <div className="columns is-mobile is-multiline">
               {artists.map(profile =>(
                   <ArtistCard key={profile.id} {...profile}/>
               ))}
       </div>
-
     </section>
     )
   }
