@@ -9,6 +9,13 @@ import ProfilePage from './components/Artist/ProfilePage'
 import ArtistViewPage from './components/Artist/ArtistViewPage'
 import Register from './components/Auth/Register'
 
+import ProfilePage from './components/Artist/ProfilePage'
+import ArtistViewPage from './components/Artist/ArtistViewPage'
+
+import Register from './components/Auth/Register'
+import Login from './components/Auth/Login'
+
+
 const App = () => (
   <BrowserRouter>
     <main>
@@ -19,6 +26,7 @@ const App = () => (
         <Route path="/profile" component={ProfilePage} />
         <Route path="/artist/:id" component={ArtistViewPage} />
         <Route path="/register" component={Register} />
+        <Route path="/login" component={Login} />
         <Route path="/*" component={NotFound} />
       </Switch>
     </main>

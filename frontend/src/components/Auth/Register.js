@@ -2,6 +2,7 @@ import React from 'react'
 // import ImageUpload from '../../lib/imageUpload'
 import { registerUser } from '../../lib/apiAuth'
 import { Link } from 'react-router-dom'
+// import Select from 'react-select'
 
 class Register extends React.Component {
   state = {
@@ -14,22 +15,24 @@ class Register extends React.Component {
       bio: '',
       type: [],
       favourites: []
-    }
+    },
+    errors: {}
   }
 
   handleChange = e => {
     const data = { ...this.state.data, [e.target.name]: e.target.value }
-    this.setState({ data })
+    const errors = { ...this.state.errors, [e.target.name]: ''}
+    this.setState({ data, errors })
   }
 
   handleSubmit = async e => {
     e.preventDefault()
     try {
       await registerUser(this.state.data)
-      console.log(this.state.data)
+      this.props.history.push('/login')
     } catch (err) {
-      console.log(err)
-      console.log(this.state.data)
+      this.setState({ errors: err.response.data })
+      console.log(this.state.errors)
     }
   }
 
@@ -49,33 +52,33 @@ class Register extends React.Component {
                   <label className="label">Username</label>
                   <div className="control has-icons-left">
                     <input
-                      // className={`input ${this.state.errors.username ? 'is-danger' : ''}`}
+                      className={`input ${this.state.errors.username ? 'is-danger' : ''}`}
                       placeholder="Username"
                       name="username"
                       onChange={this.handleChange}
                     />
 
                   </div>
-                  {/* {this.state.errors.username && <small className="help is-danger">{this.state.errors.username}</small>} */}
+                  {this.state.errors.username && <small className="help is-danger">{this.state.errors.username}</small>}
                 </div>
                 <div className="field">
                   <label className="label">Email</label>
                   <div className="control has-icons-left">
                     <input
-                      // className={`input ${this.state.errors.email ? 'is-danger' : ''}`}
+                      className={`input ${this.state.errors.email ? 'is-danger' : ''}`}
                       placeholder="Email"
                       name="email"
                       onChange={this.handleChange}
                     />
 
                   </div>
-                  {/* {this.state.errors.email && <small className="help is-danger">{this.state.errors.email}</small>} */}
+                  {this.state.errors.email && <small className="help is-danger">{this.state.errors.email}</small>}
                 </div>
                 <div className="field">
                   <label className="label">Password</label>
                   <div className="control has-icons-left">
                     <input
-                      // className={`input ${this.state.errors.password ? 'is-danger' : ''}`}
+                      className={`input ${this.state.errors.password ? 'is-danger' : ''}`}
                       type="password"
                       placeholder="Password"
                       name="password"
@@ -83,20 +86,24 @@ class Register extends React.Component {
                     />
 
                   </div>
-                  {/* {this.state.errors.password && <small className="help is-danger">{this.state.errors.password}</small>} */}
+
+                  {this.state.errors.password && <small className="help is-danger">{this.state.errors.password}</small>}
+
                 </div>
                 <div className="field">
                   <label className="label">Password Confirmation</label>
                   <div className="control has-icons-left">
                     <input
-                      // className={`input ${this.state.errors.passwordConfirmation ? 'is-danger' : ''}`}
+                      className={`input ${this.state.errors.password_confirmation ? 'is-danger' : ''}`}
                       type="password"
                       placeholder="Password Confirmation"
                       name="password_confirmation"
                       onChange={this.handleChange}
                     />
                   </div>
-                  {/* {this.state.errors.passwordConfirmation && <small className="help is-danger">{this.state.errors.passwordConfirmation}</small>} */}
+
+                  {this.state.errors.password_confirmation && <small className="help is-danger">{this.state.errors.password_confirmation}</small>}
+
                   {/* <div className="field">
                       <label className="label">Profile Picture</label>
                       <div className="control">
