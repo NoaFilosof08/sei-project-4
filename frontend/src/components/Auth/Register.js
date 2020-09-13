@@ -13,6 +13,7 @@ class Register extends React.Component {
       password_confirmation: '',
       profilePicture: '',
       bio: '',
+      is_artist: false,
       types: [],
       favourites: []
     },
@@ -51,6 +52,12 @@ class Register extends React.Component {
     const data = { ...this.state.data, [e.target.name]: e.target.value }
     const errors = { ...this.state.errors, [e.target.name]: ''}
     this.setState({ data, errors })
+  }
+
+  handleCheckboxChange = (event) => {
+    const value = event.target.type === 'checkbox' ? event.target.checked : event.target.value
+    const data = { ...this.state.data, [event.target.name]: value }
+    this.setState({ data: data })
   }
 
   handleSubmit = async e => {
@@ -148,6 +155,19 @@ class Register extends React.Component {
                         <span></span>
                       </div>
                     </div> */}
+
+                  </div>
+
+                  <div className="field">
+                    <label className="label">Are you an artist?</label>
+                    <div className="control">
+                      <input
+                        type="checkbox"
+                        name="is_artist"
+                        onChange={this.handleCheckboxChange}
+                        checked={this.state.data.is_artist}
+                      />
+                    </div>
 
                   <div className="field">
                     <label className="label">Pick what type of Art you are interested in</label>
