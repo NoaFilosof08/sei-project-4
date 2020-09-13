@@ -62,9 +62,11 @@ class ProfilePage extends React.Component {
                 <p className="title is-4">Art:</p>
                 {this.state.user.created_art.map((art) =>
                   <div key={art.id}>
-                    <p >{art.name}</p>
-                    <img className="image" src={art.image} alt={art.descripton}/>
-                    <p >{art.description}</p>
+                    <Link to={`/art/${art.id}`}>
+                      <p >{art.name}</p>
+                      <img className="image" src={art.image} alt={art.descripton}/>
+                      <p >{art.description}</p>
+                    </Link>
                   </div>
                 )}
                 </div>

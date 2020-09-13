@@ -25,14 +25,11 @@ export const getArtistProfile = (pk) => {
   return axios.get(`${baseUrl}auth/artists/${pk}`)
 }
 
-export const favoriteToggle = (id) => {
-  return axios.post(`${baseUrl}auth/profile}`, {}, withHeaders())
-}
-
 export const editProfile = data => {
   return axios.put(`${baseUrl}auth/profile/`, data, withHeaders())
 }
 
+<<<<<<< HEAD
 export const createArt = data => {
   return axios.post(`${baseUrl}arts/`, data, withHeaders())
 }
@@ -40,3 +37,13 @@ export const createArt = data => {
 export const editArt = (pk, data) => {
   return axios.put(`${baseUrl}arts/${pk}/`, data, withHeaders())
 }
+=======
+export const getSingleArt = (pk) => {
+  return axios.get(`${baseUrl}arts/${pk}/`)
+}
+
+export const deleteArt = (pk) => {
+  return axios.delete(`${baseUrl}arts/${pk}`, withHeaders())
+}
+
+>>>>>>> development
