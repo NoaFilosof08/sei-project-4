@@ -9,6 +9,7 @@ import ProfilePage from './components/Artist/ProfilePage'
 import ArtistViewPage from './components/Artist/ArtistViewPage'
 import Register from './components/Auth/Register'
 import Login from './components/Auth/Login'
+import EditProfile from './components/Auth/EditProfile'
 
 
 const App = () => (
@@ -19,6 +20,7 @@ const App = () => (
         <Route exact path="/" component={Splash} />
         <Route path="/home" component={Home} />
         <Route path="/profile" component={ProfilePage} />
+        <Route path="/editprofile" component={EditProfile} />
         <Route path="/artist/:id" component={ArtistViewPage} />
         <Route path="/register" component={Register} />
         <Route path="/login" component={Login} />

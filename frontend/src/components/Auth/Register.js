@@ -60,7 +60,6 @@ class Register extends React.Component {
       this.props.history.push('/login')
     } catch (err) {
       this.setState({ errors: err.response.data })
-      console.log(this.state.errors)
     }
   }
 
@@ -77,7 +76,6 @@ class Register extends React.Component {
 
 
   render(){
-    console.log(this.state.data)
     return (
       <section className="hero is-fullheight-with-navbar">
         <div className="hero-body">
