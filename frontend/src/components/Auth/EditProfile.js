@@ -9,7 +9,7 @@ class EditProfile extends React.Component {
       profilePicture: '',
       first_name: '',
       last_name: '',
-      is_artist: '',
+      is_artist: false,
       bio: '',
       types: [],
       favourites: []
@@ -59,6 +59,12 @@ class EditProfile extends React.Component {
     this.setState({ data })
   }
 
+  handleCheckboxChange = (event) => {
+    const value = event.target.type === 'checkbox' ? event.target.checked : event.target.value
+    const data = { ...this.state.data, [event.target.name]: value }
+    this.setState({ data: data })
+  }
+
   handleSubmit = async event => {
     event.preventDefault()
     try {
@@ -75,9 +81,16 @@ class EditProfile extends React.Component {
     this.setState({ data })
   }
 
+  checkIsArtist = () => {
+    if (this.state.data.is_artist) {
+      return true
+    }
+  }
+
 
   render() {
     console.log(this.state.data)
+    const isArtist = this.checkIsArtist()
     return (
       <section className="hero is-fullheight-with-navbar">
         <div className="hero-body">
@@ -119,6 +132,18 @@ class EditProfile extends React.Component {
                   </div>
                 </div>
 
+                <div className="field">
+                  <label className="label">Do you want to be able to upload art?</label>
+
+                    <div className="control">
+                      <input
+                        type="checkbox"
+                        name="is_artist"
+                        onChange={this.handleCheckboxChange}
+                        checked={this.state.data.is_artist}
+                      />
+                    </div>
+
                   {/* <div className="field">
                       <label className="label">Profile Picture</label>
                       <div className="control">
@@ -149,7 +174,7 @@ class EditProfile extends React.Component {
                   onSubmit={this.handleSubmit}
                   >Update Profile</button>
                 </div>
-
+                    </div>
               </form>
 
           </div>
