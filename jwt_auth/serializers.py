@@ -42,4 +42,4 @@ class FavouriteSerializer(UserSerializer):
 class PopulatedUserSerializer(UserSerializer):
     created_art = ArtSerializer(many=True)
     types = TypeSerializer(many=True)
-    favourite = FavouriteSerializer(many=True)
+    favourites = FavouriteSerializer(many=True)

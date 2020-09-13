@@ -1,11 +1,12 @@
 
 import React from 'react'
-import { getArtistProfile } from '../../lib/api'
+import { getArtistProfile, getSingleProfile } from '../../lib/api'
 
 class ArtistViewPage extends React.Component {
 
   state = {
-    artist: null
+    artist: null,
+    user: null
   }
 
   async componentDidMount() {
@@ -13,6 +14,10 @@ class ArtistViewPage extends React.Component {
     try {
       const res = await getArtistProfile(artistId)
       this.setState({ artist: res.data })
+      const userRes = await getSingleProfile()
+      this.setState({ user: userRes.data })
+      console.log(this.state.user)
+      console.log(this.state)
     } catch (err) {
       console.log(err)
     }
@@ -26,8 +31,19 @@ class ArtistViewPage extends React.Component {
     this.props.history.push('/profile/edit')
   }
 
-  handleFavourite = () => {
+  async handleFavourite = () => {
     console.log('fave click')
+    const favouritedArtist = this.state.artist
+    console.log('faved:', favouritedArtist)
+    const currentFaves = this.state.user.favourites
+    const updatedFavourites = [ ...currentFaves, this.state.artist.id]
+    console.log(updatedFavourites)
+    try {
+      await this.handleEditProfile(this.state.user.id, `favourites: ${updatedFavourites}`)
+      console.log('sucess')
+    } catch {
+      console.log(err.Response.data)
+    }
   }
 
   render() {
@@ -35,7 +51,7 @@ class ArtistViewPage extends React.Component {
       console.log('no artist')
       return null
     } else {
-      console.log('user')
+      console.log(this.state.artist)
       return (
         <section className="section">
           <div className="container box">
