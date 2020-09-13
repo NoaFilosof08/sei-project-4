@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link, withRouter } from 'react-router-dom'
+import { logout, isAuthenticated } from '../../lib/auth'
 
 class Navbar extends React.Component {
   state = { navbarOpen: false }
@@ -11,6 +12,12 @@ class Navbar extends React.Component {
     if (this.props.location.pathname !== prevProps.location.pathname) {
       this.setState({ navbarOpen: false })
     }
+  }
+
+  handleLogout = () => {
+    logout()
+    // popupNotification('See you again soon!')
+    this.props.history.push('/home')
   }
 
   render() {
@@ -32,6 +39,7 @@ class Navbar extends React.Component {
           <div className={`navbar-menu ${navbarOpen ? 'is-active' : ''}`}>
             <div className="navbar-end">
             {/* // LINKS */}
+            {isAuthenticated() && <span onClick={this.handleLogout} className="navbar-item logout">Logout</span>}
             </div>
           </div>
         </div>

@@ -6,6 +6,7 @@ import Home from './components/Common/Home'
 import NotFound from './components/Common/NotFound'
 import Splash from './components/Common/Splash'
 import Register from './components/Auth/Register'
+import Login from './components/Auth/Login'
 
 const App = () => (
   <BrowserRouter>
@@ -15,6 +16,7 @@ const App = () => (
         <Route exact path="/" component={Splash} />
         <Route path="/home" component={Home} />
         <Route path="/register" component={Register} />
+        <Route path="/login" component={Login} />
         <Route path="/*" component={NotFound} />
       </Switch>
     </main>
