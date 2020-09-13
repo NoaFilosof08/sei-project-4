@@ -10,10 +10,13 @@ class User(AbstractUser):
     bio = models.CharField(max_length=500,blank=True)
     types = models.ManyToManyField(
         'artist_types.Type',
-        related_name='users'
+        related_name='users',
+        blank=True
     )
     favourites = models.ManyToManyField(
         'jwt_auth.User',
-        related_name="favourite"
+        related_name="favourite",
+        blank=True
     )
+    date_joined = models.CharField(max_length=100, blank=True)
 
