@@ -27,8 +27,8 @@ class Navbar extends React.Component {
         <div className="container">
           <div className="navbar-brand">
             <Link className="navbar-item" to="/home">
-              <span role="img" aria-label="logo" className="logo-emoji">🎨</span>
-              <h2 className="is-hidden-mobile navbarText">ARTLY</h2>
+              <span role="img" aria-label="logo" className="logo-emoji">🎨 </span>
+              <h2 className="is-hidden-mobile navbarText artly">ARTLY</h2>
             </Link>
             <span className={`navbar-burger ${navbarOpen ? 'is-active' : ''}`} onClick={this.toggleNavbar}>
               <span></span>

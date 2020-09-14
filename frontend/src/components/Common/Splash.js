@@ -8,14 +8,9 @@ class Splash extends React.Component {
         <div className="hero-body">
           <div className="container">
 
-            {/* <div className="splashTitle">
-              <h1>Welcome to Artly</h1>
-            </div> */}
-            <h1 className="ml9">
-              <span className="text-wrapper">
-                <span className="letters">Welcome to Artly</span>
-              </span>
-            </h1>
+            <div className="splashTitle">
+              <p>Welcome to  <span id="logo"><span role="img" aria-label="EMOJI-DESC">🎨</span> Artly</span></p>
+            </div>
 
             <div class="columns">
 
@@ -24,9 +19,9 @@ class Splash extends React.Component {
 
               <div class="column is-two-fifths is-link">
                 <Link to="/home">
-                  <div className="card splashCards">
+                  <div className="card splashCards box">
                     <div className="splashText">
-                      <h3>Browser some Artists and their awesome art</h3>
+                      <h3>Browse some Artists and their awesome art</h3>
                     </div>
                   </div>
                 </Link>
@@ -37,7 +32,7 @@ class Splash extends React.Component {
 
               <div class="column is-two-fifths is-link">
                 <Link to="/login">
-                  <div className="card splashCards">
+                  <div className="card splashCards box">
                     <div className="splashText">
                       <h3>I'm an Artist and want to post some art </h3>
                     </div>

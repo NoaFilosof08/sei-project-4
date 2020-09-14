@@ -8,6 +8,11 @@ $primaryNavy: #00063b;
 $primaryTitleFont: 'Amatic SC', cursive;
 $primaryMainFont: 'Josefin Slab', serif;
 
+@import './forms.scss';
+@import './artShow.scss';
+@import './profileViews.scss';
+@import './common.scss';
+
 body {
   font-family: $primaryMainFont;
   font-weight: 700;
@@ -100,7 +105,7 @@ span {
 
 //navbar
 .navbarMain {
-  background-color: $primaryPink;
+  background-color: rgba(250, 177, 190, 0.3);
 }
 
 .navbarText {
@@ -127,4 +132,12 @@ span {
   transform-origin: 50% 100%;
   display: inline-block;
   line-height: 1em;
+}
+
+p > #logo {
+  font-family: $primaryTitleFont;
+}
+
+.artly {
+  margin-left: 8px;
 }
