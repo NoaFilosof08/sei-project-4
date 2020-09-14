@@ -1,1 +1,26 @@
 // profile page and artist view page
+
+.ico {
+  border-radius: 50%;
+  cursor: pointer;
+  fill: #232323;
+  transition: .4s;
+}
+
+.editIcon {
+  margin: 10px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.deleteIcon {
+  margin: 10px;
+  margin-top: 20px;
+  margin-left: 0;
+  margin-right: 0;
+  cursor: pointer;
+}
+
+.favourited {
+  transform: scale(1.05) rotate(360deg);
+  fill: yellow;
+}
