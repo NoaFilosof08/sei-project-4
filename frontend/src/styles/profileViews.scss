@@ -1,5 +1,6 @@
 // profile page and artist view page
 
+//ICONS
 .ico {
   border-radius: 50%;
   cursor: pointer;
@@ -23,4 +24,23 @@
 .favourited {
   transform: scale(1.05) rotate(360deg);
   fill: yellow;
+}
+
+//general
+
+.profile-headers {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  padding-top: 100px;
+}
+
+.start {
+  margin-top: 20px;
+}
+
+cover-pic {
+  display: flex;
+  flex-grow: 1;;
 }

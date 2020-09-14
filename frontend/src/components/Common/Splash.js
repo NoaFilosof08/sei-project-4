@@ -12,12 +12,12 @@ class Splash extends React.Component {
               <p>Welcome to  <span id="logo"><span role="img" aria-label="EMOJI-DESC">🎨</span> Artly</span></p>
             </div>
 
-            <div class="columns">
+            <div className="columns">
 
-              <div class="column auto is-danger">
+              <div className="column auto">
               </div>
 
-              <div class="column is-two-fifths is-link">
+              <div className="column is-two-fifths is-link">
                 <Link to="/home">
                   <div className="card splashCards box">
                     <div className="splashText">
@@ -27,10 +27,10 @@ class Splash extends React.Component {
                 </Link>
               </div>
 
-              <div class="column auto is-danger">
+              <div className="column auto">
               </div>
 
-              <div class="column is-two-fifths is-link">
+              <div className="column is-two-fifths is-link">
                 <Link to="/login">
                   <div className="card splashCards box">
                     <div className="splashText">
@@ -40,7 +40,7 @@ class Splash extends React.Component {
                 </Link>
               </div>
 
-              <div class="column auto is-danger">
+              <div className="column auto">
               </div>
 
             </div>
