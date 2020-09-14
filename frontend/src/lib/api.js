@@ -44,3 +44,6 @@ export const deleteArt = (pk) => {
   return axios.delete(`${baseUrl}arts/${pk}`, withHeaders())
 }
 
+export const createEnquiry = (data) => {
+  return axios.post(`${baseUrl}enquiries/`, data, withHeaders())
+}

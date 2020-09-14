@@ -13,6 +13,7 @@ import EditProfile from './components/Auth/EditProfile'
 import CreateArt from './components/Artist/CreateArt'
 import EditArt from './components/Artist/EditArt'
 import ArtShow from './components/Artist/ArtShow'
+import CreateEnquiry from './components/Artist/CreateEnquiry'
 
 
 const App = () => (
@@ -29,10 +30,10 @@ const App = () => (
         <Route path="/createart" component={CreateArt} />
         <Route path="/art/:id" component={ArtShow}/>
         <Route path="/artist/:id" component={ArtistViewPage} />
+        <Route path="/enquire/:artid" component={CreateEnquiry} />
         <Route path="/register" component={Register} />
         <Route path="/login" component={Login} />
         <Route path="/*" component={NotFound} />
-
       </Switch>
     </main>
   </BrowserRouter>
