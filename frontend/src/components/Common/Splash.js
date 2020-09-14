@@ -8,9 +8,14 @@ class Splash extends React.Component {
         <div className="hero-body">
           <div className="container">
 
-            <div className="splashTitle">
+            {/* <div className="splashTitle">
               <h1>Welcome to Artly</h1>
-            </div>
+            </div> */}
+            <h1 className="ml9">
+              <span className="text-wrapper">
+                <span className="letters">Welcome to Artly</span>
+              </span>
+            </h1>
 
             <div class="columns">
 

@@ -8,14 +8,21 @@ $primaryNavy: #00063b;
 $primaryTitleFont: 'Amatic SC', cursive;
 $primaryMainFont: 'Josefin Slab', serif;
 
+body {
+  font-family: $primaryMainFont;
+  font-weight: 700;
+}
+
 h1 {
   font-family: $primaryTitleFont;
   font-weight: 700;
-  font-size: 30px;
+  font-size: 40px;
 }
 
 h2 {
-  font-family: $primaryMainFont;
+  font-family: $primaryTitleFont;
+  font-size: 25px;
+  font-weight: 700;
 }
 
 h3 {
@@ -24,10 +31,13 @@ h3 {
   font-weight: 700;
 }
 
-
 img {
   max-width: 200px;
   max-height: 200px;
+}
+
+span {
+  color: $primaryRed;
 }
 
 .ico {
@@ -59,8 +69,9 @@ img {
 // splash title
 .splashCards {
   display: flex;
-  background-color: $primaryPink;
-  color: $primaryRed;
+  background-color: $primaryRed;
+  color: $primaryYellow;
+  border: solid 18px $primaryPink;
   height: 60vh;
   transition: all 0.4s ease;
 }
@@ -83,5 +94,37 @@ img {
 .splashTitle {
   text-align: center;
   margin-bottom: 50px;
-  font-size: 40px;
+  font-size: 50px;
+  color: $primaryRed;
+}
+
+//navbar
+.navbarMain {
+  background-color: $primaryPink;
+}
+
+.navbarText {
+  color: $primaryRed;
+}
+
+// splash title
+.ml9 {
+  position: relative;
+  font-weight: 200;
+  font-size: 4em;
+}
+
+.ml9 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.2em;
+  padding-right: 0.05em;
+  padding-bottom: 0.1em;
+  overflow: hidden;
+}
+
+.ml9 .letter {
+  transform-origin: 50% 100%;
+  display: inline-block;
+  line-height: 1em;
 }
