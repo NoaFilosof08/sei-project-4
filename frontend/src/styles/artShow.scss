@@ -1,1 +1,36 @@
 // art show page
+
+.artShowContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.artName {
+  align-items: flex-end;
+}
+
+.artShowMain {
+  display: flex;
+  flex-direction: column;
+}
+
+.artShowEnquire {
+  display: flex;
+}
+
+.artContent {
+  margin-bottom: 30px;
+}
+
+.enquireBtn {
+  background-color: $primaryYellow;
+  color: $primaryGray;
+  border: none;
+  font-family: $primaryMainFont;
+  font-weight: 700;
+}
+
+.imgArtShow {
+  max-width: 400px;
+  max-height: 400px;
+}
