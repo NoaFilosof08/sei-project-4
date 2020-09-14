@@ -42,8 +42,8 @@ class CreateArt extends React.Component {
       <section className="hero is-fullheight-with-navbar">
         <div className="hero-body">
           <div className="container">
-            <div>{this.state.user.username}</div>
-            <div>{this.state.user.email}</div>
+            <p>Your <span id="logo" >Artly</span> Username:</p><div>{this.state.user.username}</div>
+            <p>Your <span id="logo" >Artly</span> Email:</p><div>{this.state.user.email}</div>
             <h2 className="title">Equiry:</h2>
 
             <form onSubmit={this.handleSubmit} className="column is-half is-offset-one-quarter box">
