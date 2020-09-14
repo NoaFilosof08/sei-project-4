@@ -1,7 +1,7 @@
 import React from 'react'
-import Select from 'react-select'
 // import { Link } from 'react-router-dom'
 import { editProfile, getSingleProfile} from '../../lib/api'
+import EditProfileForm from './EditProfileForm'
 
 class EditProfile extends React.Component {
   state = {
@@ -46,27 +46,28 @@ class EditProfile extends React.Component {
   ]
 
   async componentDidMount() {
+    const profileID = this.props.match.params
     try {
-      const res = await getSingleProfile()
+      const res = await getSingleProfile(profileID)
       this.setState({ data: res.data })
     } catch (err) {
       console.log(err)
     }
   }
 
-  handleChange = event => {
-    const data = { ...this.state.formData, [event.target.name]: event.target.value }
+  handleChange = e => {
+    const data = { ...this.state.data, [e.target.name]: e.target.value }
     this.setState({ data })
   }
 
-  handleCheckboxChange = (event) => {
-    const value = event.target.type === 'checkbox' ? event.target.checked : event.target.value
-    const data = { ...this.state.data, [event.target.name]: value }
+  handleCheckboxChange = e => {
+    const value = e.target.type === 'checkbox' ? e.target.checked : e.target.value
+    const data = { ...this.state.data, [e.target.name]: value }
     this.setState({ data: data })
   }
 
-  handleSubmit = async event => {
-    event.preventDefault()
+  handleSubmit = async e => {
+    e.preventDefault()
     try {
       const res = await editProfile(this.state.data)
       this.setState({ data: res.data })
@@ -96,87 +97,16 @@ class EditProfile extends React.Component {
         <div className="hero-body">
           <div className="container">
             <h1 className="title">Register pls </h1>
-            <form onSubmit={this.handleSubmit} className="column is-half is-offset-one-quarter box">
 
-                <div className="field">
-                  <label className="label">First Name</label>
-                  <div className="control has-icons-left">
-                    <input
-                      name="first_name"
-                      onChange={this.handleChange}
-                      value={this.state.data.first_name}
-                    />
-                  </div>
-                </div>
-
-                <div className="field">
-                  <label className="label">Last Name</label>
-                  <div className="control has-icons-left">
-                    <input
-                      name="last_name"
-                      onChange={this.handleChange}
-                      value={this.state.data.last_name}
-                    />
-                  </div>
-                </div>
-
-                <div className="field">
-                  <label className="label">bio</label>
-                  <div className="control has-icons-left">
-                    <input
-                      placeholder="bio"
-                      name="bio"
-                      onChange={this.handleChange}
-                      value={this.state.data.bio}
-                    />
-                  </div>
-                </div>
-
-                <div className="field">
-                  <label className="label">Do you want to be able to upload art?</label>
-
-                    <div className="control">
-                      <input
-                        type="checkbox"
-                        name="is_artist"
-                        onChange={this.handleCheckboxChange}
-                        checked={this.state.data.is_artist}
-                      />
-                    </div>
-
-                  {/* <div className="field">
-                      <label className="label">Profile Picture</label>
-                      <div className="control">
-                        <ImageUpload
-                          labelText="Profile Picture"
-                          onChange={this.handleImageChange}
-                        />
-                        <span></span>
-                      </div>
-                    </div> */}
-
-                  <div className="field">
-                    <label className="label">Pick what type of art you are interested in (please include all previous types)</label>
-                    <div className="control">
-                      <div className="control">
-                      <Select
-                      options={this.options}
-                      onChange={this.handleSelectCategories}
-                      isMulti
-                      // value={this.state.data.types}
-                      />
-                    </div>
-                  </div>
-              </div>
-
-                <div className="field">
-                  <button type="submit" className="button is-fullwidth is-warning"
-                  onSubmit={this.handleSubmit}
-                  >Update Profile</button>
-                </div>
-                    </div>
-              </form>
-
+            <EditProfileForm
+            handleChange={this.handleChange}
+            handleCheckboxChange={this.handleCheckboxChange}
+            handleSelectCategories={this.handleSelectCategories}
+            handleSubmit={this.handleSubmit}
+            data={this.state.data}
+            errors={this.state.errors}
+            options={this.options}
+            />
           </div>
         </div>
       </section>
@@ -185,3 +115,4 @@ class EditProfile extends React.Component {
 }
 
 export default EditProfile
+

@@ -4,6 +4,7 @@ import { logout, isAuthenticated } from '../../lib/auth'
 
 class Navbar extends React.Component {
   state = { navbarOpen: false }
+
   toggleNavbar = () => {
     this.setState({ navbarOpen: !this.state.navbarOpen })
   }
