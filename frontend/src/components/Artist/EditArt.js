@@ -1,5 +1,5 @@
 import React from 'react'
-import { editArt } from '../../lib/api'
+import { editArt, getSingleArt } from '../../lib/api'
 
 class EditArt extends React.Component {
   state = {
@@ -11,14 +11,15 @@ class EditArt extends React.Component {
     }
   }
 
-  // async componentDidMount() {
-  //   try {
-  //     const res = await getSingleProfile()
-  //     this.setState({ data: res.data })
-  //   } catch (err) {
-  //     console.log(err)
-  //   }
-  // }
+  async componentDidMount() {
+    const artID = this.props.match.params
+    try {
+      const res = await getSingleArt(artID)
+      this.setState({ data: res.data })
+    } catch (err) {
+      console.log(err)
+    }
+  }
 
   handleChange = e => {
     const data = { ...this.state.data, [e.target.name]: e.target.value }

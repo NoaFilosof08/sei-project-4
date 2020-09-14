@@ -9,6 +9,7 @@ const withHeaders = () => {
   }
 }
 
+// Auth Requests
 export const getAllProfiles = () => {
   return axios.get(`${baseUrl}/auth/artists/`)
 }
@@ -29,6 +30,15 @@ export const editProfile = data => {
   return axios.put(`${baseUrl}auth/profile/`, data, withHeaders())
 }
 
+export const registerUser = (data) => {
+  return axios.post(`${baseUrl}auth/register/`, data)
+}
+
+export const loginUser = (data) => {
+  return axios.post(`${baseUrl}auth/login/`, data)
+}
+
+// Art Request
 export const createArt = data => {
   return axios.post(`${baseUrl}arts/`, data, withHeaders())
 }
@@ -44,6 +54,7 @@ export const deleteArt = (pk) => {
   return axios.delete(`${baseUrl}arts/${pk}`, withHeaders())
 }
 
+// Enquiry Requests
 export const createEnquiry = (data) => {
   return axios.post(`${baseUrl}enquiries/`, data, withHeaders())
 }

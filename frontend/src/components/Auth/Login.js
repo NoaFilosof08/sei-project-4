@@ -1,7 +1,8 @@
 import React from 'react'
-import { loginUser } from '../../lib/apiAuth'
+import { loginUser } from '../../lib/api'
 import { setToken } from '../../lib/auth'
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
+import LoginFrom from './LoginForm'
 
 class Login extends React.Component {
   state = {
@@ -35,43 +36,12 @@ class Login extends React.Component {
           <div className="container">
             <h1 className="title">Login Pls</h1>
 
-            <form onSubmit={this.handleSubmit} className="column is-half is-offset-one-quarter box">
-                <div className="field">
-                  <label className="label">Email</label>
-                  <div className="control has-icons-left">
-                    <input
-                      className={`input ${this.state.error ? 'is-danger' : ''}`}
-                      name="email"
-                      placeholder="Email"
-                      onChange={this.handleChange}
-                    />
-
-                  </div>
-                </div>
-                <div className="field">
-                  <label className="label">Password</label>
-                  <div className="control has-icons-left">
-                    <input
-                      className={`input ${this.state.error ? 'is-danger' : ''}`}
-                      type="password"
-                      name="password"
-                      placeholder="Password"
-                      onChange={this.handleChange}
-                    />
-
-                  </div>
-                  {this.state.error && <small className="help is-danger">Sorry, your credentials were incorrect</small>}
-                </div>
-                <button type="submit" className="button is-warning is-fullwidth" onSubmit={this.handleSubmit} disabled={!this.state.data.email || !this.state.data.password}>Login</button>
-                <div className="column is-half is-offset-one-quarter">
-                  <p className="has-text-centered">
-                    <small>Dont have an account?
-                      <Link to="/register" className="form-link">Sign Up</Link>
-                    </small>
-                  </p>
-                </div>
-              </form>
-
+            <LoginFrom
+              handleChange={this.handleChange}
+              handleSubmit={this.handleSubmit}
+              errors={this.state.error}
+              data={this.state.data}
+            />
           </div>
         </div>
       </section>
