@@ -23,12 +23,12 @@ class Navbar extends React.Component {
   render() {
     const { navbarOpen } = this.state
     return (
-      <nav className="navbar is-dark is-fixed-top">
+      <nav className="navbar navbarMain is-fixed-top">
         <div className="container">
           <div className="navbar-brand">
             <Link className="navbar-item" to="/home">
               <span role="img" aria-label="logo" className="logo-emoji">🎨</span>
-              <h1 className="is-hidden-mobile">ARTLY</h1>
+              <h2 className="is-hidden-mobile navbarText">ARTLY</h2>
             </Link>
             <span className={`navbar-burger ${navbarOpen ? 'is-active' : ''}`} onClick={this.toggleNavbar}>
               <span></span>
@@ -39,11 +39,11 @@ class Navbar extends React.Component {
           <div className={`navbar-menu ${navbarOpen ? 'is-active' : ''}`}>
             <div className="navbar-end">
             {/* // LINKS */}
-            <Link className="navbar-item" to="/home">Artists</Link>
-            {!isAuthenticated() &&<Link className="navbar-item" to="/register">Sign up</Link>}
-            {!isAuthenticated() &&<Link className="navbar-item" to="/login">Login</Link>}
-            {isAuthenticated() &&<Link className="navbar-item" to="/profile">Profile</Link>}
-            {isAuthenticated() && <span onClick={this.handleLogout} className="navbar-item logout">Logout</span>}
+            <Link className="navbar-item navbarText" to="/home">Artists</Link>
+            {!isAuthenticated() &&<Link className="navbar-item navbarText" to="/register">Sign up</Link>}
+            {!isAuthenticated() &&<Link className="navbar-item navbarText" to="/login">Login</Link>}
+            {isAuthenticated() &&<Link className="navbar-item navbarText" to="/profile">Profile</Link>}
+            {isAuthenticated() && <span onClick={this.handleLogout} className="navbar-item logout navbarText">Logout</span>}
             </div>
           </div>
         </div>
