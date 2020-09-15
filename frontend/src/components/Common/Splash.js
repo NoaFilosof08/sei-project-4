@@ -9,7 +9,7 @@ class Splash extends React.Component {
           <div className="container">
 
             <div className="splashTitle">
-              <p id="logo"><span role="img" aria-label="EMOJI-DESC">🎨</span> Artly</p>
+              <p id="logo"><span role="img" aria-label="EMOJI-DESC">🎨</span> ARTLY</p>
             </div>
 
             <div className="columns splashMain">
