@@ -6,7 +6,7 @@ import ProfileForm from './ProfileForm'
 class EditProfile extends React.Component {
   state = {
     data: {
-      profile_image: '',
+      profile_image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTTOkHm3_mPQ5PPRvGtU6Si7FJg8DVDtZ47rw&usqp=CAU',
       username: '',
       is_artist: false,
       bio: '',

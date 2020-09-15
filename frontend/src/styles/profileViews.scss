@@ -39,7 +39,11 @@
 
 .cover-pic {
   display: flex;
-  flex-grow: 1;;
+  flex-grow: 1;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 20%;
 }
 
 .profile-buttons {

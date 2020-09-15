@@ -9,7 +9,7 @@ class CreateArt extends React.Component {
       name: '',
       description: '',
       price: 0,
-      image: ''
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQTGQVF6FDMDDy6a9DM8u4cIQX69OxhGAP8Jw&usqp=CAU'
     }
   }
 
