@@ -3,6 +3,7 @@ import { getSingleProfile } from '../../lib/api'
 import { Link } from 'react-router-dom'
 
 
+
 class ProfilePage extends React.Component {
 
   state = {
@@ -37,16 +38,12 @@ class ProfilePage extends React.Component {
     this.props.history.push('/createart')
   }
 
-
   render() {
     if (!this.state.user) {
       console.log('no user logged in')
       return null
     } else {
       const isArtist = this.checkIsArtist()
-      console.log('user')
-      console.log(this.state.user.favourites)
-      // const coverImg = this.state.user.cover_image
       return (
         <section className="section">
           <div className="container box start">
@@ -73,20 +70,21 @@ class ProfilePage extends React.Component {
                   {
                   isArtist ?
                   <>
-                  <p className="title is-4">Art:</p>
                     <div id="artWrapping">
                     {this.state.user.created_art.map((art) =>
-                      <div key={art.id}>
+                      <div key={art.id} className="art-display">
                         <Link to={`/art/${art.id}`}>
-                          <p >{art.name}</p>
-                          <img className="image" src={art.image} alt={art.descripton}/>
-                          <p >{art.description}</p>
+                          <div>
+                            <img className="image art-image" src={art.image} alt={art.descripton}/>
+                          </div>
+                          <p>{art.name}</p>
+                          <p>{art.description}</p>
                         </Link>
                       </div>
                     )}
                     </div>
                     <br></br>
-                    <button className="button" onClick={this.handleAddArt} >Add Art</button>
+                    <button className="button flex-end" onClick={this.handleAddArt} >Add Art</button>
                     </>
                   :
                     <div></div>
@@ -97,7 +95,7 @@ class ProfilePage extends React.Component {
                   {this.state.user.favourites.map( (fave) =>
                     <div key={fave.id}>
                       <Link to={`/artist/${fave.id}/`}>
-                        <p>{fave.username}</p>
+                        <p className="favourite-link">{fave.username}</p>
                       </Link>
                     </div>
                   )}
@@ -110,6 +108,5 @@ class ProfilePage extends React.Component {
     }
   }
 }
-
 
 export default ProfilePage

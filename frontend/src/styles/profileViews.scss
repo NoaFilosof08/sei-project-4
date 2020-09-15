@@ -64,3 +64,20 @@
   flex-direction: row;
   justify-content: center;
 }
+
+.art-image {
+  border-radius: 25px;
+}
+
+.art-display {
+  margin: 8px;
+}
+
+.flex-end {
+  align-self: flex-end;
+}
+
+.favourite-link {
+  border: 1px solid grey;
+  border-radius: 5px;
+}
