@@ -8,7 +8,7 @@ class Login extends React.Component {
   state = {
     data: {
       email: '',
-      password: '',
+      password: ''
     },
     error: false
   }

@@ -2,7 +2,7 @@
 import React from 'react'
 import { getArtistProfile, getSingleUnpopulatedProfile, editProfile } from '../../lib/api'
 import { isAuthenticated } from '../../lib/auth'
-import {Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 class ArtistViewPage extends React.Component {
 
@@ -32,12 +32,12 @@ class ArtistViewPage extends React.Component {
   handleFavourite = async () => {
     const currentFaves = this.state.user.favourites
     const updatedFavourites = [ ...currentFaves, this.state.artist.id]
-    const updatedUser = {...this.state.user, favourites : updatedFavourites }
+    const updatedUser = { ...this.state.user, favourites: updatedFavourites }
     await this.setState({ user: updatedUser })
     const data = this.state.user
     try {
       await editProfile(data)
-    } catch(err) {
+    } catch (err) {
       console.log(err.response.data)
     }
   }
@@ -51,12 +51,12 @@ class ArtistViewPage extends React.Component {
         return null
       }
     })
-    const updatedUser = {...this.state.user, favourites : newFaves }
+    const updatedUser = { ...this.state.user, favourites: newFaves }
     await this.setState({ user: updatedUser })
     const data = this.state.user
     try {
       await editProfile(data)
-    } catch(err) {
+    } catch (err) {
       console.log(err.response.data)
     }
   }
@@ -95,29 +95,29 @@ class ArtistViewPage extends React.Component {
                 <br></br>
                 { isLoggedIn ?
                   <div>
-                    <svg id="wish" width="34" height="34" viewBox="0 0 24 24" onClick={favourited ? this.handleRemoveFavourite : this.handleFavourite} className={favourited ? "ico favourited" : "ico"}><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z" id="wish"></path></svg>
+                    <svg id="wish" width="34" height="34" viewBox="0 0 24 24" onClick={favourited ? this.handleRemoveFavourite : this.handleFavourite} className={favourited ? 'ico favourited' : 'ico'}><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z" id="wish"></path></svg>
                   </div>
                   :
                   <div></div>
                 }
               </div>
 
-            <div className="rows">
-              <p className="title is-4">Art:</p>
-              <div id="artWrapping">
-                {this.state.artist.created_art.map((art) =>
-                  <div key={art.id}>
-                    <Link to={`/art/${art.id}`}>
-                      <p >{art.name}</p>
-                      <img className="image" src={art.image} alt={art.descripton}/>
-                      <p >{art.description}</p>
-                    </Link>
-                  </div>
-                )}
+              <div className="rows">
+                <p className="title is-4">Art:</p>
+                <div id="artWrapping">
+                  {this.state.artist.created_art.map((art) =>
+                    <div key={art.id}>
+                      <Link to={`/art/${art.id}`}>
+                        <p >{art.name}</p>
+                        <img className="image" src={art.image} alt={art.descripton}/>
+                        <p >{art.description}</p>
+                      </Link>
+                    </div>
+                  )}
+                </div>
               </div>
             </div>
           </div>
-        </div>
         </section>
       )
     }

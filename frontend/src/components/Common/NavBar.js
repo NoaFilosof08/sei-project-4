@@ -39,12 +39,12 @@ class Navbar extends React.Component {
           </div>
           <div className={`navbar-menu ${navbarOpen ? 'is-active' : ''}`}>
             <div className="navbar-end">
-            {/* // LINKS */}
-            <Link className="navbar-item navbarText" to="/home">Artists</Link>
-            {!isAuthenticated() &&<Link className="navbar-item navbarText loginRegister" to="/register">Sign up</Link>}
-            {!isAuthenticated() &&<Link className="navbar-item navbarText loginRegister" to="/login">Login</Link>}
-            {isAuthenticated() &&<Link className="navbar-item navbarText" to="/profile">Profile</Link>}
-            {isAuthenticated() && <span onClick={this.handleLogout} className="navbar-item logout navbarText loginRegister">Logout</span>}
+              {/* // LINKS */}
+              <Link className="navbar-item navbarText" to="/home">Artists</Link>
+              {!isAuthenticated() && <Link className="navbar-item navbarText loginRegister" to="/register">Sign up</Link>}
+              {!isAuthenticated() && <Link className="navbar-item navbarText loginRegister" to="/login">Login</Link>}
+              {isAuthenticated() && <Link className="navbar-item navbarText" to="/profile">Profile</Link>}
+              {isAuthenticated() && <span onClick={this.handleLogout} className="navbar-item logout navbarText loginRegister">Logout</span>}
             </div>
           </div>
         </div>

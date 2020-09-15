@@ -1,6 +1,6 @@
 import React from 'react'
 // import { Link } from 'react-router-dom'
-import { editProfile, getSingleProfile} from '../../lib/api'
+import { editProfile, getSingleProfile } from '../../lib/api'
 import EditProfileForm from './EditProfileForm'
 
 class EditProfile extends React.Component {
@@ -18,31 +18,31 @@ class EditProfile extends React.Component {
   }
 
   options = [
-    { value: 1, label: 'Abstract Expressionism'},
-    { value: 2, label: 'Art Noveau'},
-    { value: 3, label: 'Avant-garde'},
-    { value: 4, label: 'Baroque'},
-    { value: 5, label: 'Classicism'},
-    { value: 6, label: 'Conceptualism'},
-    { value: 7, label: 'Constructivism'},
-    { value: 8, label: 'Cubism'},
-    { value: 9, label: 'Dadaism'},
-    { value: 10, label: 'Expressionism'},
-    { value: 11, label: 'Fauvism'},
-    { value: 12, label: 'Futurism'},
-    { value: 13, label: 'Impressionism'},
-    { value: 14, label: 'istallation Art'},
-    { value: 15, label: 'Land Art/Earth Art'},
-    { value: 16, label: 'Minimalism'},
-    { value: 17, label: 'Neo-Impressionalism'},
-    { value: 18, label: 'Neo-Classicism'},
-    { value: 19, label: 'Performance Art'},
-    { value: 20, label: 'Pointillism'},
-    { value: 21, label: 'Pop Art'},
-    { value: 22, label: 'Post-Impressionism'},
-    { value: 23, label: 'Rococo'},
-    { value: 24, label: 'Surrealism'},
-    { value: 25, label: 'Supermatism'}
+    { value: 1, label: 'Abstract Expressionism' },
+    { value: 2, label: 'Art Noveau' },
+    { value: 3, label: 'Avant-garde' },
+    { value: 4, label: 'Baroque' },
+    { value: 5, label: 'Classicism' },
+    { value: 6, label: 'Conceptualism' },
+    { value: 7, label: 'Constructivism' },
+    { value: 8, label: 'Cubism' },
+    { value: 9, label: 'Dadaism' },
+    { value: 10, label: 'Expressionism' },
+    { value: 11, label: 'Fauvism' },
+    { value: 12, label: 'Futurism' },
+    { value: 13, label: 'Impressionism' },
+    { value: 14, label: 'istallation Art' },
+    { value: 15, label: 'Land Art/Earth Art' },
+    { value: 16, label: 'Minimalism' },
+    { value: 17, label: 'Neo-Impressionalism' },
+    { value: 18, label: 'Neo-Classicism' },
+    { value: 19, label: 'Performance Art' },
+    { value: 20, label: 'Pointillism' },
+    { value: 21, label: 'Pop Art' },
+    { value: 22, label: 'Post-Impressionism' },
+    { value: 23, label: 'Rococo' },
+    { value: 24, label: 'Surrealism' },
+    { value: 25, label: 'Supermatism' }
   ]
 
   async componentDidMount() {
@@ -99,13 +99,13 @@ class EditProfile extends React.Component {
             <h1 className="title">Register pls </h1>
 
             <EditProfileForm
-            handleChange={this.handleChange}
-            handleCheckboxChange={this.handleCheckboxChange}
-            handleSelectCategories={this.handleSelectCategories}
-            handleSubmit={this.handleSubmit}
-            data={this.state.data}
-            errors={this.state.errors}
-            options={this.options}
+              handleChange={this.handleChange}
+              handleCheckboxChange={this.handleCheckboxChange}
+              handleSelectCategories={this.handleSelectCategories}
+              handleSubmit={this.handleSubmit}
+              data={this.state.data}
+              errors={this.state.errors}
+              options={this.options}
             />
           </div>
         </div>

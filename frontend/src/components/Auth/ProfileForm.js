@@ -1,7 +1,7 @@
 import React from 'react'
 import Select from 'react-select'
 
-const ProfileForm = ({ handleChange, handleCheckboxChange, handleImageChange, handleSelectCategories, data, errors, options }) => {
+const ProfileForm = ({ handleChange, handleCheckboxChange,  handleSelectCategories, data, errors, options }) => {
   return (
     <>
       <div className="field">
@@ -71,28 +71,28 @@ const ProfileForm = ({ handleChange, handleCheckboxChange, handleImageChange, ha
             </div>
           </div> */}
 
+      </div>
+
+      <div className="field">
+        <label className="label">Are you an artist?</label>
+        <div className="control">
+          <input
+            type="checkbox"
+            name="is_artist"
+            onChange={handleCheckboxChange}
+            checked={data.is_artist}
+          />
         </div>
 
         <div className="field">
-          <label className="label">Are you an artist?</label>
+          <label className="label">Pick what type of Art you are interested in</label>
           <div className="control">
-            <input
-              type="checkbox"
-              name="is_artist"
-              onChange={handleCheckboxChange}
-              checked={data.is_artist}
-            />
-          </div>
-
-          <div className="field">
-            <label className="label">Pick what type of Art you are interested in</label>
             <div className="control">
-              <div className="control">
               <Select
-              options={options}
-              onChange={handleSelectCategories}
-              isMulti
-              placeholder="please select a type from the list"
+                options={options}
+                onChange={handleSelectCategories}
+                isMulti
+                placeholder="please select a type from the list"
               />
             </div>
           </div>

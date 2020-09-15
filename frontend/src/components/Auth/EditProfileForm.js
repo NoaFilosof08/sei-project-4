@@ -1,7 +1,7 @@
 import React from 'react'
 import Select from 'react-select'
 
-const EditProfileForm = ({ handleChange, handleCheckboxChange, handleImageChange, handleSelectCategories, handleSubmit, data, errors, options }) => {
+const EditProfileForm = ({ handleChange, handleCheckboxChange, handleSelectCategories, handleSubmit, data, options }) => {
   return (
     <>
       <form onSubmit={handleSubmit} className="column is-half is-offset-one-quarter box">
@@ -42,26 +42,26 @@ const EditProfileForm = ({ handleChange, handleCheckboxChange, handleImageChange
 
         <div className="field">
           <label className="label">Do you want to be able to upload art?</label>
-            <div className="control">
-              <input
-                type="checkbox"
-                name="is_artist"
-                onChange={handleCheckboxChange}
-                checked={data.is_artist}
-              />
-            </div>
+          <div className="control">
+            <input
+              type="checkbox"
+              name="is_artist"
+              onChange={handleCheckboxChange}
+              checked={data.is_artist}
+            />
+          </div>
         </div>
 
-          {/* <div className="field">
-              <label className="label">Profile Picture</label>
-              <div className="control">
-                <ImageUpload
-                  labelText="Profile Picture"
-                  onChange={handleImageChange}
-                />
-                <span></span>
-              </div>
-            </div>  */}
+        {/* <div className="field">
+            <label className="label">Profile Picture</label>
+            <div className="control">
+              <ImageUpload
+                labelText="Profile Picture"
+                onChange={handleImageChange}
+              />
+              <span></span>
+            </div>
+          </div>  */}
 
         <div className="field">
           <label className="label">Pick what type of art you are interested in (please include all previous types)</label>
@@ -77,7 +77,7 @@ const EditProfileForm = ({ handleChange, handleCheckboxChange, handleImageChange
 
         <div className="field">
           <button type="submit" className="button is-fullwidth is-warning"
-          onSubmit={handleSubmit} >Update Profile</button>
+            onSubmit={handleSubmit} >Update Profile</button>
         </div>
       </form>
     </>

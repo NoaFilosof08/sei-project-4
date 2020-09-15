@@ -31,17 +31,17 @@ class Home extends React.Component {
     const artists = this.returnArtists()
     return (
       <section className="hero is-fullheight-with-navbar">
-      <div className="hero-body">
-        <div className="container">
-          <h1 className="title">Hello World</h1>
+        <div className="hero-body">
+          <div className="container">
+            <h1 className="title">Hello World</h1>
+          </div>
         </div>
-      </div>
-      <div className="columns is-mobile is-multiline">
-              {artists.map(profile =>(
-                  <ArtistCard key={profile.id} {...profile}/>
-              ))}
-      </div>
-    </section>
+        <div className="columns is-mobile is-multiline">
+          {artists.map(profile =>(
+            <ArtistCard key={profile.id} {...profile}/>
+          ))}
+        </div>
+      </section>
     )
   }
 }

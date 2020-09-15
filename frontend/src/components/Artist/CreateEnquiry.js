@@ -32,7 +32,7 @@ class CreateArt extends React.Component {
     const artId = this.props.match.params.artid
     try {
       const res = await createEnquiry(this.state.data)
-      this.setState({ data: res.data})
+      this.setState({ data: res.data })
       this.props.history.push(`/art/${artId}`)
     } catch (err) {
       console.log(err.response.data)
@@ -49,16 +49,16 @@ class CreateArt extends React.Component {
         <div className="hero-body">
           <div className="container">
             <form onSubmit={this.handleSubmit} className="column is-half is-offset-one-quarter box">
-            <figure className="media-left">
-              <p className="image is-128x128">
-                <img src={this.state.artdetails.image} alt="art preview"></img>
-              </p>
-            </figure>
-            <br></br>
-            <h2 className="title">Equiry:</h2>
-            <p>Your <span id="logo" >Artly</span> Username:</p><div>{this.state.user.username}</div>
-            <p>Your <span id="logo" >Artly</span> Email:</p><div>{this.state.user.email}</div>
-            <br></br>
+              <figure className="media-left">
+                <p className="image is-128x128">
+                  <img src={this.state.artdetails.image} alt="art preview"></img>
+                </p>
+              </figure>
+              <br></br>
+              <h2 className="title">Equiry:</h2>
+              <p>Your <span id="logo" >Artly</span> Username:</p><div>{this.state.user.username}</div>
+              <p>Your <span id="logo" >Artly</span> Email:</p><div>{this.state.user.email}</div>
+              <br></br>
               <div className="field">
                 <div className="control">
                   <textarea
