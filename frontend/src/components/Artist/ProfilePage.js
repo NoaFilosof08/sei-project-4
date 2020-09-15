@@ -96,7 +96,7 @@ class ProfilePage extends React.Component {
                   {this.state.user.favourites.map( (fave) =>
                     <span key={fave.id} className="favourite-link">
                       <Link to={`/artist/${fave.id}/`}>
-                        <button className="button">{fave.username}</button>
+                        <button className="button faveArtBtn">{fave.username}</button>
                       </Link>
                     </span>
                   )}
