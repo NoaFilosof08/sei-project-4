@@ -1,5 +1,5 @@
 import React from 'react'
-// import ImageUpload from '../../lib/imageUpload'
+
 import { registerUser } from '../../lib/api'
 import { Link } from 'react-router-dom'
 import ProfileForm from './ProfileForm'

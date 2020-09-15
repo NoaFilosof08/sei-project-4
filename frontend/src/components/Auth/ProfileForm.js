@@ -1,7 +1,8 @@
 import React from 'react'
 import Select from 'react-select'
+import ImageUpload from '../../lib/imageUpload'
 
-const ProfileForm = ({ handleChange, handleCheckboxChange,  handleSelectCategories, data, errors, options }) => {
+const ProfileForm = ({ handleChange, handleCheckboxChange,  handleSelectCategories, handleImageChange, data, errors, options }) => {
   return (
     <>
       <div className="field">
@@ -60,16 +61,16 @@ const ProfileForm = ({ handleChange, handleCheckboxChange,  handleSelectCategori
 
         {errors.password_confirmation && <small className="help is-danger">{errors.password_confirmation}</small>}
 
-        {/* <div className="field">
-            <label className="label">Profile Picture</label>
-            <div className="control">
-              <ImageUpload
-                labelText="Profile Picture"
-                onChange={this.handleImageChange}
-              />
-              <span></span>
-            </div>
-          </div> */}
+        <div className="field">
+          <label className="label">Profile Picture</label>
+          <div className="control">
+            <ImageUpload
+              labelText="Profile Picture"
+              onChange={handleImageChange}
+            />
+            <span></span>
+          </div>
+        </div>
 
       </div>
 
@@ -85,14 +86,14 @@ const ProfileForm = ({ handleChange, handleCheckboxChange,  handleSelectCategori
         </div>
 
         <div className="field">
-          <label className="label">Pick what type of Art you are interested in</label>
+          <label className="label">What type of Art you are interested in or what type of Art do you make?</label>
           <div className="control">
             <div className="control">
               <Select
                 options={options}
                 onChange={handleSelectCategories}
                 isMulti
-                placeholder="please select a type from the list"
+                placeholder="Please select types from the list"
               />
             </div>
           </div>
