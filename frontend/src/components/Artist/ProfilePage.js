@@ -44,16 +44,18 @@ class ProfilePage extends React.Component {
       return null
     } else {
       const isArtist = this.checkIsArtist()
+      const coverImage = this.state.user.cover_image
       return (
-        <section className="section">
-          <div className="container box tile is-ancestor">
+        <section className="section page">
+          <div className="box tile is-ancestor">
             <div className="tile is-vertical">
               <div className="profile-headers contianer tile is-vertical">
-                <figure className="image is-3by1">
-                  <img className="image  cover-pic" src={this.state.user.cover_image} alt="cover">
-                  </img>
+                <figure className="image">
+                  <div className="cover-image">
+                    <img className="image  " src={coverImage} alt="cover">
+                    </img>
+                  </div>
                 </figure>
-
                 <figure className="image is-150x150">
                   <img className="image is-rounded" src={this.state.user.profile_image} alt="profile"/>
                 </figure>
@@ -73,10 +75,10 @@ class ProfilePage extends React.Component {
                       <div id="artWrapping">
                         {this.state.user.created_art.map((art) =>
                           <div key={art.id} className="art-display box">
-                            <Link to={`/art/${art.id}`}>
-                              <img className="image art-image hover" src={art.image} alt={art.descripton}/>
+                            <Link to={`/art/${art.id}`} className="link">
+                              <img className="image art-image" src={art.image} alt={art.descripton}/>
                               <p>{art.name}</p>
-                              <p>{art.description}</p>
+                              <p className="description">{art.description}</p>
                             </Link>
                           </div>
                         )}
@@ -90,16 +92,19 @@ class ProfilePage extends React.Component {
               </div>
               <div>
                 <br></br>
+                <hr></hr>
                 <div>
                   <h3>Your Favourite Artists:</h3>
                   <br></br>
-                  {this.state.user.favourites.map( (fave) =>
-                    <span key={fave.id} className="favourite-link">
-                      <Link to={`/artist/${fave.id}/`}>
-                        <button className="button faveArtBtn">{fave.username}</button>
-                      </Link>
-                    </span>
-                  )}
+                  <div className="tile">
+                    {this.state.user.favourites.map( (fave) =>
+                      <span key={fave.id} className="favourite-link">
+                        <Link to={`/artist/${fave.id}/`}>
+                          <button className="button faveArtBtn">{fave.username}</button>
+                        </Link>
+                      </span>
+                    )}
+                  </div>
                   <br></br>
                 </div>
               </div>

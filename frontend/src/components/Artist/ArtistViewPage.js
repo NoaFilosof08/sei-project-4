@@ -89,10 +89,17 @@ checkIfArtist = () => {
       const isLoggedIn = isAuthenticated()
       const favourited = this.checkFavourite()
       const isArtist = this.checkIfArtist()
+      const coverImage = this.state.artist.cover_image
       return (
         <section className="section">
-          <div className="container box start">
+          <div className="box start">
             <div className="profile-headers container">
+              <figure className="image">
+                <div className="cover-image">
+                  <img className="image  " src={coverImage} alt="cover">
+                  </img>
+                </div>
+              </figure>
               <figure className="image is-150x150">
                 <img className="image is-rounded" src={this.state.artist.profile_image} alt="profile"/>
               </figure>
@@ -112,9 +119,9 @@ checkIfArtist = () => {
               {this.state.artist.created_art.map((art) =>
                 <div key={art.id} className="art-display box">
                   <Link to={`/art/${art.id}`}>
-                    <img className="image hover" src={art.image} alt={art.descripton}/>
+                    <img className="image art-image" src={art.image} alt={art.descripton}/>
                     <p >{art.name}</p>
-                    <p >{art.description}</p>
+                    <p className="description">{art.description}</p>
                   </Link>
                 </div>
               )}
