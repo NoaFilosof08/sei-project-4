@@ -1,7 +1,7 @@
 import React from 'react'
 // import { Link } from 'react-router-dom'
 import { editProfile, getSingleProfile } from '../../lib/api'
-import EditProfileForm from './EditProfileForm'
+import { ProfileForm } from './ProfileForm'
 
 class EditProfile extends React.Component {
   state = {
@@ -66,6 +66,11 @@ class EditProfile extends React.Component {
     this.setState({ data: data })
   }
 
+  handleImageChange = url => {
+    const formData = { ...this.state.data, profilePicture: url }
+    this.setState({ data: formData })
+  }
+
   handleSubmit = async e => {
     e.preventDefault()
     try {
@@ -98,11 +103,12 @@ class EditProfile extends React.Component {
           <div className="container">
             <h1 className="title">Register pls </h1>
 
-            <EditProfileForm
+            <ProfileForm
               handleChange={this.handleChange}
               handleCheckboxChange={this.handleCheckboxChange}
               handleSelectCategories={this.handleSelectCategories}
               handleSubmit={this.handleSubmit}
+              handleImageChange={this.handleImageChange}
               data={this.state.data}
               errors={this.state.errors}
               options={this.options}

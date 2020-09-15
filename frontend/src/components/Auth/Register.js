@@ -1,5 +1,4 @@
 import React from 'react'
-
 import { registerUser } from '../../lib/api'
 import { Link } from 'react-router-dom'
 import ProfileForm from './ProfileForm'
