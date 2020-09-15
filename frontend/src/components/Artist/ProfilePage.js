@@ -73,9 +73,7 @@ class ProfilePage extends React.Component {
                         {this.state.user.created_art.map((art) =>
                           <div key={art.id} className="art-display box">
                             <Link to={`/art/${art.id}`}>
-                              <div>
-                                <img className="image art-image" src={art.image} alt={art.descripton}/>
-                              </div>
+                              <img className="image art-image hover" src={art.image} alt={art.descripton}/>
                               <p>{art.name}</p>
                               <p>{art.description}</p>
                             </Link>

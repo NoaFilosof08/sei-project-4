@@ -2,7 +2,7 @@ import React from 'react'
 import Select from 'react-select'
 import ImageUpload from '../../lib/imageUpload'
 
-const ProfileForm = ({ handleChange, handleCheckboxChange,  handleSelectCategories, handleImageChange, data, errors, options }) => {
+const ProfileForm = ({ handleChange, handleCheckboxChange,  handleSelectCategories, handleImageChange, data, errors, options, isLoggedIn }) => {
   return (
     <>
       <div className="field">
@@ -13,8 +13,8 @@ const ProfileForm = ({ handleChange, handleCheckboxChange,  handleSelectCategori
             placeholder="Username"
             name="username"
             onChange={handleChange}
+            value={data.username}
           />
-
         </div>
         {errors.username && <small className="help is-danger">{errors.username}</small>}
       </div>
@@ -26,53 +26,67 @@ const ProfileForm = ({ handleChange, handleCheckboxChange,  handleSelectCategori
             placeholder="Email"
             name="email"
             onChange={handleChange}
+            value={data.email}
           />
-
         </div>
         {errors.email && <small className="help is-danger">{errors.email}</small>}
       </div>
-      <div className="field">
-        <label className="label">Password</label>
-        <div className="control has-icons-left">
-          <input
-            className={`input ${errors.password ? 'is-danger' : ''}`}
-            type="password"
-            placeholder="Password"
-            name="password"
-            onChange={handleChange}
-          />
-
-        </div>
-
-        {errors.password && <small className="help is-danger">{errors.password}</small>}
-
-      </div>
-      <div className="field">
-        <label className="label">Password Confirmation</label>
-        <div className="control has-icons-left">
-          <input
-            className={`input ${errors.password_confirmation ? 'is-danger' : ''}`}
-            type="password"
-            placeholder="Password Confirmation"
-            name="password_confirmation"
-            onChange={handleChange}
-          />
-        </div>
-
-        {errors.password_confirmation && <small className="help is-danger">{errors.password_confirmation}</small>}
-
-        <div className="field">
-          <label className="label">Profile Picture</label>
-          <div className="control">
-            <ImageUpload
-              labelText="Profile Picture"
-              onChange={handleImageChange}
-            />
-            <span></span>
+      { isLoggedIn ?
+        <>
+        </>
+        :
+        <div>
+          <div className="field">
+            <label className="label">Password</label>
+            <div className="control has-icons-left">
+              <input
+                className={`input ${errors.password ? 'is-danger' : ''}`}
+                type="password"
+                placeholder="Password"
+                name="password"
+                onChange={handleChange}
+              />
+            </div>
+            {errors.password && <small className="help is-danger">{errors.password}</small>}
+          </div>
+          <div className="field">
+            <label className="label">Password Confirmation</label>
+            <div className="control has-icons-left">
+              <input
+                className={`input ${errors.password_confirmation ? 'is-danger' : ''}`}
+                type="password"
+                placeholder="Password Confirmation"
+                name="password_confirmation"
+                onChange={handleChange}
+              />
+            </div>
+            {errors.password_confirmation && <small className="help is-danger">{errors.password_confirmation}</small>}
           </div>
         </div>
-      </div>
+      }
 
+      <div className="field">
+        <label className="label">Profile Picture</label>
+        <div className="control">
+          <ImageUpload
+            labelText="Profile Picture"
+            onChange={handleImageChange}
+            value={data.profile_image}
+          />
+          <span></span>
+        </div>
+      </div>
+      <div className="field">
+        <label className="label">Cover Picture</label>
+        <div className="control">
+          <ImageUpload
+            labelText="Cover Picture"
+            onChange={handleImageChange}
+            value={data.cover_image}
+          />
+          <span></span>
+        </div>
+      </div>
       <div className="field">
         <label className="label">Bio</label>
         <div className="control has-icons-left">
@@ -81,10 +95,10 @@ const ProfileForm = ({ handleChange, handleCheckboxChange,  handleSelectCategori
             placeholder="About you..."
             name="bio"
             onChange={handleChange}
+            value={data.bio}
           />
         </div>
       </div>
-
       <div className="field">
         <label className="label">Are you an artist?</label>
         <div className="control">
@@ -95,7 +109,6 @@ const ProfileForm = ({ handleChange, handleCheckboxChange,  handleSelectCategori
             checked={data.is_artist}
           />
         </div>
-
         <div className="field">
           <label className="label">What type of Art you are interested in or what type of Art do you make?</label>
           <div className="control">

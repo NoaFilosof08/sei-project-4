@@ -1,14 +1,13 @@
 import React from 'react'
 // import { Link } from 'react-router-dom'
 import { editProfile, getSingleProfile } from '../../lib/api'
-import EditProfileForm from './EditProfileForm'
+import ProfileForm from './ProfileForm'
 
 class EditProfile extends React.Component {
   state = {
     data: {
       profilePicture: '',
-      first_name: '',
-      last_name: '',
+      username: '',
       is_artist: false,
       bio: '',
       types: [],
@@ -66,13 +65,20 @@ class EditProfile extends React.Component {
     this.setState({ data: data })
   }
 
+  handleImageChange = url => {
+    const formData = { ...this.state.data, profilePicture: url }
+    this.setState({ data: formData })
+  }
+
   handleSubmit = async e => {
     e.preventDefault()
     try {
+      console.log('submitting')
       const res = await editProfile(this.state.data)
       this.setState({ data: res.data })
       this.props.history.push('/profile')
     } catch (err) {
+      console.log('erroring')
       console.log(err.response.data)
     }
   }
@@ -89,24 +95,29 @@ class EditProfile extends React.Component {
     }
   }
 
-
   render() {
     console.log(this.state.data)
     return (
       <section className="hero is-fullheight-with-navbar">
         <div className="hero-body">
           <div className="container">
-            <h1 className="title">Register pls </h1>
-
-            <EditProfileForm
-              handleChange={this.handleChange}
-              handleCheckboxChange={this.handleCheckboxChange}
-              handleSelectCategories={this.handleSelectCategories}
-              handleSubmit={this.handleSubmit}
-              data={this.state.data}
-              errors={this.state.errors}
-              options={this.options}
-            />
+            <rb></rb>
+            <h1 className="title">Edit Profile: </h1>
+            <form>
+              <ProfileForm
+                handleChange={this.handleChange}
+                handleCheckboxChange={this.handleCheckboxChange}
+                handleSelectCategories={this.handleSelectCategories}
+                handleImageChange={this.handleImageChange}
+                data={this.state.data}
+                errors={this.state.errors}
+                options={this.options}
+                isLoggedIn={true}
+              />
+              <div className="field">
+                <button type="submit" className="button is-fullwidth is-warning" onSubmit={this.handleSubmithandleSubmit}>Submit Edits</button>
+              </div>
+            </form>
           </div>
         </div>
       </section>

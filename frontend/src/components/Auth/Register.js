@@ -1,5 +1,4 @@
 import React from 'react'
-
 import { registerUser } from '../../lib/api'
 import { Link } from 'react-router-dom'
 import ProfileForm from './ProfileForm'
@@ -98,6 +97,7 @@ class Register extends React.Component {
                 data={this.state.data}
                 errors={this.state.errors}
                 options={this.options}
+                isLoggedIn={false}
               />
 
               <div className="field">
@@ -110,6 +110,7 @@ class Register extends React.Component {
                   </small>
                 </p>
               </div>
+
             </form>
 
           </div>
