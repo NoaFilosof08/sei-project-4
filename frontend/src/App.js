@@ -14,6 +14,7 @@ import CreateArt from './components/Artist/CreateArt'
 import EditArt from './components/Artist/EditArt'
 import ArtShow from './components/Artist/ArtShow'
 import CreateEnquiry from './components/Artist/CreateEnquiry'
+import Footer from './components/Common/Footer'
 
 
 const App = () => (
@@ -35,6 +36,7 @@ const App = () => (
         <Route path="/login" component={Login} />
         <Route path="/*" component={NotFound} />
       </Switch>
+      <Footer />
     </main>
   </BrowserRouter>
 )

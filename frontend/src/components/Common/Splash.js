@@ -9,19 +9,19 @@ class Splash extends React.Component {
           <div className="container">
 
             <div className="splashTitle">
-              <p>Welcome to  <span id="logo"><span role="img" aria-label="EMOJI-DESC">🎨</span> Artly</span></p>
+              <p id="logo"><span role="img" aria-label="EMOJI-DESC">🎨</span> Artly</p>
             </div>
 
-            <div className="columns">
+            <div className="columns splashMain">
 
               <div className="column auto">
               </div>
 
-              <div className="column is-two-fifths is-link">
+              <div className="column is-one-quarter is-link">
                 <Link to="/home">
-                  <div className="card splashCards box">
+                  <div className="splashCards box splashimg1">
                     <div className="splashText">
-                      <h3>Browse some Artists and their awesome art</h3>
+                      <h3>Browse</h3>
                     </div>
                   </div>
                 </Link>
@@ -30,11 +30,11 @@ class Splash extends React.Component {
               <div className="column auto">
               </div>
 
-              <div className="column is-two-fifths is-link">
+              <div className="column is-one-quarter is-link">
                 <Link to="/login">
-                  <div className="card splashCards box">
+                  <div className="splashCards box splashimg1">
                     <div className="splashText">
-                      <h3>I'm an Artist and want to post some art </h3>
+                      <h3>Post</h3>
                     </div>
                   </div>
                 </Link>
@@ -43,6 +43,15 @@ class Splash extends React.Component {
               <div className="column auto">
               </div>
 
+            </div>
+
+            <div className="splashAbout">
+              <div className="aboutTitle">
+                <h3>A bit about Artly</h3>
+              </div>
+              <div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Porta lorem mollis aliquam ut porttitor leo a diam. Accumsan tortor posuere ac ut consequat semper. Nulla pharetra diam sit amet nisl. Vestibulum lectus mauris ultrices eros.</p>
+              </div>
             </div>
           </div>
         </div>
