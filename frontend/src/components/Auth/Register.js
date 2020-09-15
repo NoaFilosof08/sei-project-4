@@ -102,7 +102,7 @@ class Register extends React.Component {
               />
 
               <div className="field">
-                <button type="submit" className="button is-fullwidth is-warning" onSubmit={this.handleSubmit}>Register Me</button>
+                <button type="submit" className="button is-fullwidth formbtn" onSubmit={this.handleSubmit}>Register Me</button>
               </div>
               <div className="column is-half is-offset-one-quarter">
                 <p className="has-text-centered">
