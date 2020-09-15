@@ -100,8 +100,10 @@ checkIfArtist = () => {
                   </img>
                 </div>
               </figure>
-              <figure className="image is-150x150">
-                <img className="image is-rounded" src={this.state.artist.profile_image} alt="profile"/>
+              <figure className="image">
+                <div className="profile-image">
+                  <img className="image is-rounded" src={this.state.artist.profile_image} alt="profile"/>
+                </div>
               </figure>
               <h1 className="profile-name">{this.capitalizeFirstLetter(this.state.artist.username)} </h1>
               <p>{this.capitalizeFirstLetter(this.state.artist.bio)}</p>
