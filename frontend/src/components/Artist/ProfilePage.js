@@ -46,8 +46,8 @@ class ProfilePage extends React.Component {
       const isArtist = this.checkIsArtist()
       return (
         <section className="section">
-          <div className="container box start">
-            <div className="profile-headers contianer">
+          <div className="container box start tile is-ancestor">
+            <div className="profile-headers contianer tile">
               {/* <figure className="image is-3by1 cover-pic">
                 <img className="image" src={coverImg} alt="cover">
                 </img>
@@ -91,14 +91,16 @@ class ProfilePage extends React.Component {
                 }
                 <div>
                   <br></br>
-                  <p className="title is-4">Favourite Artists:</p>
+                  <div>
+                  <p className="title is-4">Your Favourite Artists:</p>
                   {this.state.user.favourites.map( (fave) =>
-                    <div key={fave.id}>
+                    <div key={fave.id} className="favourite-link">
                       <Link to={`/artist/${fave.id}/`}>
-                        <p className="favourite-link">{fave.username}</p>
+                        <p>{fave.username}</p>
                       </Link>
                     </div>
                   )}
+                  </div>
                 </div>
               </div>
           </div>
