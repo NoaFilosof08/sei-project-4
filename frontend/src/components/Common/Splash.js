@@ -21,7 +21,7 @@ class Splash extends React.Component {
                 <Link to="/home">
                   <div className="splashCards box splashimg1">
                     <div className="splashText">
-                      <h3>Browse</h3>
+                      <h3 className="splashText">Browse</h3>
                     </div>
                   </div>
                 </Link>
@@ -34,7 +34,7 @@ class Splash extends React.Component {
                 <Link to="/login">
                   <div className="splashCards box splashimg1">
                     <div className="splashText">
-                      <h3>Post</h3>
+                      <h3 className="splashText">Post</h3>
                     </div>
                   </div>
                 </Link>
@@ -49,6 +49,7 @@ class Splash extends React.Component {
               <div className="aboutTitle">
                 <h3>A bit about Artly</h3>
               </div>
+              <br></br>
               <div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Porta lorem mollis aliquam ut porttitor leo a diam. Accumsan tortor posuere ac ut consequat semper. Nulla pharetra diam sit amet nisl. Vestibulum lectus mauris ultrices eros.</p>
               </div>

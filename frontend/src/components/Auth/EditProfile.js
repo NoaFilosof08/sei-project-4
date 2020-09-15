@@ -103,6 +103,7 @@ class EditProfile extends React.Component {
           <div className="container">
             <rb></rb>
             <h1 className="formTitle">Edit Profile: </h1>
+            <br></br>
             <form className="column is-half is-offset-one-quarter box form" onSubmit={this.handleSubmit}>
               <ProfileForm
                 handleChange={this.handleChange}
