@@ -50,16 +50,19 @@ class ProfilePage extends React.Component {
           <div className="box tile is-ancestor">
             <div className="tile is-vertical">
               <div className="profile-headers contianer tile is-vertical">
+                {/* <div> */}
                 <figure className="image">
                   <div className="cover-image">
                     <img className="image  " src={coverImage} alt="cover">
                     </img>
                   </div>
                 </figure>
-                <figure className="image is-150x150">
-                  <img className="image is-rounded" src={this.state.user.profile_image} alt="profile"/>
+                <figure className="image">
+                  <div className="profile-image">
+                    <img className="image is-rounded" src={this.state.user.profile_image} alt="profile"/>
+                  </div>
                 </figure>
-                <br></br>
+                {/* </div> */}
                 <h1 className="profile-name">
                   {this.capitalizeFirstLetter(this.state.user.username)}
                 </h1>
