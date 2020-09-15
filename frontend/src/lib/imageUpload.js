@@ -27,7 +27,7 @@ class ImageUpload extends React.Component {
     return (
       <>
         {image ?
-          <div style={{ width: '300px'}}>
+          <div style={{ width: '300px' }}>
             <img src={image} alt="selected" style={{ width: '100%', height: 'auto' }}/>
           </div>
           :

@@ -7,7 +7,7 @@ const ProfileForm = ({ handleChange, handleCheckboxChange,  handleSelectCategori
     <>
       <div className="field">
         <label className="label">Username</label>
-        <div className="control has-icons-left">
+        <div className="control">
           <input
             className={`input ${errors.username ? 'is-danger' : ''}`}
             placeholder="Username"
@@ -15,12 +15,13 @@ const ProfileForm = ({ handleChange, handleCheckboxChange,  handleSelectCategori
             onChange={handleChange}
             value={data.username}
           />
+
         </div>
         {errors.username && <small className="help is-danger">{errors.username}</small>}
       </div>
       <div className="field">
         <label className="label">Email</label>
-        <div className="control has-icons-left">
+        <div className="control">
           <input
             className={`input ${errors.email ? 'is-danger' : ''}`}
             placeholder="Email"
@@ -38,7 +39,7 @@ const ProfileForm = ({ handleChange, handleCheckboxChange,  handleSelectCategori
         <div>
           <div className="field">
             <label className="label">Password</label>
-            <div className="control has-icons-left">
+            <div className="control">
               <input
                 className={`input ${errors.password ? 'is-danger' : ''}`}
                 type="password"
@@ -51,7 +52,7 @@ const ProfileForm = ({ handleChange, handleCheckboxChange,  handleSelectCategori
           </div>
           <div className="field">
             <label className="label">Password Confirmation</label>
-            <div className="control has-icons-left">
+            <div className="control">
               <input
                 className={`input ${errors.password_confirmation ? 'is-danger' : ''}`}
                 type="password"
@@ -89,7 +90,7 @@ const ProfileForm = ({ handleChange, handleCheckboxChange,  handleSelectCategori
       </div>
       <div className="field">
         <label className="label">Bio</label>
-        <div className="control has-icons-left">
+        <div className="control">
           <input
             className={`input ${errors.bio ? 'is-danger' : ''}`}
             placeholder="About you..."

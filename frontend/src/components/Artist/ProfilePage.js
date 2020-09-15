@@ -81,7 +81,7 @@ class ProfilePage extends React.Component {
                         )}
                       </div>
                       <br></br>
-                      <button className="button flex-end" onClick={this.handleAddArt} >Add Art</button>
+                      <button className="button flex-end addArtBtn" onClick={this.handleAddArt} >Add Art</button>
                     </>
                     :
                     <div></div>

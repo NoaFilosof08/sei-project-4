@@ -6,7 +6,7 @@ import ProfileForm from './ProfileForm'
 class EditProfile extends React.Component {
   state = {
     data: {
-      profilePicture: '',
+      profile_image: '',
       username: '',
       is_artist: false,
       bio: '',
@@ -66,7 +66,7 @@ class EditProfile extends React.Component {
   }
 
   handleImageChange = url => {
-    const formData = { ...this.state.data, profilePicture: url }
+    const formData = { ...this.state.data, profile_image: url }
     this.setState({ data: formData })
   }
 
@@ -102,8 +102,8 @@ class EditProfile extends React.Component {
         <div className="hero-body">
           <div className="container">
             <rb></rb>
-            <h1 className="title">Edit Profile: </h1>
-            <form>
+            <h1 className="formTitle">Edit Profile: </h1>
+            <form className="column is-half is-offset-one-quarter box form" onSubmit={this.handleSubmit}>
               <ProfileForm
                 handleChange={this.handleChange}
                 handleCheckboxChange={this.handleCheckboxChange}
@@ -115,7 +115,7 @@ class EditProfile extends React.Component {
                 isLoggedIn={true}
               />
               <div className="field">
-                <button type="submit" className="button is-fullwidth is-warning" onSubmit={this.handleSubmithandleSubmit}>Submit Edits</button>
+                <button type="submit" className="button is-fullwidth formbtn" onSubmit={this.handleSubmit}>Submit Edits</button>
               </div>
             </form>
           </div>

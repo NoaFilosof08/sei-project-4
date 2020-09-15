@@ -34,7 +34,7 @@ class Login extends React.Component {
       <section className="hero is-fullheight-with-navbar">
         <div className="hero-body">
           <div className="container">
-            <h1 className="title">Login Pls</h1>
+            <h1 className="formTitle">Login</h1>
 
             <LoginFrom
               handleChange={this.handleChange}

@@ -1,5 +1,6 @@
 import React from 'react'
 import { createArt } from '../../lib/api'
+import ImageUpload from '../../lib/imageUpload'
 // import { Link } from 'react-router-dom'
 
 class CreateArt extends React.Component {
@@ -28,19 +29,25 @@ class CreateArt extends React.Component {
     }
   }
 
+  handleImageChange = url => {
+    const formData = { ...this.state.data, image: url }
+    this.setState({ data: formData })
+  }
+
   render() {
     console.log(this.state.data)
     return (
       <section className="hero is-fullheight-with-navbar">
         <div className="hero-body">
           <div className="container">
-            <h1 className="title">Add a Piece of Art</h1>
+            <h1 className="formTitle">Add a Piece of Art</h1>
 
-            <form onSubmit={this.handleSubmit} className="column is-half is-offset-one-quarter box">
+            <form onSubmit={this.handleSubmit} className="column is-half is-offset-one-quarter box form">
               <div className="field">
                 <label className="label">Name of Art</label>
                 <div className="control">
                   <input
+                    className="input"
                     name="name"
                     placeholder="name"
                     onChange={this.handleChange}
@@ -53,6 +60,8 @@ class CreateArt extends React.Component {
                 <label className="label">Description</label>
                 <div className="control">
                   <input
+                    className="input"
+                    type="textarea"
                     name="description"
                     placeholder="description"
                     onChange={this.handleChange}
@@ -66,6 +75,7 @@ class CreateArt extends React.Component {
                 <div className="control">
                   £
                   <input
+                    className="input"
                     type="number"
                     name="price"
                     placeholder="price"
@@ -76,18 +86,18 @@ class CreateArt extends React.Component {
               </div>
 
               <div className="field">
-                <label className="label">Image</label>
+                <label className="label">Cover Picture</label>
                 <div className="control">
-                  <input
-                    name="image"
-                    placeholder="photo"
-                    onChange={this.handleChange}
-                    value={this.state.data.image}
+                  <ImageUpload
+                    labelText="Cover Picture"
+                    onChange={this.handleImageChange}
+                    value={this.state.data.cover_image}
                   />
+                  <span></span>
                 </div>
               </div>
 
-              <button type="submit" className="button is-warning is-fullwidth" onSubmit={this.handleSubmit}>Post</button>
+              <button type="submit" className="button  is-fullwidth formbtn" onSubmit={this.handleSubmit}>Post</button>
             </form>
 
           </div>
