@@ -71,7 +71,18 @@ const ProfileForm = ({ handleChange, handleCheckboxChange,  handleSelectCategori
             <span></span>
           </div>
         </div>
+      </div>
 
+      <div className="field">
+        <label className="label">Bio</label>
+        <div className="control has-icons-left">
+          <input
+            className={`input ${errors.bio ? 'is-danger' : ''}`}
+            placeholder="About you..."
+            name="bio"
+            onChange={handleChange}
+          />
+        </div>
       </div>
 
       <div className="field">

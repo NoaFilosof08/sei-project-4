@@ -1,5 +1,6 @@
 import React from 'react'
 import Select from 'react-select'
+import ImageUpload from '../../lib/imageUpload'
 
 const EditProfileForm = ({ handleChange, handleCheckboxChange, handleSelectCategories, handleSubmit, data, options }) => {
   return (
@@ -7,23 +8,12 @@ const EditProfileForm = ({ handleChange, handleCheckboxChange, handleSelectCateg
       <form onSubmit={handleSubmit} className="column is-half is-offset-one-quarter box">
 
         <div className="field">
-          <label className="label">First Name</label>
-          <div className="control has-icons-left">
-            <input
-              name="first_name"
-              onChange={handleChange}
-              value={data.first_name}
-            />
-          </div>
-        </div>
-
-        <div className="field">
-          <label className="label">Last Name</label>
+          <label className="label">Username</label>
           <div className="control has-icons-left">
             <input
               name="last_name"
               onChange={handleChange}
-              value={data.last_name}
+              value={data.username}
             />
           </div>
         </div>
@@ -52,16 +42,16 @@ const EditProfileForm = ({ handleChange, handleCheckboxChange, handleSelectCateg
           </div>
         </div>
 
-        {/* <div className="field">
-            <label className="label">Profile Picture</label>
-            <div className="control">
-              <ImageUpload
-                labelText="Profile Picture"
-                onChange={handleImageChange}
-              />
-              <span></span>
-            </div>
-          </div>  */}
+        <div className="field">
+          <label className="label">Profile Picture</label>
+          <div className="control">
+            <ImageUpload
+              labelText="Profile Picture"
+              onChange={this.handleImageChange}
+            />
+            <span></span>
+          </div>
+        </div>
 
         <div className="field">
           <label className="label">Pick what type of art you are interested in (please include all previous types)</label>
