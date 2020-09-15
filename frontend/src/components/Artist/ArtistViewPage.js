@@ -86,7 +86,7 @@ class ArtistViewPage extends React.Component {
         <section className="section">
           <div className="container box start">
             <div className="container">
-              <div className="profile-headers">
+              <div className="profile-headers container">
                 <figure className="image is-150x150">
                   <img className="image is-rounded" src={this.state.artist.profile_image} alt="profile"/>
                 </figure>
@@ -101,20 +101,17 @@ class ArtistViewPage extends React.Component {
                   <div></div>
                 }
               </div>
-
-              <div className="rows">
-                <p className="title is-4">Art:</p>
-                <div id="artWrapping">
-                  {this.state.artist.created_art.map((art) =>
-                    <div key={art.id}>
-                      <Link to={`/art/${art.id}`}>
-                        <p >{art.name}</p>
-                        <img className="image" src={art.image} alt={art.descripton}/>
-                        <p >{art.description}</p>
-                      </Link>
-                    </div>
-                  )}
-                </div>
+              <br></br>
+              <div id="artWrapping">
+                {this.state.artist.created_art.map((art) =>
+                  <div key={art.id} className="art-display box">
+                    <Link to={`/art/${art.id}`}>
+                      <p >{art.name}</p>
+                      <img className="image" src={art.image} alt={art.descripton}/>
+                      <p >{art.description}</p>
+                    </Link>
+                  </div>
+                )}
               </div>
             </div>
           </div>
