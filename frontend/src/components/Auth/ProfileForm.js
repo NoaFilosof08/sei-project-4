@@ -15,7 +15,18 @@ const ProfileForm = ({ handleChange, handleCheckboxChange,  handleSelectCategori
             onChange={handleChange}
             value={data.username}
           />
-
+        </div>
+      </div>
+      <div className="field">
+        <label className="label">Name</label>
+        <div className="control">
+          <input
+            className={`input ${errors.name ? 'is-danger' : ''}`}
+            placeholder="Name"
+            name="name"
+            onChange={handleChange}
+            value={data.name}
+          />
         </div>
         {errors.username && <small className="help is-danger">{errors.username}</small>}
       </div>

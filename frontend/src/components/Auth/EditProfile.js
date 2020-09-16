@@ -9,6 +9,7 @@ class EditProfile extends React.Component {
     data: {
       profile_image: '',
       cover_image: '',
+      name: '',
       username: '',
       is_artist: false,
       bio: '',
