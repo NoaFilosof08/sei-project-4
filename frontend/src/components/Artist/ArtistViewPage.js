@@ -82,6 +82,12 @@ checkIfArtist = () => {
     }
   }
 
+  checkHasTypes = () => {
+    if (this.state.artist.types.length > 0) {
+      return true
+    }
+  }
+
   render() {
     if (!this.state.artist) {
       return null
@@ -89,14 +95,14 @@ checkIfArtist = () => {
       const isLoggedIn = isAuthenticated()
       const favourited = this.checkFavourite()
       const isArtist = this.checkIfArtist()
-      const coverImage = this.state.artist.cover_image
+      const hasTypes = this.checkHasTypes()
       return (
         <section className="section">
           <div className="box start">
             <div className="profile-headers container">
               <figure className="image">
                 <div className="cover-image">
-                  <img className="image  " src={coverImage} alt="cover">
+                  <img className="image  " src={this.state.artist.cover_image} alt="cover">
                   </img>
                 </div>
               </figure>
@@ -107,6 +113,19 @@ checkIfArtist = () => {
               </figure>
               <h1 className="profile-name">{this.capitalizeFirstLetter(this.state.artist.username)} </h1>
               <p>{this.capitalizeFirstLetter(this.state.artist.bio)}</p>
+              <br></br>
+              { hasTypes ?
+                <div className="tile">
+                  {this.state.artist.types.map((type) =>
+                    <span key={type.id} className="favourite-link">
+                      <div className="typeBubble">{type.name}</div>
+                    </span>
+                  )}
+                </div>
+                :
+                <>
+                </>
+              }
               <br></br>
               { isLoggedIn && isArtist ?
                 <div>
