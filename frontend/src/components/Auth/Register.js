@@ -71,9 +71,14 @@ class Register extends React.Component {
   }
 
   handleImageChange = url => {
-    const formData = { ...this.state.data, profilePicture: url }
+    const formData = { ...this.state.data, profile_image: url }
     this.setState({ data: formData })
   }
+  handleImageChangeCover = url => {
+    const formData = { ...this.state.data, cover_image: url }
+    this.setState({ data: formData })
+  }
+
 
   handleSelectCategories = selected => {
     const selectedCategories = selected ? selected.map(category => category.value) : []
@@ -94,6 +99,7 @@ class Register extends React.Component {
                 handleChange={this.handleChange}
                 handleCheckboxChange={this.handleCheckboxChange}
                 handleImageChange={this.handleImageChange}
+                handleImageChangeCover={this.handleImageChangeCover}
                 handleSelectCategories={this.handleSelectCategories}
                 data={this.state.data}
                 errors={this.state.errors}

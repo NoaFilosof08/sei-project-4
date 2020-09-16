@@ -2,7 +2,7 @@ import React from 'react'
 import Select from 'react-select'
 import ImageUpload from '../../lib/imageUpload'
 
-const ProfileForm = ({ handleChange, handleCheckboxChange,  handleSelectCategories, handleImageChange, data, errors, options, isLoggedIn }) => {
+const ProfileForm = ({ handleChange, handleCheckboxChange,  handleSelectCategories, handleImageChange, handleImageChangeCover, data, errors, options, isLoggedIn }) => {
   return (
     <>
       <div className="field">
@@ -82,7 +82,7 @@ const ProfileForm = ({ handleChange, handleCheckboxChange,  handleSelectCategori
         <div className="control">
           <ImageUpload
             labelText="Cover Picture"
-            onChange={handleImageChange}
+            onChange={handleImageChangeCover}
             value={data.cover_image}
           />
           <span></span>

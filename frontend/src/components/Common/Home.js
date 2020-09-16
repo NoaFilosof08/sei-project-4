@@ -36,36 +36,25 @@ class Home extends React.Component {
       <section className="hero is-fullheight-with-navbar">
         <div className="hero-body">
           <div className="container">
-            <h1 className="title">Hello World</h1>
+            <hr></hr>
+            <h3>Browse Artists:</h3>
           </div>
         </div>
-
-        <div className="columns is-mobile is-multiline">
-          <Carousel>
-            {artists.map(profile =>(
-              <div className="column is-one-quarter-desktop is-one-third-tablet is-half-mobile" key={profile.id}>
-                <Link to={`/artist/${profile.id}`}>
-                  <img src={profile.cover_image} alt={profile.username} loading="lazy" width="255" height="255"/>
-                  <p className="legend"><h4 className="card-header-title">{profile.username}</h4></p>
-
-
-                  {/* <div className="card">
-                    <div className="card-header">
-                      <h4 className="card-header-title">{profile.username}</h4>
+        <div className="columns is-center">
+          <div className="slider-container column is-10 is-offset-1">
+            <Carousel className="carousel-style" showThumbs={false}>
+              {artists.map(profile =>(
+                <div className="" key={profile.id}>
+                  <Link to={`/artist/${profile.id}`}>
+                    <div className=".slider-item-div">
+                      <img className="carosel-pic" src={profile.cover_image} alt={profile.username}/>
                     </div>
-                    <div className="card-image">
-                      <figure className="image image is-1by1">
-                        <img src={profile.coverImage} alt={profile.username} loading="lazy" width="255" height="255"/>
-                      </figure>
-                    </div>
-                    <div className="card-content">
-                      <h5 className="">{profile.bio}</h5>
-                    </div>
-                  </div> */}
-                </Link>
-              </div>
-            ))}
-          </Carousel>
+                    <p className="legend"><h2>{profile.username}</h2><h4>{profile.bio}</h4></p>
+                  </Link>
+                </div>
+              ))}
+            </Carousel>
+          </div>
         </div>
       </section>
     )

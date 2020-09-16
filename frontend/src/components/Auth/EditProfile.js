@@ -70,6 +70,11 @@ class EditProfile extends React.Component {
     this.setState({ data: formData })
   }
 
+  handleImageChangeCover = url => {
+    const formData = { ...this.state.data, cover_image: url }
+    this.setState({ data: formData })
+  }
+
   handleSubmit = async e => {
     e.preventDefault()
     try {
@@ -110,6 +115,7 @@ class EditProfile extends React.Component {
                 handleCheckboxChange={this.handleCheckboxChange}
                 handleSelectCategories={this.handleSelectCategories}
                 handleImageChange={this.handleImageChange}
+                handleImageChangeCover={this.handleImageChangeCover}
                 data={this.state.data}
                 errors={this.state.errors}
                 options={this.options}
