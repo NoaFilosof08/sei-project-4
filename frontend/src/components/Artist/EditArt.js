@@ -37,7 +37,7 @@ class EditArt extends React.Component {
       const res = await editArt(artId, this.state.data)
       this.setState({ data: res.data })
       popupNotification(`${this.state.data.name} successfully edited!`)
-      this.props.history.push('/home')
+      this.props.history.push('/profile')
     } catch (err) {
       this.setState({ errors: err.response.data })
     }
