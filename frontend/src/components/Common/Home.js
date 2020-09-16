@@ -35,10 +35,6 @@ class Home extends React.Component {
     return (
       <section className="hero is-fullheight-with-navbar">
         <div className="hero-body">
-          <div className="container">
-            <hr></hr>
-            <h3>Browse Artists:</h3>
-          </div>
         </div>
         <div className="columns is-center">
           <div className="slider-container column is-10 is-offset-1">
