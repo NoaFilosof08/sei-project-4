@@ -27,19 +27,24 @@
 .artShowEnquire {
   display: flex;
   margin-right: 30px;
+  justify-content: flex-end;
 }
 
 .artContent {
   display: flex;
   margin-bottom: 30px;
-    .price {
-      align-items: center;
-      justify-content: center;
-    }
+  align-items: flex-start;
+  padding: 10px;
+  flex-direction: column;
+  justify-content: flex-end;
+  .price {
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
 }
 
 .enquireBtn {
-  background-color: $primaryGray;
+  background-color: $primaryRed;
   color: $primaryYellow;
   border: none;
   font-family: $primaryMainFont;
@@ -64,12 +69,16 @@ div > img {
   max-width: 100%;
 }
 
-.icons, .enquiries {
+.icons, .enquiries, .controls {
   margin-left: 50px;
 }
 
+
+
 .enquiry {
   margin-top: 20px;
-  background-color: $primaryYellow;
+  border: 1px solid $primaryGray;
+  border-radius: 10px;
+  padding: 4px;
   color: $primaryGray;
 }
