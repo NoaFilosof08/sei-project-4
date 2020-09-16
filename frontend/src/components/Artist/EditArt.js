@@ -1,6 +1,7 @@
 import React from 'react'
 import { editArt, getSingleArt } from '../../lib/api'
 import ImageUpload from '../../lib/imageUpload'
+import { popupNotification } from '../../lib/notification'
 
 class EditArt extends React.Component {
   state = {
@@ -35,6 +36,7 @@ class EditArt extends React.Component {
     try {
       const res = await editArt(artId, this.state.data)
       this.setState({ data: res.data })
+      popupNotification(`${this.state.data.name} successfully edited!`)
       this.props.history.push('/home')
     } catch (err) {
       this.setState({ errors: err.response.data })

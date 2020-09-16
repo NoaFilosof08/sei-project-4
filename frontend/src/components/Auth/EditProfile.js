@@ -2,6 +2,7 @@ import React from 'react'
 // import { Link } from 'react-router-dom'
 import { editProfile, getSingleProfile } from '../../lib/api'
 import ProfileForm from './ProfileForm'
+import { popupNotification } from '../../lib/notification'
 
 class EditProfile extends React.Component {
   state = {
@@ -81,6 +82,7 @@ class EditProfile extends React.Component {
       console.log('submitting')
       const res = await editProfile(this.state.data)
       this.setState({ data: res.data })
+      popupNotification('Your profile has been successfully edited!')
       this.props.history.push('/profile')
     } catch (err) {
       console.log('erroring')

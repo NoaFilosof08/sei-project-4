@@ -2,6 +2,7 @@ import React from 'react'
 import { createArt } from '../../lib/api'
 import ImageUpload from '../../lib/imageUpload'
 // import { Link } from 'react-router-dom'
+import { popupNotification } from '../../lib/notification'
 
 class CreateArt extends React.Component {
   state = {
@@ -26,8 +27,8 @@ class CreateArt extends React.Component {
       const res = await createArt(this.state.data)
       this.setState({ data: res.data })
       console.log(this.props.history)
+      popupNotification(`${this.state.data.name} successfully added`)
       this.props.history.push('/home')
-
     } catch (err) {
       this.setState({ errors: err.response.data })
     }

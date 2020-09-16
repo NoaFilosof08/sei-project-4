@@ -1,5 +1,6 @@
 import React from 'react'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
+import Notifications from 'react-notify-toast'
 
 import NavBar from './components/Common/NavBar'
 import Home from './components/Common/Home'
@@ -21,6 +22,7 @@ const App = () => (
   <BrowserRouter>
     <main>
       <NavBar />
+      <Notifications />
       <Switch>
         <Route exact path="/" component={Splash} />
         <Route path="/art/edit/:id" component={EditArt} />
