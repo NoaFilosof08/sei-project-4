@@ -14,6 +14,7 @@ class Register extends React.Component {
       cover_image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSmef96QDCD064tHtbExDLQRckzU4Djoq3eiw&usqp=CAU',
       profile_image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTTOkHm3_mPQ5PPRvGtU6Si7FJg8DVDtZ47rw&usqp=CAU',
       bio: '',
+      insta_handle: '',
       is_artist: false,
       types: [],
       favourites: []

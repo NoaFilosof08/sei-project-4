@@ -11,6 +11,7 @@ class EditProfile extends React.Component {
       username: '',
       is_artist: false,
       bio: '',
+      insta_handle: '',
       types: [],
       favourites: []
     },
@@ -86,7 +87,7 @@ class EditProfile extends React.Component {
       this.props.history.push('/profile')
     } catch (err) {
       console.log('erroring')
-      console.log(err.response.data)
+      this.setState({ errors: err.response.data })
     }
   }
 
