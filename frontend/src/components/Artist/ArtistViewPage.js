@@ -120,7 +120,7 @@ checkIfArtist = () => {
               </figure>
               <br></br>
               <br></br>
-              <h1 className="profile-name">{this.capitalizeFirstLetter(this.state.artist.username)} </h1>
+              <h1 className="profile-name">{this.capitalizeFirstLetter(this.state.artist.name)} </h1>
               <p>{this.capitalizeFirstLetter(this.state.artist.bio)}</p>
               { hasTypes ?
                 <div className="tile">

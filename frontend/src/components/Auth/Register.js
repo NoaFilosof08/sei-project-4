@@ -8,6 +8,7 @@ class Register extends React.Component {
   state = {
     data: {
       username: '',
+      name: '',
       email: '',
       password: '',
       password_confirmation: '',

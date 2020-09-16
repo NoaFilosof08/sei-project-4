@@ -79,7 +79,7 @@ class ProfilePage extends React.Component {
                 <br></br>
                 <br></br>
                 <h1 className="profile-name">
-                  {this.capitalizeFirstLetter(this.state.user.username)}
+                  {this.capitalizeFirstLetter(this.state.user.name)}
                 </h1>
                 <p>{this.capitalizeFirstLetter(this.state.user.bio)}</p>
                 { hasTypes ?
