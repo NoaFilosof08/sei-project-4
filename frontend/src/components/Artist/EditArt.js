@@ -7,6 +7,7 @@ class EditArt extends React.Component {
   state = {
     data: {
       name: '',
+      username: '',
       description: '',
       price: 0,
       image: ''

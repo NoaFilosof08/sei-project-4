@@ -126,7 +126,7 @@ class ArtShow extends React.Component {
                         <>
                           <div key={enq.id} className="enquiry">
 
-                            <p><strong>Enquiry from <Link to={`/artist/${enq.owner.id}`}><span>{enq.owner.name}</span></Link></strong>: </p>
+                            <p><strong>Enquiry from <Link to={`/artist/${enq.owner.id}`}><span>{enq.owner.username}</span></Link></strong>: </p>
 
                             <p>{enq.text}</p>
 
