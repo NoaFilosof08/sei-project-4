@@ -4,7 +4,7 @@
   "pk": 1,
   "fields": {
     "password": "pbkdf2_sha256$216000$oVbEiNpIoxQJ$8Z8jCWMEySuDaPVLhBjhTQ4KuKxIRW0poQO0s3Lua/c=",
-    "last_login": "2020-09-13T14:46:22.120Z",
+    "last_login": "2020-09-16T18:11:46.595Z",
     "is_superuser": true,
     "username": "admin",
     "first_name": "",
@@ -92,14 +92,16 @@
     "date_joined": "2020-09-16T17:48:53.757Z",
     "email": "emilyponsonbyart@email.com",
     "is_artist": true,
-    "profile_image": "",
-    "cover_image": "",
+    "profile_image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600280269/SEI-PROJECT-4/dnjxhwanrs3p1sk5blpr.png",
+    "cover_image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600280276/SEI-PROJECT-4/iabmhzrc42wesi6jxunr.png",
     "name": "Emily Ponsonby",
-    "bio": "",
+    "bio": "British artist capturing the natural, the organic and the nude.",
     "insta_handle": "https://www.instagram.com/emilyponsonbyart/",
     "groups": [],
     "user_permissions": [],
-    "types": [],
+    "types": [
+      16
+    ],
     "favourites": []
   }
 },
@@ -331,6 +333,32 @@
     "name": "Sarah Roi",
     "bio": "She/Her UK Based Artist & Best Selling Author - Cosmopolitan Influencer of The Year '19 - Represented by @divingbellgroup - BUY MY ART & MY BOOK",
     "insta_handle": "https://www.instagram.com/florencegiven/",
+    "groups": [],
+    "user_permissions": [],
+    "types": [],
+    "favourites": []
+  }
+},
+{
+  "model": "jwt_auth.user",
+  "pk": 19,
+  "fields": {
+    "password": "pbkdf2_sha256$216000$zxBZMo1KnF9U$QHJY8cRIi8W7vdK0F2aaauciPUqVVsMjoPrFNPuRabg=",
+    "last_login": null,
+    "is_superuser": true,
+    "username": "superUser",
+    "first_name": "",
+    "last_name": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2020-09-16T18:09:38.534Z",
+    "email": "superUser@email.com",
+    "is_artist": null,
+    "profile_image": "",
+    "cover_image": "",
+    "name": "",
+    "bio": "",
+    "insta_handle": "",
     "groups": [],
     "user_permissions": [],
     "types": [],
