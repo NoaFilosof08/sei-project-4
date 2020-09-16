@@ -33,7 +33,9 @@ class Splash extends React.Component {
               </div>
               <br></br>
               <div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Porta lorem mollis aliquam ut porttitor leo a diam. Accumsan tortor posuere ac ut consequat semper. Nulla pharetra diam sit amet nisl. Vestibulum lectus mauris ultrices eros.</p>
+                <p>Artly has been curated as a platform to uplift and support small female and non-binary artists. Artly puts art lovers together in one place to share art, support and love. But most importantly, allows you to buy and sell art all in one place! You don’t have to be an artist to take part, just make sure to sign up which will allow you to get in touch with our Artists. If you’re an Artist, make sure to register in order unlock some awesome features of our app such as upload and edit your artwork, links to your socials, and view enquiries on your Art. We hope you love Artly as much as we do.
+                  <br></br>
+                — E and N x</p>
               </div>
             </div>
           </div>

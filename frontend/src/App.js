@@ -16,6 +16,7 @@ import EditArt from './components/Artist/EditArt'
 import ArtShow from './components/Artist/ArtShow'
 import CreateEnquiry from './components/Artist/CreateEnquiry'
 import Footer from './components/Common/Footer'
+import ArtistIndexPage from './components/Artist/ArtistIndexPage'
 
 
 const App = () => (
@@ -28,6 +29,7 @@ const App = () => (
         <Route path="/art/edit/:id" component={EditArt} />
         <Route path="/artist/:id" component={ArtistViewPage} />
         <Route path="/home" component={Home} />
+        <Route path="/artists" component={ArtistIndexPage} />
         <Route path="/profile" component={ProfilePage} />
         <Route path="/editprofile" component={EditProfile} />
         <Route path="/createart" component={CreateArt} />
