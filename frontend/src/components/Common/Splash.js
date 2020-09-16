@@ -5,11 +5,11 @@ class Splash extends React.Component {
   render() {
     return (
       <section className="hero is-fullheight-with-navbar">
-        <div className="hero-body">
-          <div className="container">
+        <div className="hero-body background-img">
+          <div className="container ">
 
             <div className="splashTitle">
-              <p id="logo"><span role="img" aria-label="EMOJI-DESC">🎨</span> ARTLY</p>
+              <p id="logo"><span role="img" aria-label="EMOJI-DESC"></span> ARTLY</p>
             </div>
 
             <div className="columns splashMain">
@@ -17,7 +17,7 @@ class Splash extends React.Component {
               <div className="column auto">
               </div>
 
-              <div className="column is-one-quarter is-link">
+              <div className="column is-one-fifth is-link">
                 <Link to="/home">
                   <div className="splashCards box splashimg1">
                     <div className="splashText">
@@ -30,7 +30,7 @@ class Splash extends React.Component {
               <div className="column auto">
               </div>
 
-              <div className="column is-one-quarter is-link">
+              <div className="column is-one-fifth is-link">
                 <Link to="/login">
                   <div className="splashCards box splashimg1">
                     <div className="splashText">
