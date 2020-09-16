@@ -43,7 +43,7 @@ class CreateArt extends React.Component {
     console.log(this.state)
     return (
       <section className="hero is-fullheight-with-navbar">
-        <div className="hero-body">
+        <div className="hero-body spacer">
           <div className="container">
             <h1 className="formTitle">Add a Piece of Art</h1>
 

@@ -93,7 +93,7 @@ class Register extends React.Component {
     console.log(this.state.data)
     return (
       <section className="hero is-fullheight-with-navbar">
-        <div className="hero-body background-img">
+        <div className="hero-body spacer">
           <div className="container">
             <h1 className="formTitle">Sign Up!</h1>
             <form onSubmit={this.handleSubmit} className="column is-half is-offset-one-quarter box form">

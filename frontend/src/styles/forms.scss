@@ -30,6 +30,10 @@
   color: $primaryYellow;
 }
 
+.spacer {
+  margin-top: 20px;
+}
+
 @keyframes slideUp {
   0% {
     transform: translateY(300px);

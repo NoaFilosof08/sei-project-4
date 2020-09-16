@@ -9,42 +9,24 @@ class Splash extends React.Component {
           <div className="container ">
 
             <div className="splashTitle">
-              <p id="logo"><span role="img" aria-label="EMOJI-DESC"></span> ARTLY</p>
+              <p id="logo">ARTLY</p>
             </div>
-
-            <div className="columns splashMain">
-
-              <div className="column auto">
-              </div>
-
-              <div className="column is-one-fifth is-link">
+            <div className="columns splashMain is-centered ">
+              <div className="column is-2 is-link">
                 <Link to="/home">
                   <div className="splashCards box splashimg1">
-                    <div className="splashText">
-                      <h3 className="splashText">Browse</h3>
-                    </div>
+                    <h3 className="splashText Button">Browse</h3>
                   </div>
                 </Link>
               </div>
-
-              <div className="column auto">
-              </div>
-
-              <div className="column is-one-fifth is-link">
+              <div className="column is-2 is-link">
                 <Link to="/login">
                   <div className="splashCards box splashimg1">
-                    <div className="splashText">
-                      <h3 className="splashText">Post</h3>
-                    </div>
+                    <h3 className="splashText Button">Post</h3>
                   </div>
                 </Link>
               </div>
-
-              <div className="column auto">
-              </div>
-
             </div>
-
             <div className="splashAbout">
               <div className="aboutTitle">
                 <h3>A bit about Artly</h3>

@@ -46,7 +46,7 @@ class CreateArt extends React.Component {
     }
     return (
       <section className="hero is-fullheight-with-navbar">
-        <div className="hero-body">
+        <div className="hero-body spacer">
           <div className="container">
             <form onSubmit={this.handleSubmit} className="column is-half is-offset-one-quarter box">
               <figure className="media-left">

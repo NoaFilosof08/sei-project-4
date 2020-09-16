@@ -52,7 +52,7 @@ class EditArt extends React.Component {
     console.log(this.state)
     return (
       <section className="hero is-fullheight-with-navbar">
-        <div className="hero-body">
+        <div className="hero-body spacer">
           <div className="container">
             <h1 className="title">Edit Art info </h1>
 
