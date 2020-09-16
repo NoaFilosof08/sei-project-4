@@ -1,5 +1,6 @@
 import React from 'react'
 import { editArt, getSingleArt } from '../../lib/api'
+import ImageUpload from '../../lib/imageUpload'
 
 class EditArt extends React.Component {
   state = {
@@ -8,11 +9,12 @@ class EditArt extends React.Component {
       description: '',
       price: 0,
       image: ''
-    }
+    },
+    errors: {}
   }
 
   async componentDidMount() {
-    const artID = this.props.match.params
+    const artID = this.props.match.params.id
     try {
       const res = await getSingleArt(artID)
       this.setState({ data: res.data })
@@ -23,7 +25,8 @@ class EditArt extends React.Component {
 
   handleChange = e => {
     const data = { ...this.state.data, [e.target.name]: e.target.value }
-    this.setState({ data })
+    const errors = { ...this.state.errors, [e.target.name]: '' }
+    this.setState({ data, errors })
   }
 
   handleSubmit = async e => {
@@ -34,11 +37,17 @@ class EditArt extends React.Component {
       this.setState({ data: res.data })
       this.props.history.push('/home')
     } catch (err) {
-      console.log(err.response.data)
+      this.setState({ errors: err.response.data })
     }
   }
 
+  handleImageChange = url => {
+    const formData = { ...this.state.data, image: url }
+    this.setState({ data: formData })
+  }
+
   render() {
+    console.log(this.state)
     return (
       <section className="hero is-fullheight-with-navbar">
         <div className="hero-body">
@@ -50,6 +59,7 @@ class EditArt extends React.Component {
                 <label className="label">Name of Art</label>
                 <div className="control">
                   <input
+                    className={`input ${this.state.errors.name ? 'is-danger' : ''}`}
                     name="name"
                     placeholder="name"
                     onChange={this.handleChange}
@@ -57,11 +67,12 @@ class EditArt extends React.Component {
                   />
                 </div>
               </div>
-
+              {this.state.errors.name && <small className="help is-danger">Name of Art is required!</small>}
               <div className="field">
                 <label className="label">Description</label>
                 <div className="control">
                   <input
+                    className={`input ${this.state.errors.description ? 'is-danger' : ''}`}
                     name="description"
                     placeholder="description"
                     onChange={this.handleChange}
@@ -69,12 +80,13 @@ class EditArt extends React.Component {
                   />
                 </div>
               </div>
-
+              {this.state.errors.description && <small className="help is-danger">Description is required  is required!</small>}
               <div className="field">
                 <label className="label">Price</label>
                 <div className="control">
                   £
                   <input
+                    className={`input ${this.state.errors.price ? 'is-danger' : ''}`}
                     type="number"
                     name="price"
                     placeholder="price"
@@ -83,20 +95,35 @@ class EditArt extends React.Component {
                   />
                 </div>
               </div>
+              {this.state.errors.price && <small className="help is-danger">price is required  is required!</small>}
 
               <div className="field">
-                <label className="label">Image</label>
+                <label className="label">Your current image is: </label>
                 <div className="control">
-                  <input
+                  <img src={this.state.data.image} alt={this.state.data.name}></img>
+                  {/* <input
+                    className="input"
                     name="image"
                     placeholder="photo"
                     onChange={this.handleChange}
                     value={this.state.data.image}
-                  />
+                  /> */}
                 </div>
               </div>
 
-              <button type="submit" className="button is-warning is-fullwidth" onSubmit={this.handleSubmit}>Post</button>
+              <div className="field">
+                <label className="label">or upload a new image!</label>
+                <div className="control">
+                  <ImageUpload
+                    labelText="Cover Picture"
+                    onChange={this.handleImageChange}
+                    value={this.state.data.image}
+                  />
+                  <span></span>
+                </div>
+              </div>
+
+              <button type="submit" className="button formbtn is-fullwidth" onSubmit={this.handleSubmit}>Post</button>
             </form>
 
           </div>
