@@ -87,7 +87,7 @@ class EditProfile extends React.Component {
       popupNotification('Your profile has been successfully edited!')
       this.props.history.push('/profile')
     } catch (err) {
-      console.log('erroring')
+      console.log(err.response.data)
       this.setState({ errors: err.response.data })
     }
   }
