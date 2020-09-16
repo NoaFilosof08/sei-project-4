@@ -55,6 +55,7 @@ class ProfilePage extends React.Component {
       console.log('no user logged in')
       return null
     } else {
+      console.log(this.state.user.profile_image)
       const isArtist = this.checkIsArtist()
       const coverImage = this.state.user.cover_image
       const hasTypes = this.checkHasTypes()
