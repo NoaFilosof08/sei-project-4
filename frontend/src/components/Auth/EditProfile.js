@@ -1,13 +1,14 @@
 import React from 'react'
 // import { Link } from 'react-router-dom'
-import { editProfile, getSingleProfile } from '../../lib/api'
+import { editProfile, getSingleUnpopulatedProfile } from '../../lib/api'
 import ProfileForm from './ProfileForm'
 import { popupNotification } from '../../lib/notification'
 
 class EditProfile extends React.Component {
   state = {
     data: {
-      profile_image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTTOkHm3_mPQ5PPRvGtU6Si7FJg8DVDtZ47rw&usqp=CAU',
+      profile_image: '',
+      cover_image: '',
       username: '',
       is_artist: false,
       bio: '',
@@ -48,7 +49,7 @@ class EditProfile extends React.Component {
   async componentDidMount() {
     const profileID = this.props.match.params
     try {
-      const res = await getSingleProfile(profileID)
+      const res = await getSingleUnpopulatedProfile(profileID)
       this.setState({ data: res.data })
     } catch (err) {
       console.log(err)
