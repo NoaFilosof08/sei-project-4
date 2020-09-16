@@ -18,5 +18,4 @@ class User(AbstractUser):
         related_name="favourite",
         blank=True
     )
-    date_joined = models.CharField(max_length=100, blank=True)
 

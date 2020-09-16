@@ -23,7 +23,9 @@ class CreateArt extends React.Component {
     try {
       const res = await createArt(this.state.data)
       this.setState({ data: res.data })
+      console.log(this.props.history)
       this.props.history.push('/home')
+
     } catch (err) {
       console.log(err.response.data)
     }
