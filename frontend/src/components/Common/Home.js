@@ -49,7 +49,7 @@ class Home extends React.Component {
                     <div className=".slider-item-div">
                       <img className="carosel-pic" src={profile.cover_image} alt={profile.username}/>
                     </div>
-                    <p className="legend"><h2>{profile.username}</h2><h4>{profile.bio}</h4></p>
+                    <div className="legend"><h2>{profile.username}</h2><h4>{profile.bio}</h4></div>
                   </Link>
                 </div>
               ))}
