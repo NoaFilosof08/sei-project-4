@@ -1,444 +1,444 @@
 [
-  {
-    "model": "jwt_auth.user",
-    "pk": 1,
-    "fields": {
-      "password": "pbkdf2_sha256$216000$oVbEiNpIoxQJ$8Z8jCWMEySuDaPVLhBjhTQ4KuKxIRW0poQO0s3Lua/c=",
-      "last_login": "2020-09-16T18:11:46.595Z",
-      "is_superuser": true,
-      "username": "admin",
-      "first_name": "",
-      "last_name": "",
-      "is_staff": true,
-      "is_active": true,
-      "date_joined": "2020-09-11T13:27:18.954Z",
-      "email": "admin@email.com",
-      "is_artist": null,
-      "profile_image": "",
-      "cover_image": "",
-      "name": "",
-      "bio": "",
-      "insta_handle": "",
-      "groups": [],
-      "user_permissions": [],
-      "types": [],
-      "favourites": []
-    }
-  },
-  {
-    "model": "jwt_auth.user",
-    "pk": 3,
-    "fields": {
-      "password": "pbkdf2_sha256$216000$sfnGpVHsW35j$p2sfK6tJTb5OnwdWHvNx/p2EBRfs+enBnY5sJMKX3AU=",
-      "last_login": null,
-      "is_superuser": false,
-      "username": "noa",
-      "first_name": "",
-      "last_name": "",
-      "is_staff": false,
-      "is_active": true,
-      "date_joined": "2020-09-11T13:59:05.082Z",
-      "email": "noa@email.com",
-      "is_artist": false,
-      "profile_image": "https://ca.slack-edge.com/T0351JZQ0-UDC194EAH-3d2a5f44ffa8-512",
-      "cover_image": "https://ca.slack-edge.com/T0351JZQ0-UDC194EAH-3d2a5f44ffa8-512",
-      "name": "Noa Filosof",
-      "bio": "Hello, My name is Noa and I am not an Artist",
-      "insta_handle": "",
-      "groups": [],
-      "user_permissions": [],
-      "types": [],
-      "favourites": []
-    }
-  },
-  {
-    "model": "jwt_auth.user",
-    "pk": 4,
-    "fields": {
-      "password": "pbkdf2_sha256$216000$xIzg8vu3YijU$kCodyskPrAMdCW3XnO0In0TY29pU18/lpLxRXyANhSk=",
-      "last_login": null,
-      "is_superuser": false,
-      "username": "Eliza",
-      "first_name": "",
-      "last_name": "",
-      "is_staff": false,
-      "is_active": false,
-      "date_joined": "2020-09-11T14:00:07.835Z",
-      "email": "eliza@email.com",
-      "is_artist": false,
-      "profile_image": "https://ca.slack-edge.com/T0351JZQ0-UDC194EAH-3d2a5f44ffa8-512",
-      "cover_image": "https://ca.slack-edge.com/T0351JZQ0-UDC194EAH-3d2a5f44ffa8-512",
-      "name": "Eliza Thompson",
-      "bio": "Hello, My name is Eliza and I am not an Artist",
-      "insta_handle": "",
-      "groups": [],
-      "user_permissions": [],
-      "types": [],
-      "favourites": []
-    }
-  },
-  {
-    "model": "jwt_auth.user",
-    "pk": 9,
-    "fields": {
-      "password": "pbkdf2_sha256$216000$CLI83TqJC1BU$VF6jUfyEg0Ov7B/ztgIviOkrMfw3pg5WVZHH2QXYGEY=",
-      "last_login": null,
-      "is_superuser": false,
-      "username": "emilyponsonbyart",
-      "first_name": "",
-      "last_name": "",
-      "is_staff": false,
-      "is_active": true,
-      "date_joined": "2020-09-16T17:48:53.757Z",
-      "email": "emilyponsonbyart@email.com",
-      "is_artist": true,
-      "profile_image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600280269/SEI-PROJECT-4/dnjxhwanrs3p1sk5blpr.png",
-      "cover_image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600280276/SEI-PROJECT-4/iabmhzrc42wesi6jxunr.png",
-      "name": "Emily Ponsonby",
-      "bio": "British artist capturing the natural, the organic and the nude.",
-      "insta_handle": "https://www.instagram.com/emilyponsonbyart/",
-      "groups": [],
-      "user_permissions": [],
-      "types": [
-        16
-      ],
-      "favourites": [
-        13,
-        14,
-        16,
-        15
-      ]
-    }
-  },
-  {
-    "model": "jwt_auth.user",
-    "pk": 10,
-    "fields": {
-      "password": "pbkdf2_sha256$216000$IZNRgGjGGCil$K54yzj7ot+Xi0blad0IIAWbsWhFy8LQ4BAHgZIiuq0A=",
-      "last_login": null,
-      "is_superuser": false,
-      "username": "alyssabluett",
-      "first_name": "",
-      "last_name": "",
-      "is_staff": false,
-      "is_active": true,
-      "date_joined": "2020-09-16T17:49:52.644Z",
-      "email": "alyssabluett@email.com",
-      "is_artist": true,
-      "profile_image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600283872/SEI-PROJECT-4/mxezlewnx3loeiz2s2cm.png",
-      "cover_image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600285201/SEI-PROJECT-4/tzs4scdq0sz4wowklivj.png",
-      "name": "Alyssa Bluett",
-      "bio": "Artist | London | hello@alyssabluett.com",
-      "insta_handle": "https://www.instagram.com/alyssabluett.art/",
-      "groups": [],
-      "user_permissions": [],
-      "types": [
-        21,
-        13
-      ],
-      "favourites": [
-        9,
-        13,
-        11,
-        15
-      ]
-    }
-  },
-  {
-    "model": "jwt_auth.user",
-    "pk": 11,
-    "fields": {
-      "password": "pbkdf2_sha256$216000$OktKVdq3HdVz$y1ePOfftuZ3AyPvSrSWEEwmx5wBP4tjmDEmDqkmDbbc=",
-      "last_login": null,
-      "is_superuser": false,
-      "username": "annarocke",
-      "first_name": "",
-      "last_name": "",
-      "is_staff": false,
-      "is_active": true,
-      "date_joined": "2020-09-16T17:51:06.861Z",
-      "email": "annarocke@email.com",
-      "is_artist": true,
-      "profile_image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600285011/SEI-PROJECT-4/t1y6a8gpfkhy4efzdosg.png",
-      "cover_image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600285683/SEI-PROJECT-4/beu3vwxrde2fzhtokrzu.png",
-      "name": "Anna Rocke",
-      "bio": "Represented by @arushagallery Edinburgh College of Art graduate",
-      "insta_handle": "https://www.instagram.com/annarocke/",
-      "groups": [],
-      "user_permissions": [],
-      "types": [
-        5,
-        6
-      ],
-      "favourites": [
-        17,
-        14,
-        10
-      ]
-    }
-  },
-  {
-    "model": "jwt_auth.user",
-    "pk": 12,
-    "fields": {
-      "password": "pbkdf2_sha256$216000$n7eKtlmguxnw$TRqa797A8uaeUZ/KHOhpt5cqlTcKgKU7kXsoC+5Cb9U=",
-      "last_login": null,
-      "is_superuser": false,
-      "username": "lynetteyiadomboakye",
-      "first_name": "",
-      "last_name": "",
-      "is_staff": false,
-      "is_active": true,
-      "date_joined": "2020-09-16T17:52:51.528Z",
-      "email": "lynetteyiadomboakye@email.com",
-      "is_artist": true,
-      "profile_image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600286515/SEI-PROJECT-4/jgv7uh7c4cdfo7dcdvcj.png",
-      "cover_image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600286521/SEI-PROJECT-4/ht5wb0ond6ihxg9d7ovc.png",
-      "name": "Lynette Yiadom-Boakye",
-      "bio": "Beautiful Comtempory Artist",
-      "insta_handle": "https://www.instagram.com/lynetteyiadomboakye/",
-      "groups": [],
-      "user_permissions": [],
-      "types": [
-        16,
-        2
-      ],
-      "favourites": []
-    }
-  },
-  {
-    "model": "jwt_auth.user",
-    "pk": 13,
-    "fields": {
-      "password": "pbkdf2_sha256$216000$m3YKjnMPhLDK$M/ktXFhX+mN7xNOL910cwOs65LZtKzDhozNYzmDUPZQ=",
-      "last_login": null,
-      "is_superuser": false,
-      "username": "kimizoetart",
-      "first_name": "",
-      "last_name": "",
-      "is_staff": false,
-      "is_active": true,
-      "date_joined": "2020-09-16T17:54:03.554Z",
-      "email": "kimizoetart@email.com",
-      "is_artist": true,
-      "profile_image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600287295/SEI-PROJECT-4/ydlig4s4nwbloxld4d7p.png",
-      "cover_image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600287301/SEI-PROJECT-4/x94yimkf1v2fca4u5mqq.png",
-      "name": "Kimi Zoet",
-      "bio": "“If I had a world of my own, everything would be nonsense.” Lewis Carroll",
-      "insta_handle": "https://www.instagram.com/kimizoetart/",
-      "groups": [],
-      "user_permissions": [],
-      "types": [
-        24,
-        1
-      ],
-      "favourites": [
-        12,
-        14,
-        11,
-        15
-      ]
-    }
-  },
-  {
-    "model": "jwt_auth.user",
-    "pk": 14,
-    "fields": {
-      "password": "pbkdf2_sha256$216000$2svzIIvP1ykD$i+QR78NWB0GQwMFAucNAiWQZAtCGsS3TREoiD6rKa6M=",
-      "last_login": null,
-      "is_superuser": false,
-      "username": "honorgrace",
-      "first_name": "",
-      "last_name": "",
-      "is_staff": false,
-      "is_active": true,
-      "date_joined": "2020-09-16T17:54:59.593Z",
-      "email": "honorgrace@email.com",
-      "is_artist": true,
-      "profile_image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600288326/SEI-PROJECT-4/zlrmxpln7s8qr35fgkhx.png",
-      "cover_image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600288408/SEI-PROJECT-4/qbs7cwwpjrfo1ku2rxut.png",
-      "name": "Honor Grace",
-      "bio": "“she / her founder of @freshfrootzine",
-      "insta_handle": "https://www.instagram.com/honorgrace_/",
-      "groups": [],
-      "user_permissions": [],
-      "types": [
-        2,
-        21
-      ],
-      "favourites": [
-        17,
-        16,
-        15
-      ]
-    }
-  },
-  {
-    "model": "jwt_auth.user",
-    "pk": 15,
-    "fields": {
-      "password": "pbkdf2_sha256$216000$xudwdLBMSUBx$QWHkYGtig7TQGWJ0KnVBtDjkQpjeWv1YACxx3cnpDog=",
-      "last_login": null,
-      "is_superuser": false,
-      "username": "sophieteaart",
-      "first_name": "",
-      "last_name": "",
-      "is_staff": false,
-      "is_active": true,
-      "date_joined": "2020-09-16T17:56:20.044Z",
-      "email": "sophieteaart@email.com",
-      "is_artist": true,
-      "profile_image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600288254/SEI-PROJECT-4/ihz6w9qgyonpkwudtgjd.png",
-      "cover_image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600288261/SEI-PROJECT-4/zfpzjcedv0hn9mf1i1dx.png",
-      "name": "Sophie Tea",
-      "bio": "Stores in London and Sydney - Love you forever if you buy my art xxxx",
-      "insta_handle": "https://www.instagram.com/sophieteaart/",
-      "groups": [],
-      "user_permissions": [],
-      "types": [
-        16,
-        13,
-        5,
-        22
-      ],
-      "favourites": [
-        12,
-        17,
-        16
-      ]
-    }
-  },
-  {
-    "model": "jwt_auth.user",
-    "pk": 16,
-    "fields": {
-      "password": "pbkdf2_sha256$216000$fFDYExnk9biW$DqSKzuO0oaztUBX7p1XSdnOhBozf+Eqe33Wrc8zcj8E=",
-      "last_login": null,
-      "is_superuser": false,
-      "username": "terrylilt",
-      "first_name": "",
-      "last_name": "",
-      "is_staff": false,
-      "is_active": true,
-      "date_joined": "2020-09-16T17:57:25.096Z",
-      "email": "terrylilt@email.com",
-      "is_artist": true,
-      "profile_image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600287469/SEI-PROJECT-4/cqcmspd66koeebfmnikj.png",
-      "cover_image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600287478/SEI-PROJECT-4/ptah0m1mkj0odro8x0n7.png",
-      "name": "Lily Kemp",
-      "bio": "30% of all sales will be donated to @brain_appeal because the work they do is incredible",
-      "insta_handle": "https://www.instagram.com/terry.lilt/",
-      "groups": [],
-      "user_permissions": [],
-      "types": [
-        23,
-        21,
-        22,
-        7
-      ],
-      "favourites": [
-        9,
-        13,
-        17,
-        14
-      ]
-    }
-  },
-  {
-    "model": "jwt_auth.user",
-    "pk": 17,
-    "fields": {
-      "password": "pbkdf2_sha256$216000$mKBydQf8ETwI$6B65CCkUWF97W61LDFkVMNlfzeFB2GHmqB3LqEQ1TjU=",
-      "last_login": null,
-      "is_superuser": false,
-      "username": "sarahroi",
-      "first_name": "",
-      "last_name": "",
-      "is_staff": false,
-      "is_active": true,
-      "date_joined": "2020-09-16T17:58:47.743Z",
-      "email": "sarart@email.com",
-      "is_artist": true,
-      "profile_image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600286792/SEI-PROJECT-4/oqt5twma42msztvkrwae.png",
-      "cover_image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600286799/SEI-PROJECT-4/iuye8btse0azjjtlwssm.png",
-      "name": "Sarah Roi",
-      "bio": "I'm Sarah, I draw bodies and souls",
-      "insta_handle": "https://www.instagram.com/sar.art.s/",
-      "groups": [],
-      "user_permissions": [],
-      "types": [
-        9,
-        2,
-        12,
-        22
-      ],
-      "favourites": [
-        14,
-        10,
-        15,
-        18
-      ]
-    }
-  },
-  {
-    "model": "jwt_auth.user",
-    "pk": 18,
-    "fields": {
-      "password": "pbkdf2_sha256$216000$OP8PQ23c7cRs$v6sxrH3v4F1bAkZq/xBYPS4aO1SIPIDTv3GvuXTwuQA=",
-      "last_login": null,
-      "is_superuser": false,
-      "username": "florencegiven",
-      "first_name": "",
-      "last_name": "",
-      "is_staff": false,
-      "is_active": true,
-      "date_joined": "2020-09-16T18:00:27.793Z",
-      "email": "florencegiven@email.com",
-      "is_artist": true,
-      "profile_image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600285939/SEI-PROJECT-4/jdc7oasgarsl5jzo285k.png",
-      "cover_image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600286073/SEI-PROJECT-4/jmmzta6ffghkm1ia0ksg.png",
-      "name": "Florence Given",
-      "bio": "She/Her UK Based Artist & Best Selling Author - Cosmopolitan Influencer of The Year '19 - Represented by @divingbellgroup - BUY MY ART & MY BOOK",
-      "insta_handle": "https://www.instagram.com/florencegiven/",
-      "groups": [],
-      "user_permissions": [],
-      "types": [
-        18,
-        6
-      ],
-      "favourites": [
-        9,
-        12,
-        11,
-        16,
-        15
-      ]
-    }
-  },
-  {
-    "model": "jwt_auth.user",
-    "pk": 19,
-    "fields": {
-      "password": "pbkdf2_sha256$216000$zxBZMo1KnF9U$QHJY8cRIi8W7vdK0F2aaauciPUqVVsMjoPrFNPuRabg=",
-      "last_login": null,
-      "is_superuser": true,
-      "username": "superUser",
-      "first_name": "",
-      "last_name": "",
-      "is_staff": true,
-      "is_active": true,
-      "date_joined": "2020-09-16T18:09:38.534Z",
-      "email": "superUser@email.com",
-      "is_artist": null,
-      "profile_image": "",
-      "cover_image": "",
-      "name": "",
-      "bio": "",
-      "insta_handle": "",
-      "groups": [],
-      "user_permissions": [],
-      "types": [],
-      "favourites": []
-    }
+{
+  "model": "jwt_auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$216000$oVbEiNpIoxQJ$8Z8jCWMEySuDaPVLhBjhTQ4KuKxIRW0poQO0s3Lua/c=",
+    "last_login": "2020-09-16T18:11:46.595Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2020-09-11T13:27:18.954Z",
+    "email": "admin@email.com",
+    "is_artist": null,
+    "profile_image": "",
+    "cover_image": "",
+    "name": "",
+    "bio": "",
+    "insta_handle": "",
+    "groups": [],
+    "user_permissions": [],
+    "types": [],
+    "favourites": []
   }
-  ]
+},
+{
+  "model": "jwt_auth.user",
+  "pk": 3,
+  "fields": {
+    "password": "pbkdf2_sha256$216000$sfnGpVHsW35j$p2sfK6tJTb5OnwdWHvNx/p2EBRfs+enBnY5sJMKX3AU=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "noa",
+    "first_name": "",
+    "last_name": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2020-09-11T13:59:05.082Z",
+    "email": "noa@email.com",
+    "is_artist": false,
+    "profile_image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600294517/SEI-PROJECT-4/alatzvjsaaafvhd1gzmr.png",
+    "cover_image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600294502/SEI-PROJECT-4/wyj1ilpltvpnii2jrulw.png",
+    "name": "Noa Filosof",
+    "bio": "Hello, My name is Noa and I am not an Artist",
+    "insta_handle": "",
+    "groups": [],
+    "user_permissions": [],
+    "types": [],
+    "favourites": []
+  }
+},
+{
+  "model": "jwt_auth.user",
+  "pk": 4,
+  "fields": {
+    "password": "pbkdf2_sha256$216000$xIzg8vu3YijU$kCodyskPrAMdCW3XnO0In0TY29pU18/lpLxRXyANhSk=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "Eliza",
+    "first_name": "",
+    "last_name": "",
+    "is_staff": false,
+    "is_active": false,
+    "date_joined": "2020-09-11T14:00:07.835Z",
+    "email": "eliza@email.com",
+    "is_artist": false,
+    "profile_image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600294464/SEI-PROJECT-4/lev9gjj5zoiafr3jwlxj.png",
+    "cover_image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600294464/SEI-PROJECT-4/mh8r4usbzhi0knx4wdjf.png",
+    "name": "Eliza Thompson",
+    "bio": "Hello, My name is Eliza and I am not an Artist",
+    "insta_handle": "",
+    "groups": [],
+    "user_permissions": [],
+    "types": [],
+    "favourites": []
+  }
+},
+{
+  "model": "jwt_auth.user",
+  "pk": 9,
+  "fields": {
+    "password": "pbkdf2_sha256$216000$CLI83TqJC1BU$VF6jUfyEg0Ov7B/ztgIviOkrMfw3pg5WVZHH2QXYGEY=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "emilyponsonbyart",
+    "first_name": "",
+    "last_name": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2020-09-16T17:48:53.757Z",
+    "email": "emilyponsonbyart@email.com",
+    "is_artist": true,
+    "profile_image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600280269/SEI-PROJECT-4/dnjxhwanrs3p1sk5blpr.png",
+    "cover_image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600280276/SEI-PROJECT-4/iabmhzrc42wesi6jxunr.png",
+    "name": "Emily Ponsonby",
+    "bio": "British artist capturing the natural, the organic and the nude.",
+    "insta_handle": "https://www.instagram.com/emilyponsonbyart/",
+    "groups": [],
+    "user_permissions": [],
+    "types": [
+      16
+    ],
+    "favourites": [
+      13,
+      14,
+      15,
+      16
+    ]
+  }
+},
+{
+  "model": "jwt_auth.user",
+  "pk": 10,
+  "fields": {
+    "password": "pbkdf2_sha256$216000$IZNRgGjGGCil$K54yzj7ot+Xi0blad0IIAWbsWhFy8LQ4BAHgZIiuq0A=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "alyssabluett",
+    "first_name": "",
+    "last_name": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2020-09-16T17:49:52.644Z",
+    "email": "alyssabluett@email.com",
+    "is_artist": true,
+    "profile_image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600283872/SEI-PROJECT-4/mxezlewnx3loeiz2s2cm.png",
+    "cover_image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600285201/SEI-PROJECT-4/tzs4scdq0sz4wowklivj.png",
+    "name": "Alyssa Bluett",
+    "bio": "Artist | London | hello@alyssabluett.com",
+    "insta_handle": "https://www.instagram.com/alyssabluett.art/",
+    "groups": [],
+    "user_permissions": [],
+    "types": [
+      13,
+      21
+    ],
+    "favourites": [
+      9,
+      11,
+      13,
+      15
+    ]
+  }
+},
+{
+  "model": "jwt_auth.user",
+  "pk": 11,
+  "fields": {
+    "password": "pbkdf2_sha256$216000$OktKVdq3HdVz$y1ePOfftuZ3AyPvSrSWEEwmx5wBP4tjmDEmDqkmDbbc=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "annarocke",
+    "first_name": "",
+    "last_name": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2020-09-16T17:51:06.861Z",
+    "email": "annarocke@email.com",
+    "is_artist": true,
+    "profile_image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600285011/SEI-PROJECT-4/t1y6a8gpfkhy4efzdosg.png",
+    "cover_image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600285683/SEI-PROJECT-4/beu3vwxrde2fzhtokrzu.png",
+    "name": "Anna Rocke",
+    "bio": "Represented by @arushagallery Edinburgh College of Art graduate",
+    "insta_handle": "https://www.instagram.com/annarocke/",
+    "groups": [],
+    "user_permissions": [],
+    "types": [
+      5,
+      6
+    ],
+    "favourites": [
+      10,
+      14,
+      17
+    ]
+  }
+},
+{
+  "model": "jwt_auth.user",
+  "pk": 12,
+  "fields": {
+    "password": "pbkdf2_sha256$216000$n7eKtlmguxnw$TRqa797A8uaeUZ/KHOhpt5cqlTcKgKU7kXsoC+5Cb9U=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "lynetteyiadomboakye",
+    "first_name": "",
+    "last_name": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2020-09-16T17:52:51.528Z",
+    "email": "lynetteyiadomboakye@email.com",
+    "is_artist": true,
+    "profile_image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600286515/SEI-PROJECT-4/jgv7uh7c4cdfo7dcdvcj.png",
+    "cover_image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600286521/SEI-PROJECT-4/ht5wb0ond6ihxg9d7ovc.png",
+    "name": "Lynette Yiadom-Boakye",
+    "bio": "Beautiful Comtempory Artist",
+    "insta_handle": "https://www.instagram.com/lynetteyiadomboakye/",
+    "groups": [],
+    "user_permissions": [],
+    "types": [
+      2,
+      16
+    ],
+    "favourites": []
+  }
+},
+{
+  "model": "jwt_auth.user",
+  "pk": 13,
+  "fields": {
+    "password": "pbkdf2_sha256$216000$m3YKjnMPhLDK$M/ktXFhX+mN7xNOL910cwOs65LZtKzDhozNYzmDUPZQ=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "kimizoetart",
+    "first_name": "",
+    "last_name": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2020-09-16T17:54:03.554Z",
+    "email": "kimizoetart@email.com",
+    "is_artist": true,
+    "profile_image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600287295/SEI-PROJECT-4/ydlig4s4nwbloxld4d7p.png",
+    "cover_image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600287301/SEI-PROJECT-4/x94yimkf1v2fca4u5mqq.png",
+    "name": "Kimi Zoet",
+    "bio": "“If I had a world of my own, everything would be nonsense.” Lewis Carroll",
+    "insta_handle": "https://www.instagram.com/kimizoetart/",
+    "groups": [],
+    "user_permissions": [],
+    "types": [
+      1,
+      24
+    ],
+    "favourites": [
+      11,
+      12,
+      14,
+      15
+    ]
+  }
+},
+{
+  "model": "jwt_auth.user",
+  "pk": 14,
+  "fields": {
+    "password": "pbkdf2_sha256$216000$2svzIIvP1ykD$i+QR78NWB0GQwMFAucNAiWQZAtCGsS3TREoiD6rKa6M=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "honorgrace",
+    "first_name": "",
+    "last_name": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2020-09-16T17:54:59.593Z",
+    "email": "honorgrace@email.com",
+    "is_artist": true,
+    "profile_image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600288326/SEI-PROJECT-4/zlrmxpln7s8qr35fgkhx.png",
+    "cover_image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600288408/SEI-PROJECT-4/qbs7cwwpjrfo1ku2rxut.png",
+    "name": "Honor Grace",
+    "bio": "“she / her founder of @freshfrootzine",
+    "insta_handle": "https://www.instagram.com/honorgrace_/",
+    "groups": [],
+    "user_permissions": [],
+    "types": [
+      2,
+      21
+    ],
+    "favourites": [
+      15,
+      16,
+      17
+    ]
+  }
+},
+{
+  "model": "jwt_auth.user",
+  "pk": 15,
+  "fields": {
+    "password": "pbkdf2_sha256$216000$xudwdLBMSUBx$QWHkYGtig7TQGWJ0KnVBtDjkQpjeWv1YACxx3cnpDog=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "sophieteaart",
+    "first_name": "",
+    "last_name": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2020-09-16T17:56:20.044Z",
+    "email": "sophieteaart@email.com",
+    "is_artist": true,
+    "profile_image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600288254/SEI-PROJECT-4/ihz6w9qgyonpkwudtgjd.png",
+    "cover_image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600288261/SEI-PROJECT-4/zfpzjcedv0hn9mf1i1dx.png",
+    "name": "Sophie Tea",
+    "bio": "Stores in London and Sydney - Love you forever if you buy my art xxxx",
+    "insta_handle": "https://www.instagram.com/sophieteaart/",
+    "groups": [],
+    "user_permissions": [],
+    "types": [
+      5,
+      13,
+      16,
+      22
+    ],
+    "favourites": [
+      12,
+      16,
+      17
+    ]
+  }
+},
+{
+  "model": "jwt_auth.user",
+  "pk": 16,
+  "fields": {
+    "password": "pbkdf2_sha256$216000$fFDYExnk9biW$DqSKzuO0oaztUBX7p1XSdnOhBozf+Eqe33Wrc8zcj8E=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "terrylilt",
+    "first_name": "",
+    "last_name": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2020-09-16T17:57:25.096Z",
+    "email": "terrylilt@email.com",
+    "is_artist": true,
+    "profile_image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600287469/SEI-PROJECT-4/cqcmspd66koeebfmnikj.png",
+    "cover_image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600287478/SEI-PROJECT-4/ptah0m1mkj0odro8x0n7.png",
+    "name": "Lily Kemp",
+    "bio": "30% of all sales will be donated to @brain_appeal because the work they do is incredible",
+    "insta_handle": "https://www.instagram.com/terry.lilt/",
+    "groups": [],
+    "user_permissions": [],
+    "types": [
+      7,
+      21,
+      22,
+      23
+    ],
+    "favourites": [
+      9,
+      13,
+      14,
+      17
+    ]
+  }
+},
+{
+  "model": "jwt_auth.user",
+  "pk": 17,
+  "fields": {
+    "password": "pbkdf2_sha256$216000$mKBydQf8ETwI$6B65CCkUWF97W61LDFkVMNlfzeFB2GHmqB3LqEQ1TjU=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "sarahroi",
+    "first_name": "",
+    "last_name": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2020-09-16T17:58:47.743Z",
+    "email": "sarart@email.com",
+    "is_artist": true,
+    "profile_image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600286792/SEI-PROJECT-4/oqt5twma42msztvkrwae.png",
+    "cover_image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600286799/SEI-PROJECT-4/iuye8btse0azjjtlwssm.png",
+    "name": "Sarah Roi",
+    "bio": "I'm Sarah, I draw bodies and souls",
+    "insta_handle": "https://www.instagram.com/sar.art.s/",
+    "groups": [],
+    "user_permissions": [],
+    "types": [
+      2,
+      9,
+      12,
+      22
+    ],
+    "favourites": [
+      10,
+      14,
+      15,
+      18
+    ]
+  }
+},
+{
+  "model": "jwt_auth.user",
+  "pk": 18,
+  "fields": {
+    "password": "pbkdf2_sha256$216000$OP8PQ23c7cRs$v6sxrH3v4F1bAkZq/xBYPS4aO1SIPIDTv3GvuXTwuQA=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "florencegiven",
+    "first_name": "",
+    "last_name": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2020-09-16T18:00:27.793Z",
+    "email": "florencegiven@email.com",
+    "is_artist": true,
+    "profile_image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600285939/SEI-PROJECT-4/jdc7oasgarsl5jzo285k.png",
+    "cover_image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600286073/SEI-PROJECT-4/jmmzta6ffghkm1ia0ksg.png",
+    "name": "Florence Given",
+    "bio": "She/Her UK Based Artist & Best Selling Author - Cosmopolitan Influencer of The Year '19 - Represented by @divingbellgroup - BUY MY ART & MY BOOK",
+    "insta_handle": "https://www.instagram.com/florencegiven/",
+    "groups": [],
+    "user_permissions": [],
+    "types": [
+      6,
+      18
+    ],
+    "favourites": [
+      9,
+      11,
+      12,
+      15,
+      16
+    ]
+  }
+},
+{
+  "model": "jwt_auth.user",
+  "pk": 19,
+  "fields": {
+    "password": "pbkdf2_sha256$216000$zxBZMo1KnF9U$QHJY8cRIi8W7vdK0F2aaauciPUqVVsMjoPrFNPuRabg=",
+    "last_login": null,
+    "is_superuser": true,
+    "username": "superUser",
+    "first_name": "",
+    "last_name": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2020-09-16T18:09:38.534Z",
+    "email": "superUser@email.com",
+    "is_artist": null,
+    "profile_image": "",
+    "cover_image": "",
+    "name": "",
+    "bio": "",
+    "insta_handle": "",
+    "groups": [],
+    "user_permissions": [],
+    "types": [],
+    "favourites": []
+  }
+}
+]
