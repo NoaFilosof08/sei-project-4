@@ -2,6 +2,7 @@ import React from 'react'
 import { registerUser } from '../../lib/api'
 import { Link } from 'react-router-dom'
 import ProfileForm from './ProfileForm'
+import { popupNotification } from '../../lib/notification'
 
 class Register extends React.Component {
   state = {
@@ -64,6 +65,7 @@ class Register extends React.Component {
     e.preventDefault()
     try {
       await registerUser(this.state.data)
+      popupNotification('Registration Successful!')
       this.props.history.push('/login')
     } catch (err) {
       this.setState({ errors: err.response.data })

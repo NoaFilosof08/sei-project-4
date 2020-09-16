@@ -3,6 +3,8 @@ import { loginUser } from '../../lib/api'
 import { setToken } from '../../lib/auth'
 // import { Link } from 'react-router-dom'
 import LoginFrom from './LoginForm'
+import { popupNotification } from '../../lib/notification'
+
 
 class Login extends React.Component {
   state = {
@@ -23,6 +25,7 @@ class Login extends React.Component {
     try {
       const res = await loginUser(this.state.data)
       setToken(res.data.token)
+      popupNotification('Welcome back')
       this.props.history.push('/home')
     } catch (err) {
       this.setState({ error: true })
@@ -30,6 +33,7 @@ class Login extends React.Component {
   }
 
   render() {
+    console.log(this.state.data)
     return (
       <section className="hero is-fullheight-with-navbar">
         <div className="hero-body">

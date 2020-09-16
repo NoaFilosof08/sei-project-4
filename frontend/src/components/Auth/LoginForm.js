@@ -10,7 +10,7 @@ const ProfileForm = ({ data, handleChange, handleSubmit, errors }) => {
           <input
             className={`input ${errors ? 'is-danger' : ''}`}
             name="email"
-            placeholder="Email"
+            placeholder="email"
             onChange={handleChange}
           />
 
