@@ -2,6 +2,14 @@
 .form {
   animation: slideUp .8s ease forwards .5s;
 }
+
+.background-img {
+  background-image: url('https://i.pinimg.com/564x/28/d4/00/28d400f31942af3cc87ad97be0c38d7e.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .formTitle {
   font-family: $primaryMainFont;
   font-size: 30px;
@@ -12,13 +20,13 @@
 
 .formbtn {
   background-color: $primaryYellow;
-  color: $primaryGray;
+  color: $primaryRed;
   border: none;
   margin-top: 20px;
 }
 
 .formbtn:hover {
-  background-color: $primaryGray;
+  background-color: $primaryRed;
   color: $primaryYellow;
 }
 
