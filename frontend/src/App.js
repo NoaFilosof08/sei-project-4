@@ -1,7 +1,6 @@
 import React from 'react'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import Notifications from 'react-notify-toast'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import NavBar from './components/Common/NavBar'
 import Home from './components/Common/Home'
@@ -24,7 +23,6 @@ const App = () => (
     <main>
       <NavBar />
       <Notifications />
-      <FontAwesomeIcon icon={['fab', 'apple']} />
       <Switch>
         <Route exact path="/" component={Splash} />
         <Route path="/art/edit/:id" component={EditArt} />
