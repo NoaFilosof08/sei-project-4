@@ -101,6 +101,18 @@ const ProfileForm = ({ handleChange, handleCheckboxChange,  handleSelectCategori
         </div>
       </div>
       <div className="field">
+        <label className="label">Instagram: add a link to your profile!</label>
+        <div className="control">
+          <input
+            className={`input ${errors.insta_handle ? 'is-danger' : ''}`}
+            placeholder="https://www.instagram.com/myhandle/"
+            name="insta_handle"
+            onChange={handleChange}
+            value={data.insta_handle}
+          />
+        </div>
+      </div>
+      <div className="field">
         <label className="label">Are you an artist?</label>
         <div className="control">
           <input
@@ -123,6 +135,7 @@ const ProfileForm = ({ handleChange, handleCheckboxChange,  handleSelectCategori
             </div>
           </div>
         </div>
+        {errors.types && <small className="help is-danger">Please enter at least one type!</small>}
       </div>
     </>
   )
