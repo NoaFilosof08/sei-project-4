@@ -26,7 +26,7 @@ class Login extends React.Component {
       const res = await loginUser(this.state.data)
       setToken(res.data.token)
       popupNotification('Welcome back')
-      this.props.history.push('/home')
+      this.props.history.push('/profile')
     } catch (err) {
       this.setState({ error: true })
     }
