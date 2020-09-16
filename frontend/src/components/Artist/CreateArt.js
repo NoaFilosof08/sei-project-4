@@ -28,7 +28,7 @@ class CreateArt extends React.Component {
       this.setState({ data: res.data })
       console.log(this.props.history)
       popupNotification(`${this.state.data.name} successfully added`)
-      this.props.history.push('/home')
+      this.props.history.push('/profile')
     } catch (err) {
       this.setState({ errors: err.response.data })
     }

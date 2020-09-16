@@ -3,22 +3,99 @@
   "model": "art.art",
   "pk": 1,
   "fields": {
-    "name": "Noa F",
-    "description": "pretty gyal",
-    "price": 9,
-    "image": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMTEhUTEhMWFhUWGR4aGBgWGBgfIBgXHxgaHRcYHRgfHSghGBolGx0aIjEhJSkrLi4uHx8zODMtNygtLisBCgoKDg0OGhAQGyslHyUtKy0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tL",
-    "owner": 1
+    "name": "Weightless",
+    "description": "Oil and beeswax on panel 20 x 15cm",
+    "price": 100,
+    "image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600280422/SEI-PROJECT-4/oluw4bxovf9bspiapx7g.png",
+    "owner": 9
   }
 },
 {
   "model": "art.art",
   "pk": 2,
   "fields": {
-    "name": "Eliza Thompson",
-    "description": "woo",
-    "price": 1,
-    "image": "https://cimg2.ibsrv.net/cimg/www.fodors.com/500x500_60/662/5a328f2a8bbef-312662.jpg",
-    "owner": 1
+    "name": "Mother",
+    "description": "There are still 14,000 babies being born in the UK every week, despite coronavirus.",
+    "price": 50,
+    "image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600280515/SEI-PROJECT-4/xxkwdnquljygei2ta7xs.png",
+    "owner": 9
+  }
+},
+{
+  "model": "art.art",
+  "pk": 3,
+  "fields": {
+    "name": "The Sheep Wash",
+    "description": "Oil and beeswax on panel 20cm x 15cm",
+    "price": 100,
+    "image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600280630/SEI-PROJECT-4/p1detx0nshwvsds6uhme.png",
+    "owner": 9
+  }
+},
+{
+  "model": "art.art",
+  "pk": 4,
+  "fields": {
+    "name": "Waterbed",
+    "description": "Oil and beeswax on panel 20cm x 15cm",
+    "price": 100,
+    "image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600280717/SEI-PROJECT-4/twvzqdwytiomncuisxtg.png",
+    "owner": 9
+  }
+},
+{
+  "model": "art.art",
+  "pk": 5,
+  "fields": {
+    "name": "Old Etchings",
+    "description": "For every 1000 of sales I pledge to spend 200 on another artists work",
+    "price": 100,
+    "image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600280778/SEI-PROJECT-4/lmvr8pbruzjalsu95ug0.png",
+    "owner": 9
+  }
+},
+{
+  "model": "art.art",
+  "pk": 6,
+  "fields": {
+    "name": "Daniel Start",
+    "description": "Oil on Panel | 20 x 15cm",
+    "price": 100,
+    "image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600280841/SEI-PROJECT-4/kfuhnoyoq2vb0e8cmbrf.png",
+    "owner": 9
+  }
+},
+{
+  "model": "art.art",
+  "pk": 7,
+  "fields": {
+    "name": "Can't Wait To Hug You",
+    "description": "Oil on Panel",
+    "price": 100,
+    "image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600280893/SEI-PROJECT-4/bmx9qy0kzcg1if73kjir.png",
+    "owner": 9
+  }
+},
+{
+  "model": "art.art",
+  "pk": 8,
+  "fields": {
+    "name": "Sunshine",
+    "description": "Open windows, spring mornings, deep breaths",
+    "price": 100,
+    "image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600280955/SEI-PROJECT-4/wjibsqyz82n6j2bczhcq.png",
+    "owner": 9
+  }
+},
+{
+  "model": "art.art",
+  "pk": 9,
+  "fields": {
+    "name": "Scarborough",
+    "description": "Watercolour on layered chiffon and canvas 115cm x 89cm",
+    "price": 100,
+    "image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600280998/SEI-PROJECT-4/fafldszz4vsjdhqtedqh.png",
+    "owner": 9
   }
 }
 ]
