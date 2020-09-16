@@ -1,6 +1,7 @@
 import React from 'react'
 import { getAllProfiles } from '../../lib/api'
-import ArtistCard from '../Artist/ArtistCard'
+// import ArtistCard from '../Artist/ArtistCard'
+import { Link } from 'react-router-dom'
 
 class ArtistIndexPage extends React.Component {
   state = {
@@ -42,10 +43,29 @@ class ArtistIndexPage extends React.Component {
         <div id="artWrapping">
           {artists.map(profile => (
             <div key={profile.id} className="art-display box">
-              <ArtistCard
-                key={profile.id} {...profile}
-              />
+              <Link to={`/artist/${profile.id}`} className="link">
+                <img className="image art-image" src={profile.cover_image} alt={profile.username}/>
+                <p>{profile.name}</p>
+              </Link>
             </div>
+
+            // <div className="column is-one-quarter-desktop is-one-third-tablet is-half-mobile">
+            // <Link to={`/artist/${id}`}>
+            //   <div className="card">
+            //     <div className="card-header">
+            //       <h4 className="card-header-title">{username}</h4>
+            //     </div>
+            //     <div className="card-image">
+            //       <figure className="image image is-1by1">
+            //         <img src={cover_image} alt={username} loading="lazy" width="255" height="255"/>
+            //       </figure>
+            //     </div>
+            //     {/* <div className="card-content">
+            //       <h5 className="">{bio}</h5>
+            //     </div> */}
+            //   </div>
+            // </Link>
+            // </div>
           ))}
         </div>
       </section>
