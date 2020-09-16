@@ -89,6 +89,15 @@
   cursor: pointer;
 }
 
+.typeBubble {
+  background-color: $primaryPink;
+  color: $primaryRed;
+  padding: 1.5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 5px;
+}
+
 .faveArtBtn:hover {
   cursor: pointer;
   background-color: $primaryPink;

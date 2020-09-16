@@ -38,6 +38,12 @@ class ProfilePage extends React.Component {
     this.props.history.push('/createart')
   }
 
+  checkHasTypes = () => {
+    if (this.state.user.types.length > 0) {
+      return true
+    }
+  }
+
   render() {
     if (!this.state.user) {
       console.log('no user logged in')
@@ -45,6 +51,7 @@ class ProfilePage extends React.Component {
     } else {
       const isArtist = this.checkIsArtist()
       const coverImage = this.state.user.cover_image
+      const hasTypes = this.checkHasTypes()
       return (
         <section className="section page">
           <div className="box tile is-ancestor">
@@ -67,6 +74,21 @@ class ProfilePage extends React.Component {
                   {this.capitalizeFirstLetter(this.state.user.username)}
                 </h1>
                 <p>{this.capitalizeFirstLetter(this.state.user.bio)}</p>
+
+                { hasTypes ?
+                  <div className="tile">
+                    {this.state.user.types.map((type) =>
+                      <span key={type.id} className="favourite-link">
+                        <div className="typeBubble">{type.name}</div>
+                      </span>
+                    )}
+                  </div>
+                  :
+                  <>
+                  </>
+                }
+
+
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" onClick={this.handleEditProfile} className="editIcon"><path d="M18.363 8.464l1.433 1.431-12.67 12.669-7.125 1.436 1.439-7.127 12.665-12.668 1.431 1.431-12.255 12.224-.726 3.584 3.584-.723 12.224-12.257zm-.056-8.464l-2.815 2.817 5.691 5.692 2.817-2.821-5.693-5.688zm-12.318 18.718l11.313-11.316-.705-.707-11.313 11.314.705.709z"/>
                 </svg>
                 <br></br>
