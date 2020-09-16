@@ -46,7 +46,6 @@ class CreateArt extends React.Component {
         <div className="hero-body spacer">
           <div className="container">
             <h1 className="formTitle">Add a Piece of Art</h1>
-
             <form onSubmit={this.handleSubmit} className="column is-half is-offset-one-quarter box form">
               <div className="field">
                 <label className="label">Name of Art</label>
@@ -61,7 +60,6 @@ class CreateArt extends React.Component {
                 </div>
               </div>
               {this.state.errors.name && <small className="help is-danger">Name of Art is required!</small>}
-
               <div className="field">
                 <label className="label">Description</label>
                 <div className="control">
@@ -76,7 +74,6 @@ class CreateArt extends React.Component {
                 </div>
               </div>
               {this.state.errors.description && <small className="help is-danger">Description is required  is required!</small>}
-
               <div className="field">
                 <label className="label">Price</label>
                 <div className="control">
@@ -92,7 +89,6 @@ class CreateArt extends React.Component {
                 </div>
               </div>
               {this.state.errors.price && <small className="help is-danger">price is required  is required!</small>}
-
               <div className="field">
                 <label className="label">Cover Picture</label>
                 <div className="control">
@@ -104,10 +100,8 @@ class CreateArt extends React.Component {
                   <span></span>
                 </div>
               </div>
-
               <button type="submit" className="button  is-fullwidth formbtn" onSubmit={this.handleSubmit}>Post</button>
             </form>
-
           </div>
         </div>
       </section>

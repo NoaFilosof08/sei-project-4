@@ -72,7 +72,7 @@ class ProfilePage extends React.Component {
                 </figure>
                 <figure className="image">
                   <div className="profile-image">
-                    <img className="image is-rounded" src={this.state.user.profile_image} alt="profile"/>
+                    <img className="image is-rounded prof" src={this.state.user.profile_image} alt="profile"/>
                   </div>
                 </figure>
                 <br></br>

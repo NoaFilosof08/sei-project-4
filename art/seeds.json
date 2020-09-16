@@ -97,5 +97,995 @@
     "image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600280998/SEI-PROJECT-4/fafldszz4vsjdhqtedqh.png",
     "owner": 9
   }
+},
+{
+  "model": "art.art",
+  "pk": 10,
+  "fields": {
+    "name": "Tree Frog",
+    "description": "25x18 cm.",
+    "price": 120,
+    "image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600284034/SEI-PROJECT-4/vajs0dvf8ypjagw2rfib.png",
+    "owner": 10
+  }
+},
+{
+  "model": "art.art",
+  "pk": 11,
+  "fields": {
+    "name": "Black and White Mackerel",
+    "description": "42 x 30cm",
+    "price": 200,
+    "image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600284160/SEI-PROJECT-4/l4ywgct1agprplvixjkf.png",
+    "owner": 10
+  }
+},
+{
+  "model": "art.art",
+  "pk": 12,
+  "fields": {
+    "name": "Nude",
+    "description": "Female Nude | Oil paint",
+    "price": 300,
+    "image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600284212/SEI-PROJECT-4/fxagvpamo7wpavmplbwn.png",
+    "owner": 10
+  }
+},
+{
+  "model": "art.art",
+  "pk": 13,
+  "fields": {
+    "name": "Grey Nude",
+    "description": "Original Drawing | 20x30cm",
+    "price": 150,
+    "image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600284287/SEI-PROJECT-4/dbrwqse2uek4gurmhjnk.png",
+    "owner": 10
+  }
+},
+{
+  "model": "art.art",
+  "pk": 14,
+  "fields": {
+    "name": "Nude",
+    "description": "Ink on paper | 37x30cm | Unframed",
+    "price": 95,
+    "image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600284389/SEI-PROJECT-4/obl3e89hsxjnyq3pqiaa.png",
+    "owner": 10
+  }
+},
+{
+  "model": "art.art",
+  "pk": 15,
+  "fields": {
+    "name": "Little Creeper",
+    "description": "19 x22cm",
+    "price": 60,
+    "image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600284461/SEI-PROJECT-4/hdmfvr99j7mlig1anbwy.png",
+    "owner": 10
+  }
+},
+{
+  "model": "art.art",
+  "pk": 16,
+  "fields": {
+    "name": "Red Snapper",
+    "description": "48x28cm",
+    "price": 200,
+    "image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600284510/SEI-PROJECT-4/zfki8faq5a9cptbnuyal.png",
+    "owner": 10
+  }
+},
+{
+  "model": "art.art",
+  "pk": 17,
+  "fields": {
+    "name": "Finished Plaice",
+    "description": "48x38cm",
+    "price": 200,
+    "image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600284570/SEI-PROJECT-4/ainl8vxc9iieyqburztz.png",
+    "owner": 10
+  }
+},
+{
+  "model": "art.art",
+  "pk": 18,
+  "fields": {
+    "name": "Untitled",
+    "description": "Oil on Wood | 2020",
+    "price": 200,
+    "image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600285487/SEI-PROJECT-4/n7vwoyg8zxggswbiypkd.png",
+    "owner": 11
+  }
+},
+{
+  "model": "art.art",
+  "pk": 19,
+  "fields": {
+    "name": "Nightime",
+    "description": "150x200cm | Oil Paint",
+    "price": 250,
+    "image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600285899/SEI-PROJECT-4/hbxumlpbfnwox3er3avt.png",
+    "owner": 11
+  }
+},
+{
+  "model": "art.art",
+  "pk": 20,
+  "fields": {
+    "name": "Into The Waves of Whelm",
+    "description": "Oil Painting",
+    "price": 200,
+    "image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600285958/SEI-PROJECT-4/jymkeccfnvic4i5oyfuy.png",
+    "owner": 11
+  }
+},
+{
+  "model": "art.art",
+  "pk": 21,
+  "fields": {
+    "name": "Warm Your Hands Sun Child",
+    "description": "2019 | Oil and Varnish on Wood | 15x20cm",
+    "price": 150,
+    "image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600286052/SEI-PROJECT-4/ye8zj6j9ii2i0uxnmnt4.png",
+    "owner": 11
+  }
+},
+{
+  "model": "art.art",
+  "pk": 22,
+  "fields": {
+    "name": "Swing",
+    "description": "Oil and Varnish on Wood | 2019",
+    "price": 150,
+    "image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600286096/SEI-PROJECT-4/kytufcansfo5erjmr1p3.png",
+    "owner": 11
+  }
+},
+{
+  "model": "art.art",
+  "pk": 23,
+  "fields": {
+    "name": "Daydream in Blue",
+    "description": "Oil and Varnish on Wood | 2020",
+    "price": 200,
+    "image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600286132/SEI-PROJECT-4/unjvsilphy4vprzxlk4g.png",
+    "owner": 11
+  }
+},
+{
+  "model": "art.art",
+  "pk": 24,
+  "fields": {
+    "name": "By Night",
+    "description": "Oil, Acrylic, Varnish | 20x15cm",
+    "price": 130,
+    "image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600286192/SEI-PROJECT-4/uevf3pflqk9fpdj3w9ys.png",
+    "owner": 11
+  }
+},
+{
+  "model": "art.art",
+  "pk": 25,
+  "fields": {
+    "name": "Red Beds",
+    "description": "Oil, Acrylic and Varnish on Wood",
+    "price": 200,
+    "image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600286231/SEI-PROJECT-4/mb37toqwixwkeu7z9d5u.png",
+    "owner": 11
+  }
+},
+{
+  "model": "art.art",
+  "pk": 26,
+  "fields": {
+    "name": "Cabin Fever Believer",
+    "description": "Oil, Acrylic and Varnish on Wood",
+    "price": 100,
+    "image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600286297/SEI-PROJECT-4/b1age6aujpldzy6hha4j.png",
+    "owner": 11
+  }
+},
+{
+  "model": "art.art",
+  "pk": 27,
+  "fields": {
+    "name": "Lone Chair",
+    "description": "Oil and beeswax on panel 20 x 15cm",
+    "price": 200,
+    "image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600286344/SEI-PROJECT-4/tq2fmt1ngcwj88mbjsao.png",
+    "owner": 11
+  }
+},
+{
+  "model": "art.art",
+  "pk": 28,
+  "fields": {
+    "name": "Hide and Seek",
+    "description": "Acrylic | 20x40cm",
+    "price": 100,
+    "image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600286393/SEI-PROJECT-4/tibo2pjc6erpcfbhjy2y.png",
+    "owner": 11
+  }
+},
+{
+  "model": "art.art",
+  "pk": 29,
+  "fields": {
+    "name": "Tala Madani",
+    "description": "Ryan Mosley in Radical Figures at the Whitechapel Gallery",
+    "price": 200,
+    "image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600286777/SEI-PROJECT-4/dllgsqricmnlovynevys.png",
+    "owner": 12
+  }
+},
+{
+  "model": "art.art",
+  "pk": 30,
+  "fields": {
+    "name": "Projects 110: Michael Armitage",
+    "description": "On show at MoMA",
+    "price": 1000,
+    "image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600286814/SEI-PROJECT-4/rlde4k8rlbo8f1spszwj.png",
+    "owner": 12
+  }
+},
+{
+  "model": "art.art",
+  "pk": 31,
+  "fields": {
+    "name": "Rachel Jones",
+    "description": "On Show at the Royal Academy Schools Show",
+    "price": 2000,
+    "image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600286860/SEI-PROJECT-4/jun2nqf2gldzslq83moo.png",
+    "owner": 12
+  }
+},
+{
+  "model": "art.art",
+  "pk": 32,
+  "fields": {
+    "name": "Faith Ringgold",
+    "description": "On Show at the Serpentine Gallery",
+    "price": 2000,
+    "image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600286907/SEI-PROJECT-4/rusti94upkmka0wpfpq7.png",
+    "owner": 12
+  }
+},
+{
+  "model": "art.art",
+  "pk": 33,
+  "fields": {
+    "name": "Natalia Goncharova",
+    "description": "On Show at Tate Modern",
+    "price": 300,
+    "image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600286999/SEI-PROJECT-4/aqgdzuh36a33anigokmk.png",
+    "owner": 12
+  }
+},
+{
+  "model": "art.art",
+  "pk": 34,
+  "fields": {
+    "name": "Black Refractions",
+    "description": "On Show at MoAD, San Fran",
+    "price": 2000,
+    "image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600287103/SEI-PROJECT-4/dvf8q1nslt4kr6vo5hyx.png",
+    "owner": 12
+  }
+},
+{
+  "model": "art.art",
+  "pk": 35,
+  "fields": {
+    "name": "Diorama",
+    "description": "Pamela Phatsimo Sunstrum at Tiwani Contemporary",
+    "price": 2000,
+    "image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600287142/SEI-PROJECT-4/ndxpwj4f2fkms2soh7kt.png",
+    "owner": 12
+  }
+},
+{
+  "model": "art.art",
+  "pk": 36,
+  "fields": {
+    "name": "A View of Landscape",
+    "description": "Kevin Beasley at the Whitney",
+    "price": 2500,
+    "image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600287190/SEI-PROJECT-4/p4kjomgett4oyodfamz3.png",
+    "owner": 12
+  }
+},
+{
+  "model": "art.art",
+  "pk": 37,
+  "fields": {
+    "name": "Drowning in the Sea of Love",
+    "description": "Inspired by a lyric from Fleetwood Mac’s song ‘Sarah’",
+    "price": 250,
+    "image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600287457/SEI-PROJECT-4/gptvgvbei2aj7zxrxn3m.png",
+    "owner": 13
+  }
+},
+{
+  "model": "art.art",
+  "pk": 38,
+  "fields": {
+    "name": "That on EARTH is that!?",
+    "description": "This new work is an illustration of abstract intelligence.",
+    "price": 250,
+    "image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600287628/SEI-PROJECT-4/x62aqrxifjuck6mronn5.png",
+    "owner": 13
+  }
+},
+{
+  "model": "art.art",
+  "pk": 39,
+  "fields": {
+    "name": "‘Well, Sir can’t you see'",
+    "description": "This new work is an illustration of abstract intelligence.",
+    "price": 300,
+    "image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600287722/SEI-PROJECT-4/kwx9efypbydoihiqf3uo.png",
+    "owner": 13
+  }
+},
+{
+  "model": "art.art",
+  "pk": 40,
+  "fields": {
+    "name": "Initial sketch of Mr Rose.",
+    "description": "Mr Rose is a drawing that prompted a entire series of stories.",
+    "price": 60,
+    "image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600287822/SEI-PROJECT-4/nkbkvfpglssyq1xpsorc.png",
+    "owner": 13
+  }
+},
+{
+  "model": "art.art",
+  "pk": 41,
+  "fields": {
+    "name": "New Life",
+    "description": "Acrylic on Canvas",
+    "price": 400,
+    "image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600287877/SEI-PROJECT-4/ntbgf7f0kvrg37zxvguy.png",
+    "owner": 13
+  }
+},
+{
+  "model": "art.art",
+  "pk": 42,
+  "fields": {
+    "name": "It was Beyond the Sky",
+    "description": "Oil pastels | A4",
+    "price": 100,
+    "image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600287926/SEI-PROJECT-4/jpadiy0ijbdl6rycsdbf.png",
+    "owner": 13
+  }
+},
+{
+  "model": "art.art",
+  "pk": 43,
+  "fields": {
+    "name": "Birds replaced them words",
+    "description": "Acrylic on Canvas",
+    "price": 150,
+    "image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600287999/SEI-PROJECT-4/rbdmlkoonaaidjxe9ydz.png",
+    "owner": 13
+  }
+},
+{
+  "model": "art.art",
+  "pk": 44,
+  "fields": {
+    "name": "Untitled",
+    "description": "Pen on Paper",
+    "price": 80,
+    "image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600288039/SEI-PROJECT-4/fkaam6eo4ipj5kamkfgd.png",
+    "owner": 13
+  }
+},
+{
+  "model": "art.art",
+  "pk": 45,
+  "fields": {
+    "name": "Untitled",
+    "description": "Pen on Paper | A4",
+    "price": 140,
+    "image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600288115/SEI-PROJECT-4/aslebovz2pvjxkhzefme.png",
+    "owner": 13
+  }
+},
+{
+  "model": "art.art",
+  "pk": 46,
+  "fields": {
+    "name": "The River Ran Red",
+    "description": "Mixed Media on Card",
+    "price": 240,
+    "image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600288157/SEI-PROJECT-4/fizvh4sgiioeyw15vftw.png",
+    "owner": 13
+  }
+},
+{
+  "model": "art.art",
+  "pk": 47,
+  "fields": {
+    "name": "When Great Colours Collide",
+    "description": "A4 | Pen on Paper",
+    "price": 70,
+    "image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600288197/SEI-PROJECT-4/try460cfjdd0ilw2nm7c.png",
+    "owner": 13
+  }
+},
+{
+  "model": "art.art",
+  "pk": 48,
+  "fields": {
+    "name": "Not Allowed",
+    "description": "Graphic Print",
+    "price": 250,
+    "image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600288651/SEI-PROJECT-4/tkxo1yps7si9jdrrewuj.png",
+    "owner": 14
+  }
+},
+{
+  "model": "art.art",
+  "pk": 49,
+  "fields": {
+    "name": "Talking about Trauma",
+    "description": "Graphic Print",
+    "price": 240,
+    "image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600288680/SEI-PROJECT-4/ulgji0yinkmjsr04m0hd.png",
+    "owner": 14
+  }
+},
+{
+  "model": "art.art",
+  "pk": 50,
+  "fields": {
+    "name": "Oh Still Can't Reach",
+    "description": "Graphic Print",
+    "price": 230,
+    "image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600288751/SEI-PROJECT-4/hmyka8dah5li28kvh9fl.png",
+    "owner": 14
+  }
+},
+{
+  "model": "art.art",
+  "pk": 51,
+  "fields": {
+    "name": "Daisies",
+    "description": "Graphic Print",
+    "price": 270,
+    "image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600288782/SEI-PROJECT-4/plzmihk4hfny9i1qtcj5.png",
+    "owner": 14
+  }
+},
+{
+  "model": "art.art",
+  "pk": 52,
+  "fields": {
+    "name": "Roses",
+    "description": "Graphic Print",
+    "price": 230,
+    "image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600288812/SEI-PROJECT-4/fxswo4x0h7ph3e1hbxov.png",
+    "owner": 14
+  }
+},
+{
+  "model": "art.art",
+  "pk": 53,
+  "fields": {
+    "name": "All Twisted Still",
+    "description": "Graphic Print",
+    "price": 290,
+    "image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600288847/SEI-PROJECT-4/szf5yxduk3srmbprlxen.png",
+    "owner": 14
+  }
+},
+{
+  "model": "art.art",
+  "pk": 54,
+  "fields": {
+    "name": "Freedom from Torture",
+    "description": "Graphic Print",
+    "price": 300,
+    "image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600288879/SEI-PROJECT-4/faxco643xk57vdi1ml2m.png",
+    "owner": 14
+  }
+},
+{
+  "model": "art.art",
+  "pk": 55,
+  "fields": {
+    "name": "More Feel",
+    "description": "Graphic Print",
+    "price": 290,
+    "image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600288940/SEI-PROJECT-4/rxu98ymvwtoxhwosguas.png",
+    "owner": 14
+  }
+},
+{
+  "model": "art.art",
+  "pk": 56,
+  "fields": {
+    "name": "Draw for The NHS",
+    "description": "Graphic Print",
+    "price": 200,
+    "image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600288986/SEI-PROJECT-4/xlyphmietk5scaoioavc.png",
+    "owner": 14
+  }
+},
+{
+  "model": "art.art",
+  "pk": 57,
+  "fields": {
+    "name": "Draw for The NHS",
+    "description": "Graphic Print",
+    "price": 350,
+    "image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600289013/SEI-PROJECT-4/x6jimxmywxap3dlfzliz.png",
+    "owner": 14
+  }
+},
+{
+  "model": "art.art",
+  "pk": 58,
+  "fields": {
+    "name": "Orange",
+    "description": "Graphic Print",
+    "price": 500,
+    "image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600289068/SEI-PROJECT-4/e1qlnkhuym72eflnuvh2.png",
+    "owner": 14
+  }
+},
+{
+  "model": "art.art",
+  "pk": 59,
+  "fields": {
+    "name": "Quarantine Diary",
+    "description": "Graphic Print",
+    "price": 450,
+    "image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600289107/SEI-PROJECT-4/i8v95srmcsdoiuwclmjz.png",
+    "owner": 14
+  }
+},
+{
+  "model": "art.art",
+  "pk": 60,
+  "fields": {
+    "name": "Off For a Shag",
+    "description": "- print | pink and red",
+    "price": 25,
+    "image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600286311/SEI-PROJECT-4/srfptspjsbtlzgd9wlao.png",
+    "owner": 18
+  }
+},
+{
+  "model": "art.art",
+  "pk": 61,
+  "fields": {
+    "name": "Protect Your Energy",
+    "description": "- print | pink and red",
+    "price": 25,
+    "image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600286347/SEI-PROJECT-4/b6tyx5uuzvzhuqzwya9y.png",
+    "owner": 18
+  }
+},
+{
+  "model": "art.art",
+  "pk": 62,
+  "fields": {
+    "name": "Queer AF -",
+    "description": "Maybe It's a Girl Crush...",
+    "price": 25,
+    "image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600286386/SEI-PROJECT-4/xaxkvibvej4laahcajqf.png",
+    "owner": 18
+  }
+},
+{
+  "model": "art.art",
+  "pk": 63,
+  "fields": {
+    "name": "Crumbs Can't Feed Me",
+    "description": "- I want the cake | Art Print",
+    "price": 25,
+    "image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600286435/SEI-PROJECT-4/occbhoau1azu3opqzw26.png",
+    "owner": 18
+  }
+},
+{
+  "model": "art.art",
+  "pk": 64,
+  "fields": {
+    "name": "Become The Person",
+    "description": "- you want to shag | Art Print",
+    "price": 25,
+    "image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600286481/SEI-PROJECT-4/kvuvw2dq0vrsynn2vzpj.png",
+    "owner": 18
+  }
+},
+{
+  "model": "art.art",
+  "pk": 65,
+  "fields": {
+    "name": "Carry On",
+    "description": "- they're just a distraction. | Art Print",
+    "price": 25,
+    "image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600286524/SEI-PROJECT-4/dn0420tghddrihn3zovp.png",
+    "owner": 18
+  }
+},
+{
+  "model": "art.art",
+  "pk": 66,
+  "fields": {
+    "name": "Female Gaze",
+    "description": "- Art Print",
+    "price": 25,
+    "image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600286557/SEI-PROJECT-4/odrlwp8deylzpq0nxtpn.png",
+    "owner": 18
+  }
+},
+{
+  "model": "art.art",
+  "pk": 67,
+  "fields": {
+    "name": "Love Sex, Hate Sexism",
+    "description": "- Art Print",
+    "price": 25,
+    "image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600286587/SEI-PROJECT-4/xjklf04l3h36k0feb5hh.png",
+    "owner": 18
+  }
+},
+{
+  "model": "art.art",
+  "pk": 68,
+  "fields": {
+    "name": "Maybe It's A Girl Crush",
+    "description": "- maybe you're queer | Art Print",
+    "price": 25,
+    "image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600286626/SEI-PROJECT-4/macdgfyigte8mhy4130m.png",
+    "owner": 18
+  }
+},
+{
+  "model": "art.art",
+  "pk": 69,
+  "fields": {
+    "name": "Brain Power",
+    "description": "Big lips, bigger plants",
+    "price": 10,
+    "image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600287655/SEI-PROJECT-4/ddoxzyfgd0hoebeuonbu.png",
+    "owner": 16
+  }
+},
+{
+  "model": "art.art",
+  "pk": 70,
+  "fields": {
+    "name": "Ghosts",
+    "description": "colors, eyes and floating",
+    "price": 10,
+    "image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600287698/SEI-PROJECT-4/dnb3h2of1vl8ecdgk2z5.png",
+    "owner": 16
+  }
+},
+{
+  "model": "art.art",
+  "pk": 71,
+  "fields": {
+    "name": "sweets",
+    "description": "thinking of pic n mix",
+    "price": 10,
+    "image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600287731/SEI-PROJECT-4/d0bfsesr5wr577sp1fwh.png",
+    "owner": 16
+  }
+},
+{
+  "model": "art.art",
+  "pk": 72,
+  "fields": {
+    "name": "wine",
+    "description": "one for the late nights",
+    "price": 10,
+    "image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600287752/SEI-PROJECT-4/n8l8tcidpot3ucpshg1k.png",
+    "owner": 16
+  }
+},
+{
+  "model": "art.art",
+  "pk": 73,
+  "fields": {
+    "name": "snakes",
+    "description": "snakes and ladders minus the ladders",
+    "price": 10,
+    "image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600287779/SEI-PROJECT-4/hqzeovxxmiyrewwxt9f4.png",
+    "owner": 16
+  }
+},
+{
+  "model": "art.art",
+  "pk": 74,
+  "fields": {
+    "name": "pussy cat",
+    "description": "queen of the grumps",
+    "price": 10,
+    "image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600287804/SEI-PROJECT-4/xjqne18dy7xjn64okp4k.png",
+    "owner": 16
+  }
+},
+{
+  "model": "art.art",
+  "pk": 75,
+  "fields": {
+    "name": "Friends",
+    "description": "naked hugs with close pals",
+    "price": 10,
+    "image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600287824/SEI-PROJECT-4/yrhbrw0qml7o0vikgwnu.png",
+    "owner": 16
+  }
+},
+{
+  "model": "art.art",
+  "pk": 76,
+  "fields": {
+    "name": "precious",
+    "description": "florals",
+    "price": 10,
+    "image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600287849/SEI-PROJECT-4/dqu08hvpvmhboq2eartx.png",
+    "owner": 16
+  }
+},
+{
+  "model": "art.art",
+  "pk": 77,
+  "fields": {
+    "name": "Healthy Head",
+    "description": "I'll just sit and wait",
+    "price": 10,
+    "image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600287878/SEI-PROJECT-4/qlz8cwemoadcw3etwkst.png",
+    "owner": 16
+  }
+},
+{
+  "model": "art.art",
+  "pk": 79,
+  "fields": {
+    "name": "Disco",
+    "description": "Saturday night fever",
+    "price": 10,
+    "image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600287920/SEI-PROJECT-4/ikbqqztg4rn4kyxaetn1.png",
+    "owner": 16
+  }
+},
+{
+  "model": "art.art",
+  "pk": 80,
+  "fields": {
+    "name": "Covered",
+    "description": "I refuse to put clothes on",
+    "price": 10,
+    "image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600287940/SEI-PROJECT-4/okpydxywqoffnkwxheda.png",
+    "owner": 16
+  }
+},
+{
+  "model": "art.art",
+  "pk": 81,
+  "fields": {
+    "name": "Love",
+    "description": "love and pink knickers",
+    "price": 20,
+    "image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600287019/SEI-PROJECT-4/opncmlpcww2vlo1e9hka.png",
+    "owner": 17
+  }
+},
+{
+  "model": "art.art",
+  "pk": 82,
+  "fields": {
+    "name": "Bodied",
+    "description": "boobs and blues",
+    "price": 20,
+    "image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600287058/SEI-PROJECT-4/qcqxoisikwuymwykrr6f.png",
+    "owner": 17
+  }
+},
+{
+  "model": "art.art",
+  "pk": 83,
+  "fields": {
+    "name": "Shapes",
+    "description": "curves and shapes",
+    "price": 20,
+    "image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600287094/SEI-PROJECT-4/jtfrvisnuub0aj23ktj8.png",
+    "owner": 17
+  }
+},
+{
+  "model": "art.art",
+  "pk": 84,
+  "fields": {
+    "name": "Fizz",
+    "description": "curvy and fizzy",
+    "price": 20,
+    "image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600287122/SEI-PROJECT-4/jnrfqlasq1xlgigffexr.png",
+    "owner": 17
+  }
+},
+{
+  "model": "art.art",
+  "pk": 86,
+  "fields": {
+    "name": "Flowers",
+    "description": "nude secrets",
+    "price": 20,
+    "image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600287171/SEI-PROJECT-4/jlwvzr2bddmzw3iw69zf.png",
+    "owner": 17
+  }
+},
+{
+  "model": "art.art",
+  "pk": 87,
+  "fields": {
+    "name": "flames",
+    "description": "hot gal with a cold heart",
+    "price": 20,
+    "image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600287197/SEI-PROJECT-4/m3pylokn8fnagy9fjlmg.png",
+    "owner": 17
+  }
+},
+{
+  "model": "art.art",
+  "pk": 88,
+  "fields": {
+    "name": "Stitch",
+    "description": "stitch me up",
+    "price": 20,
+    "image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600287237/SEI-PROJECT-4/hw1ckgkgkuvlm95sig1x.png",
+    "owner": 17
+  }
+},
+{
+  "model": "art.art",
+  "pk": 89,
+  "fields": {
+    "name": "eyes",
+    "description": "light me up",
+    "price": 20,
+    "image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600287258/SEI-PROJECT-4/lcoppqxtcdm5pokjusy2.png",
+    "owner": 17
+  }
+},
+{
+  "model": "art.art",
+  "pk": 90,
+  "fields": {
+    "name": "3 bodies",
+    "description": "beauty in all",
+    "price": 20,
+    "image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600287286/SEI-PROJECT-4/my5uqdm6ntuf5nsqa7nb.png",
+    "owner": 17
+  }
+},
+{
+  "model": "art.art",
+  "pk": 91,
+  "fields": {
+    "name": "Curves",
+    "description": "blue and pink curves - canvas",
+    "price": 1000,
+    "image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600288286/SEI-PROJECT-4/j1gizx6cvzbkjkpuhueh.png",
+    "owner": 15
+  }
+},
+{
+  "model": "art.art",
+  "pk": 92,
+  "fields": {
+    "name": "Kind",
+    "description": "Kind expressions",
+    "price": 1000,
+    "image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600288329/SEI-PROJECT-4/cuwgsdtktjzqcxeysy1r.png",
+    "owner": 15
+  }
+},
+{
+  "model": "art.art",
+  "pk": 93,
+  "fields": {
+    "name": "Modest",
+    "description": "Get comfortable in your skin",
+    "price": 1000,
+    "image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600288352/SEI-PROJECT-4/yzc08tej9q1oagjpvluo.png",
+    "owner": 15
+  }
+},
+{
+  "model": "art.art",
+  "pk": 94,
+  "fields": {
+    "name": "ART",
+    "description": "I only stockpile art",
+    "price": 1000,
+    "image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600288382/SEI-PROJECT-4/mxgc21jgmhkfdldi1vza.png",
+    "owner": 15
+  }
+},
+{
+  "model": "art.art",
+  "pk": 95,
+  "fields": {
+    "name": "Chips",
+    "description": "Maccys on our way home?",
+    "price": 1200,
+    "image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600288406/SEI-PROJECT-4/j9sez8w6fm0tukvc9wiv.png",
+    "owner": 15
+  }
+},
+{
+  "model": "art.art",
+  "pk": 96,
+  "fields": {
+    "name": "Arch",
+    "description": "Just checking my phone",
+    "price": 1400,
+    "image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600288434/SEI-PROJECT-4/oaya719d9vh4bitbuoga.png",
+    "owner": 15
+  }
+},
+{
+  "model": "art.art",
+  "pk": 97,
+  "fields": {
+    "name": "Normal",
+    "description": "Normalizing normal bodies",
+    "price": 1800,
+    "image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600288456/SEI-PROJECT-4/sapktec7xrzvpbld7upi.png",
+    "owner": 15
+  }
+},
+{
+  "model": "art.art",
+  "pk": 98,
+  "fields": {
+    "name": "HATE",
+    "description": "But I love how pretty she is",
+    "price": 1600,
+    "image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600288485/SEI-PROJECT-4/vift9emp4x4cqd0ue9i8.png",
+    "owner": 15
+  }
+},
+{
+  "model": "art.art",
+  "pk": 99,
+  "fields": {
+    "name": "GREEN",
+    "description": "Green is the new nude",
+    "price": 1700,
+    "image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600288511/SEI-PROJECT-4/qw99kblacj6kvdrf8xf5.png",
+    "owner": 15
+  }
+},
+{
+  "model": "art.art",
+  "pk": 100,
+  "fields": {
+    "name": "BRUSH",
+    "description": "Did you know I paint?",
+    "price": 1300,
+    "image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600288536/SEI-PROJECT-4/qthcbzqxcpo4ngbz6vei.png",
+    "owner": 15
+  }
+},
+{
+  "model": "art.art",
+  "pk": 101,
+  "fields": {
+    "name": "PLUMP",
+    "description": "Up close and personal",
+    "price": 1300,
+    "image": "http://res.cloudinary.com/ddvkup3aq/image/upload/v1600288564/SEI-PROJECT-4/m5czdtxg9274nhen7hfo.png",
+    "owner": 15
+  }
 }
 ]
