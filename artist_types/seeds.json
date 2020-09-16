@@ -1,177 +1,177 @@
 [
-{
-  "model": "artist_types.type",
-  "pk": 1,
-  "fields": {
-    "name": "Abstract Expressionism"
+  {
+    "model": "artist_types.type",
+    "pk": 1,
+    "fields": {
+      "name": "Abstract Expressionism"
+    }
+  },
+  {
+    "model": "artist_types.type",
+    "pk": 2,
+    "fields": {
+      "name": "Art Noveau"
+    }
+  },
+  {
+    "model": "artist_types.type",
+    "pk": 3,
+    "fields": {
+      "name": "Avant-garde"
+    }
+  },
+  {
+    "model": "artist_types.type",
+    "pk": 4,
+    "fields": {
+      "name": "Baroque"
+    }
+  },
+  {
+    "model": "artist_types.type",
+    "pk": 5,
+    "fields": {
+      "name": "Classicism"
+    }
+  },
+  {
+    "model": "artist_types.type",
+    "pk": 6,
+    "fields": {
+      "name": "Conceptual"
+    }
+  },
+  {
+    "model": "artist_types.type",
+    "pk": 7,
+    "fields": {
+      "name": "Constructivism"
+    }
+  },
+  {
+    "model": "artist_types.type",
+    "pk": 8,
+    "fields": {
+      "name": "Cubism"
+    }
+  },
+  {
+    "model": "artist_types.type",
+    "pk": 9,
+    "fields": {
+      "name": "Dadaism"
+    }
+  },
+  {
+    "model": "artist_types.type",
+    "pk": 10,
+    "fields": {
+      "name": "Expressionism"
+    }
+  },
+  {
+    "model": "artist_types.type",
+    "pk": 11,
+    "fields": {
+      "name": "Fauvism"
+    }
+  },
+  {
+    "model": "artist_types.type",
+    "pk": 12,
+    "fields": {
+      "name": "Futurism"
+    }
+  },
+  {
+    "model": "artist_types.type",
+    "pk": 13,
+    "fields": {
+      "name": "Impressionism"
+    }
+  },
+  {
+    "model": "artist_types.type",
+    "pk": 14,
+    "fields": {
+      "name": "Installation Art"
+    }
+  },
+  {
+    "model": "artist_types.type",
+    "pk": 15,
+    "fields": {
+      "name": "Land Art/Earth Art"
+    }
+  },
+  {
+    "model": "artist_types.type",
+    "pk": 16,
+    "fields": {
+      "name": "Minimalism"
+    }
+  },
+  {
+    "model": "artist_types.type",
+    "pk": 17,
+    "fields": {
+      "name": "Neo-Impressionalism"
+    }
+  },
+  {
+    "model": "artist_types.type",
+    "pk": 18,
+    "fields": {
+      "name": "Neo-Classicism"
+    }
+  },
+  {
+    "model": "artist_types.type",
+    "pk": 19,
+    "fields": {
+      "name": "Performance Art"
+    }
+  },
+  {
+    "model": "artist_types.type",
+    "pk": 20,
+    "fields": {
+      "name": "Pointillism"
+    }
+  },
+  {
+    "model": "artist_types.type",
+    "pk": 21,
+    "fields": {
+      "name": "Pop Art"
+    }
+  },
+  {
+    "model": "artist_types.type",
+    "pk": 22,
+    "fields": {
+      "name": "Post-Impressionism"
+    }
+  },
+  {
+    "model": "artist_types.type",
+    "pk": 23,
+    "fields": {
+      "name": "Rococo"
+    }
+  },
+  {
+    "model": "artist_types.type",
+    "pk": 24,
+    "fields": {
+      "name": "Surrealism"
+    }
+  },
+  {
+    "model": "artist_types.type",
+    "pk": 25,
+    "fields": {
+      "name": "Supermatism"
+    }
   }
-},
-{
-  "model": "artist_types.type",
-  "pk": 2,
-  "fields": {
-    "name": "Art Noveau"
-  }
-},
-{
-  "model": "artist_types.type",
-  "pk": 3,
-  "fields": {
-    "name": "Avant-garde"
-  }
-},
-{
-  "model": "artist_types.type",
-  "pk": 4,
-  "fields": {
-    "name": "Baroque"
-  }
-},
-{
-  "model": "artist_types.type",
-  "pk": 5,
-  "fields": {
-    "name": "Classicism"
-  }
-},
-{
-  "model": "artist_types.type",
-  "pk": 6,
-  "fields": {
-    "name": "Conceptual"
-  }
-},
-{
-  "model": "artist_types.type",
-  "pk": 7,
-  "fields": {
-    "name": "Constructivism"
-  }
-},
-{
-  "model": "artist_types.type",
-  "pk": 8,
-  "fields": {
-    "name": "Cubism"
-  }
-},
-{
-  "model": "artist_types.type",
-  "pk": 9,
-  "fields": {
-    "name": "Dadaism"
-  }
-},
-{
-  "model": "artist_types.type",
-  "pk": 10,
-  "fields": {
-    "name": "Expressionism"
-  }
-},
-{
-  "model": "artist_types.type",
-  "pk": 11,
-  "fields": {
-    "name": "Fauvism"
-  }
-},
-{
-  "model": "artist_types.type",
-  "pk": 12,
-  "fields": {
-    "name": "Futurism"
-  }
-},
-{
-  "model": "artist_types.type",
-  "pk": 13,
-  "fields": {
-    "name": "Impressionism"
-  }
-},
-{
-  "model": "artist_types.type",
-  "pk": 14,
-  "fields": {
-    "name": "Installation Art"
-  }
-},
-{
-  "model": "artist_types.type",
-  "pk": 15,
-  "fields": {
-    "name": "Land Art/Earth Art"
-  }
-},
-{
-  "model": "artist_types.type",
-  "pk": 16,
-  "fields": {
-    "name": "Minimalism"
-  }
-},
-{
-  "model": "artist_types.type",
-  "pk": 17,
-  "fields": {
-    "name": "Neo-Impressionalism"
-  }
-},
-{
-  "model": "artist_types.type",
-  "pk": 18,
-  "fields": {
-    "name": "Neo-Classicism"
-  }
-},
-{
-  "model": "artist_types.type",
-  "pk": 19,
-  "fields": {
-    "name": "Performance Art"
-  }
-},
-{
-  "model": "artist_types.type",
-  "pk": 20,
-  "fields": {
-    "name": "Pointillism"
-  }
-},
-{
-  "model": "artist_types.type",
-  "pk": 21,
-  "fields": {
-    "name": "Pop Art"
-  }
-},
-{
-  "model": "artist_types.type",
-  "pk": 22,
-  "fields": {
-    "name": "Post-Impressionism"
-  }
-},
-{
-  "model": "artist_types.type",
-  "pk": 23,
-  "fields": {
-    "name": "Rococo"
-  }
-},
-{
-  "model": "artist_types.type",
-  "pk": 24,
-  "fields": {
-    "name": "Surrealism"
-  }
-},
-{
-  "model": "artist_types.type",
-  "pk": 25,
-  "fields": {
-    "name": "Supermatism"
-  }
-}
-]
+  ]
