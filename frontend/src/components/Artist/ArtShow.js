@@ -66,14 +66,15 @@ class ArtShow extends React.Component {
       return (
         <section className="hero is-fullheight-with-navbar">
           <div className="hero-body">
-            <div className="container artShowContainer tile is-ancestor is-vertical">
 
+            <div className="container artShowContainer tile is-ancestor is-vertical">
+              <hr></hr>
               {/* <div className="column auto">
               </div> */}
               <div className="tile is-parent">
                 <div className="column is-3 artShowMain tile is-parent is-vertical">
                   <div className="artName artContent tile is-child">
-                    <h1 className="title">{this.state.art.name}</h1>
+                    <h1 className="title typeBubble">{this.state.art.name}</h1>
                   </div>
                   <div className="artContent tile is-child">
                     <h2>By {this.state.art.owner.username}</h2>
@@ -100,7 +101,7 @@ class ArtShow extends React.Component {
                     }
                   </div>
                   <div className="price">
-                    <p><strong>Price:</strong> £{this.state.art.price}</p>
+                    <p><strong>Price: </strong>£{this.state.art.price}</p>
                   </div>
                 </div>
               </div>
@@ -108,7 +109,7 @@ class ArtShow extends React.Component {
               <div className="tile is-child">
                 { isOwner ?
                   <div>
-                    <p className="controls">Controls:</p>
+                    <p className="controls typeBubble subtitle">Controls:</p>
                     <div className="tile icons">
                       <br></br>
                       <br></br>
@@ -118,7 +119,7 @@ class ArtShow extends React.Component {
                     </div>
                     <hr></hr>
                     <div className="enquiries">
-                      <p>Enquiries:</p>
+                      <p className="subtitle typeBubble">Enquiries:</p>
                       {this.state.art.enquiries.map((enq)  =>
                         <>
                           <div key={enq.id} className="enquiry">
