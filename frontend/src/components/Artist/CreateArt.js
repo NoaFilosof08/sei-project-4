@@ -1,7 +1,6 @@
 import React from 'react'
 import { createArt } from '../../lib/api'
 import ImageUpload from '../../lib/imageUpload'
-// import { Link } from 'react-router-dom'
 import { popupNotification } from '../../lib/notification'
 
 class CreateArt extends React.Component {
@@ -26,7 +25,6 @@ class CreateArt extends React.Component {
     try {
       const res = await createArt(this.state.data)
       this.setState({ data: res.data })
-      console.log(this.props.history)
       popupNotification(`${this.state.data.name} successfully added`)
       this.props.history.push('/profile')
     } catch (err) {
@@ -40,7 +38,6 @@ class CreateArt extends React.Component {
   }
 
   render() {
-    console.log(this.state)
     return (
       <section className="hero is-fullheight-with-navbar">
         <div className="hero-body spacer">

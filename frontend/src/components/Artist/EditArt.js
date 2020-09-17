@@ -21,7 +21,7 @@ class EditArt extends React.Component {
       const res = await getSingleArt(artID)
       this.setState({ data: res.data })
     } catch (err) {
-      console.log(err)
+      this.props.history.push('/*')
     }
   }
 
@@ -50,13 +50,11 @@ class EditArt extends React.Component {
   }
 
   render() {
-    console.log(this.state)
     return (
       <section className="hero is-fullheight-with-navbar">
         <div className="hero-body spacer">
           <div className="container">
             <h1 className="title">Edit Art info </h1>
-
             <form onSubmit={this.handleSubmit} className="column is-half is-offset-one-quarter box">
               <div className="field">
                 <label className="label">Name of Art</label>
@@ -99,21 +97,12 @@ class EditArt extends React.Component {
                 </div>
               </div>
               {this.state.errors.price && <small className="help is-danger">price is required  is required!</small>}
-
               <div className="field">
                 <label className="label">Your current image is: </label>
                 <div className="control">
                   <img src={this.state.data.image} alt={this.state.data.name}></img>
-                  {/* <input
-                    className="input"
-                    name="image"
-                    placeholder="photo"
-                    onChange={this.handleChange}
-                    value={this.state.data.image}
-                  /> */}
                 </div>
               </div>
-
               <div className="field">
                 <label className="label">or upload a new image!</label>
                 <div className="control">
@@ -125,10 +114,8 @@ class EditArt extends React.Component {
                   <span></span>
                 </div>
               </div>
-
               <button type="submit" className="button formbtn is-fullwidth" onSubmit={this.handleSubmit}>Post</button>
             </form>
-
           </div>
         </div>
       </section>
