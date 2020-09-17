@@ -3,6 +3,7 @@ import React from 'react'
 import { getArtistProfile, getSingleUnpopulatedProfile, editProfile } from '../../lib/api'
 import { isAuthenticated } from '../../lib/auth'
 import { Link } from 'react-router-dom'
+import { popupNotification } from '../../lib/notification'
 
 class ArtistViewPage extends React.Component {
 
@@ -21,7 +22,7 @@ class ArtistViewPage extends React.Component {
         this.setState({ user: userRes.data })
       }
     } catch (err) {
-      console.log(err)
+      this.props.history.push('/*')
     }
   }
 
@@ -30,23 +31,23 @@ class ArtistViewPage extends React.Component {
   }
 
   handleFavourite = async () => {
-    const currentFaves = this.state.user.favourites
-    const updatedFavourites = [ ...currentFaves, this.state.artist.id]
-    const updatedUser = { ...this.state.user, favourites: updatedFavourites }
-    await this.setState({ user: updatedUser })
-    const data = this.state.user
     try {
+      const currentFaves = this.state.user.favourites
+      const updatedFavourites = [ ...currentFaves, this.state.artist.id]
+      const updatedUser = { ...this.state.user, favourites: updatedFavourites }
+      await this.setState({ user: updatedUser })
+      const data = this.state.user
       await editProfile(data)
     } catch (err) {
-      console.log(err.response.data)
+      popupNotification('Ooops! Something went wrong - refresh and try again!')
     }
   }
 
-checkIfArtist = () => {
-  if (this.state.artist.is_artist) {
-    return true
+  checkIfArtist = () => {
+    if (this.state.artist.is_artist) {
+      return true
+    }
   }
-}
 
   handleRemoveFavourite = async () => {
     const currentFaves = this.state.user.favourites
@@ -63,7 +64,7 @@ checkIfArtist = () => {
     try {
       await editProfile(data)
     } catch (err) {
-      console.log(err.response.data)
+      popupNotification('Ooops! Something went wrong - trefresh and try again!')
     }
   }
 
@@ -71,7 +72,6 @@ checkIfArtist = () => {
     if (isAuthenticated() && this.state.user) {
       const isFave = this.state.user.favourites.some( fave => {
         if (fave === this.state.artist.id){
-          console.log('favourited')
           return true
         } else {
           return null
@@ -175,7 +175,6 @@ checkIfArtist = () => {
     }
   }
 }
-
 
 export default ArtistViewPage
 

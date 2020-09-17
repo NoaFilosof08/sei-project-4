@@ -1,6 +1,5 @@
 import React from 'react'
 import { getAllProfiles } from '../../lib/api'
-// import ArtistCard from '../Artist/ArtistCard'
 import { Link } from 'react-router-dom'
 
 class ArtistIndexPage extends React.Component {
@@ -11,10 +10,9 @@ class ArtistIndexPage extends React.Component {
   async componentDidMount() {
     try {
       const res = await getAllProfiles()
-      console.log(res.data)
       this.setState({ profiles: res.data })
     } catch (err) {
-      console.log(err)
+      this.props.history.push('/*')
     }
   }
 
@@ -48,24 +46,6 @@ class ArtistIndexPage extends React.Component {
                 <p>{profile.name}</p>
               </Link>
             </div>
-
-            // <div className="column is-one-quarter-desktop is-one-third-tablet is-half-mobile">
-            // <Link to={`/artist/${id}`}>
-            //   <div className="card">
-            //     <div className="card-header">
-            //       <h4 className="card-header-title">{username}</h4>
-            //     </div>
-            //     <div className="card-image">
-            //       <figure className="image image is-1by1">
-            //         <img src={cover_image} alt={username} loading="lazy" width="255" height="255"/>
-            //       </figure>
-            //     </div>
-            //     {/* <div className="card-content">
-            //       <h5 className="">{bio}</h5>
-            //     </div> */}
-            //   </div>
-            // </Link>
-            // </div>
           ))}
         </div>
       </section>

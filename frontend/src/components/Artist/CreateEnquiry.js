@@ -1,6 +1,5 @@
 import React from 'react'
 import { createEnquiry, getSingleUnpopulatedProfile, getSingleArt } from '../../lib/api'
-// import { Link } from 'react-router-dom'
 
 class CreateArt extends React.Component {
   state = {
@@ -9,7 +8,8 @@ class CreateArt extends React.Component {
       art: ''
     },
     user: [],
-    artdetails: []
+    artdetails: [],
+    errors: {}
   }
 
   async componentDidMount() {
@@ -35,12 +35,11 @@ class CreateArt extends React.Component {
       this.setState({ data: res.data })
       this.props.history.push(`/art/${artId}`)
     } catch (err) {
-      console.log(err.response.data)
+      this.setState({ errors: err.response.data })
     }
   }
 
   render() {
-    console.log(this.state)
     if (!this.state.artdetails) {
       return null
     }
@@ -66,10 +65,11 @@ class CreateArt extends React.Component {
                     placeholder="Equiry text..."
                     onChange={this.handleChange}
                     value={this.state.data.text}
-                    className="textarea is-fullwidth"
+                    className={`textarea is-fullwidth ${this.state.errors.text ? 'is-danger' : ''}`}
                   />
                 </div>
               </div>
+              {this.state.errors.text && <small className="help is-danger">Enquiry text is required!</small>}
               <button type="submit" className="button" >Post</button>
             </form>
           </div>
