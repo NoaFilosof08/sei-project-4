@@ -21,12 +21,12 @@ You can find a hosted version here ----> *ADD HOSTED VERSION*
 
 ## Website Overview
 
-Artly has been curated as a platform to uplift and support small female and non-binary artists. Artly puts art lovers together in one place to share art, support and love. But most importantly, allows you to buy and sell art all in one place! You don’t have to be an artist to take part, just make sure to sign up which will allow you to get in touch with our Artists. If you’re an Artist, make sure to register in order unlock some awesome features of our app such as upload and edit your artwork, links to your socials, and view enquiries on your Art. We hope you love Artly as much as we do.
+Artly has been curated as a platform to uplift and support small female and non-binary artists. Artly puts art lovers together in one place to share art, support and love. But most importantly, allows you to buy and sell art all in one place! You don't have to be an artist to take part, just make sure to sign up which will allow you to get in touch with our Artists. If you're an Artist, make sure to register in order unlock some awesome features of our app such as upload and edit your artwork, links to your socials, and view enquiries on your Art. We hope you love Artly as much as we do.
 <br><br />
 
 ## Website Details
 
-1.	On loading the website takes you to a slash page where you can pick which side of the site you would like to visit. The artist side, where you can create a profile and post art on the website or the Browseing/Shopping side where you can browse artists, favourite them to save them, view their art and enquire about the art.
+1.	On loading the website takes you to a slash page where you can pick which side of the site you would like to visit. The artist side, where you can create a profile and post art on the website or the Browsing/Shopping side where you can browse artists, favourite them to save them, view their art and enquire about the art.
 
 ### Splash
 ![Splash Page](src/styles/WebsiteScreenshots/Splash-page.png)
@@ -49,7 +49,7 @@ Artly has been curated as a platform to uplift and support small female and non-
 
 <br><br />
 
-3.	Viewer Side - If you click through to the Browsing side of the website, you are directed to a carousel which displays all of the artists on the site to browse. You can then clik on these artist and view their profiles and then their art. Browsers can also make non-artist accounts which unlock features that allow them to and 'favourite' the artist to save them to view again later, enquire about art and have their own profile.
+3.	Viewer Side - If you click through to the Browsing side of the website, you are directed to a carousel which displays all of the artists on the site to browse. You can then click on these artist and view their profiles and then their art. Browsers can also make non-artist accounts which unlock features that allow them to and 'favourite' the artist to save them to view again later, enquire about art and have their own profile.
 ### Carousel
 ![Carousel](src/styles/WebsiteScreenshots/Home-page-with-caroursel.png)
 ### View an Artist when logged in
@@ -77,7 +77,7 @@ For example:
 
 ## Process
 
-The starting point for this website was planning our wesite layout and the models for the backend. We made basic wireframes for the layout with AdobeXD and then we created a diagram on 'quick data base diagrams' and layed out the models we would be making with Django.
+The starting point for this website was planning our website layout and the models for the backend. We made basic wireframes for the layout with AdobeXD and then we created a diagram on 'quick data base diagrams' and layed out the models we would be making with Django.
 
 ### Diagram
 ![Model Diagram](src/styles/WebsiteScreenshots/ERD.png)
@@ -86,7 +86,7 @@ The starting point for this website was planning our wesite layout and the model
 <br><br />
 We then focused on creating the models in the back end in django, using Insomnia and TablePlus to check our work as we went along. To create the back end we mostly spent our time pair-coding to make sure when you had to refer to the models later on were were both very clear on the terms used and the structures built.
 <br><br />
-Once the Backend was built we turned our attention to building our React.js frontend. We started by creating common elements that would be required by all the pages like the Nabar the home page and the 404 page.
+Once the Backend was built we turned our attention to building our React.js frontend. We started by creating common elements that would be required by all the pages like the Navbar the home page and the 404 page.
 We split up the work load on the front end more, Noa took control of creating the forms and error handling for the forms (there are a lot forms!), and I took on the role of making the profile page/the artist view page and the functionality that entailed. We split up the rest of the front end pretty similarly, jumping and helping each other whenever two brains were required.
 
 ### Errors Example:
