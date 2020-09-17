@@ -2,7 +2,8 @@
 ## Timeframe
 7 days<br><br />
 2 person pair-coded full-stack project<br><br />
-Technologies used<br><br />
+## Technologies used:
+<br><br />
 •	JavaScrip | React.js<br><br />
 •	Mongo.db | Django<br><br />
 •	CSS | Sass | Bulma<br><br />
