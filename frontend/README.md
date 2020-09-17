@@ -10,8 +10,7 @@ Technologies used<br><br />
 •	Axios | Http Proxy Middleware | Toast | React-Router-Doms | React-Responsive-Carousel<br><br />
 
 ## Installation
-1.	Clone or download the repo
-2.	Open the index.html in your browser of choice
+1.	FILL IN THESE STEPS...
 <br><br />
 
 ## Project - Artly
