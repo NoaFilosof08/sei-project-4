@@ -8,7 +8,7 @@
 •	Mongo.db | Django<br><br />
 •	CSS | Sass | Bulma<br><br />
 •	GitHub | TablePlus | Insomnia<br><br />
-•	Axios | Http Proxy Middleware | Toast | React-Router-Doms | React-Responsive-Carousel<br><br />
+•	Axios | Http Proxy Middleware | React-Notify-Toast | React-Router-Doms | React-Responsive-Carousel<br><br />
 
 ## Installation
 1.	FILL IN THESE STEPS...
