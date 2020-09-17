@@ -44,6 +44,7 @@ class LoginView(APIView):
         return Response({'token': token, 'message': f'Welcome back {user.username}'})
 
 class UserListView(APIView):
+
     def get(self, _request):
         users = User.objects.all()
         serialized_users = UserSerializer(users, many=True)
