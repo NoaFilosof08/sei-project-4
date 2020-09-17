@@ -77,7 +77,7 @@ For example:
 
 ## Process
 
-The starting point for this website was planning our website layout and the models for the backend. We made basic wireframes for the layout with AdobeXD and then we created a diagram on 'quick data base diagrams' and layed out the models we would be making with Django.
+The starting point for this website was planning our website layout and the models for the backend. We made basic wireframes for the layout with AdobeXD and then we created a diagram on 'quick data base diagrams' and layed out the models we would be making with Django. Whilst planning we also created a Trello board which broke down the challenge of our first full stack app into manageable chunks and written out on 'cards'. This allowed us to communicate well and monitor our progress.
 
 ### Diagram
 ![Model Diagram](src/styles/WebsiteScreenshots/ERD.png)
