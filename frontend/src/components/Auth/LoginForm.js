@@ -13,7 +13,6 @@ const ProfileForm = ({ data, handleChange, handleSubmit, errors }) => {
             placeholder="email"
             onChange={handleChange}
           />
-
         </div>
       </div>
       <div className="field">
@@ -26,7 +25,6 @@ const ProfileForm = ({ data, handleChange, handleSubmit, errors }) => {
             placeholder="Password"
             onChange={handleChange}
           />
-
         </div>
         {errors && <small className="help is-danger">Sorry, your credentials were incorrect</small>}
       </div>

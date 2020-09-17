@@ -1,5 +1,4 @@
 import React from 'react'
-// import { Link } from 'react-router-dom'
 import { editProfile, getSingleUnpopulatedProfile } from '../../lib/api'
 import ProfileForm from './ProfileForm'
 import { popupNotification } from '../../lib/notification'
@@ -55,6 +54,7 @@ class EditProfile extends React.Component {
       this.setState({ data: res.data })
     } catch (err) {
       console.log(err)
+      this.props.history.push('/*')
     }
   }
 
@@ -82,14 +82,13 @@ class EditProfile extends React.Component {
   handleSubmit = async e => {
     e.preventDefault()
     try {
-      console.log('submitting')
       const res = await editProfile(this.state.data)
       this.setState({ data: res.data })
       popupNotification('Your profile has been successfully edited!')
       this.props.history.push('/profile')
     } catch (err) {
-      console.log(err.response.data)
       this.setState({ errors: err.response.data })
+      this.props.history.push('/*')
     }
   }
 
@@ -106,7 +105,6 @@ class EditProfile extends React.Component {
   }
 
   render() {
-    console.log(this.state.data)
     return (
       <section className="hero is-fullheight-with-navbar">
         <div className="hero-body spacer">
