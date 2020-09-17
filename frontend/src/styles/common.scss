@@ -7,7 +7,6 @@
   background-size: initial;
 }
 
-
 .splashCards {
   display: flex;
   align-items: center;
@@ -25,6 +24,7 @@
   font-weight: 900;
   box-shadow: 1px solid gray;
 }
+
 .splashText {
   display: flex;
   align-items: center;
@@ -42,7 +42,6 @@
   font-size: 80px;
   color: $primaryGray;
   font-family: $primaryTitleFont;
-
 }
 
 .splashAbout {
@@ -61,7 +60,6 @@
 .splashCards:hover {
   transform: scale(1.05);
 }
-
 
 //navbar
 .navbarMain {

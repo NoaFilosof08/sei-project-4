@@ -53,7 +53,6 @@ class EditProfile extends React.Component {
       const res = await getSingleUnpopulatedProfile(profileID)
       this.setState({ data: res.data })
     } catch (err) {
-      console.log(err)
       this.props.history.push('/*')
     }
   }
