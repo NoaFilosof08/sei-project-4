@@ -28,7 +28,6 @@ class Login extends React.Component {
       this.props.history.push('/profile')
     } catch (err) {
       this.setState({ error: true })
-      this.props.history.push('/*')
     }
   }
 
