@@ -4,7 +4,7 @@
 2 person pair-coded full-stack project<br><br />
 ## Technologies used:
 <br><br />
-•	JavaScrip | React.js<br><br />
+•	JavaScript | React.js<br><br />
 •	Mongo.db | Django<br><br />
 •	CSS | Sass | Bulma<br><br />
 •	GitHub | TablePlus | Insomnia<br><br />
