@@ -7,7 +7,6 @@ class Splash extends React.Component {
       <section className="hero is-fullheight-with-navbar">
         <div className="hero-body background-img">
           <div className="container ">
-
             <div className="splashTitle">
               <p id="logo">ARTLY</p>
             </div>

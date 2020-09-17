@@ -71,6 +71,7 @@ class Register extends React.Component {
       this.props.history.push('/login')
     } catch (err) {
       this.setState({ errors: err.response.data })
+      this.props.history.push('/*')
     }
   }
 
@@ -78,11 +79,11 @@ class Register extends React.Component {
     const formData = { ...this.state.data, profile_image: url }
     this.setState({ data: formData })
   }
+
   handleImageChangeCover = url => {
     const formData = { ...this.state.data, cover_image: url }
     this.setState({ data: formData })
   }
-
 
   handleSelectCategories = selected => {
     const selectedCategories = selected ? selected.map(category => category.value) : []
@@ -91,14 +92,12 @@ class Register extends React.Component {
   }
 
   render(){
-    console.log(this.state.data)
     return (
       <section className="hero is-fullheight-with-navbar">
         <div className="hero-body spacer">
           <div className="container">
             <h1 className="formTitle">Sign Up!</h1>
             <form onSubmit={this.handleSubmit} className="column is-half is-offset-one-quarter box form">
-
               <ProfileForm
                 handleChange={this.handleChange}
                 handleCheckboxChange={this.handleCheckboxChange}
@@ -110,7 +109,6 @@ class Register extends React.Component {
                 options={this.options}
                 isLoggedIn={false}
               />
-
               <div className="field">
                 <button type="submit" className="button is-fullwidth formbtn" onSubmit={this.handleSubmit}>Register Me</button>
               </div>
@@ -121,9 +119,7 @@ class Register extends React.Component {
                   </small>
                 </p>
               </div>
-
             </form>
-
           </div>
         </div>
       </section>

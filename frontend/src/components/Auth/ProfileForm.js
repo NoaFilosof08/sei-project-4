@@ -76,7 +76,6 @@ const ProfileForm = ({ handleChange, handleCheckboxChange,  handleSelectCategori
           </div>
         </div>
       }
-
       <div className="field">
         <label className="label">Profile Picture</label>
         <div className="control">

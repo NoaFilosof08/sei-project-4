@@ -1,6 +1,5 @@
 import React from 'react'
 import { getAllProfiles } from '../../lib/api'
-// import ArtistCard from '../Artist/ArtistCard'
 import { Carousel } from 'react-responsive-carousel'
 import 'react-responsive-carousel/lib/styles/carousel.min.css'
 import { Link } from 'react-router-dom'
@@ -15,7 +14,7 @@ class Home extends React.Component {
       const res = await getAllProfiles()
       this.setState({ profiles: res.data })
     } catch (err) {
-      console.log(err)
+      this.props.history.push('/*')
     }
   }
 

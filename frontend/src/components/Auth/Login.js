@@ -1,7 +1,6 @@
 import React from 'react'
 import { loginUser } from '../../lib/api'
 import { setToken } from '../../lib/auth'
-// import { Link } from 'react-router-dom'
 import LoginFrom from './LoginForm'
 import { popupNotification } from '../../lib/notification'
 
@@ -29,11 +28,11 @@ class Login extends React.Component {
       this.props.history.push('/profile')
     } catch (err) {
       this.setState({ error: true })
+      this.props.history.push('/*')
     }
   }
 
   render() {
-    console.log(this.state.data)
     return (
       <section className="hero is-fullheight-with-navbar">
         <div className="hero-body spacer">

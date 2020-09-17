@@ -18,7 +18,6 @@ import CreateEnquiry from './components/Artist/CreateEnquiry'
 import Footer from './components/Common/Footer'
 import ArtistIndexPage from './components/Artist/ArtistIndexPage'
 
-
 const App = () => (
   <BrowserRouter>
     <main>

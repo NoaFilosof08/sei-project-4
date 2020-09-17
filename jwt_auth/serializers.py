@@ -17,10 +17,10 @@ class UserSerializer(serializers.ModelSerializer):
         password_confirmation = data.pop('password_confirmation')
         if password != password_confirmation:
             raise ValidationError({'password_confirmation': 'does not match'})
-        # try:
-        #     password_validation.validate_password(password=password)
-        # except ValidationError as err:
-        #     raise ValidationError({'password': err.messages})
+        try:
+            password_validation.validate_password(password=password)
+        except ValidationError as err:
+            raise ValidationError({'password': err.messages})
         data['password'] = make_password(password)
         return data
     class Meta:
