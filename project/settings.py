@@ -9,6 +9,7 @@ https://docs.djangoproject.com/en/3.1/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.1/ref/settings/
 """
+import os
 
 from pathlib import Path
 
@@ -58,7 +59,9 @@ ROOT_URLCONF = 'project.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'frontend')
+                ]  #Look, we have added the root folder of frontend here
+        ,
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -130,3 +133,7 @@ REST_FRAMEWORK = {  # added this to get rest framework to use our custom authent
         'jwt_auth.authentication.JWTAuthentication'
     ],
 }
+
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'frontend', "build", "static"),
+)

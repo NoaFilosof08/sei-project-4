@@ -11,19 +11,19 @@ const withHeaders = () => {
 
 // Auth Requests
 export const getAllProfiles = () => {
-  return axios.get(`${baseUrl}/auth/artists/`)
+  return axios.get(`${baseUrl}auth/artists/`)
 }
 
 export const getSingleProfile = () => {
-  return axios.get(`${baseUrl}/auth/profile/`, withHeaders())
+  return axios.get(`${baseUrl}auth/profile/`, withHeaders())
 }
 
 export const getSingleUnpopulatedProfile = () => {
-  return axios.get(`${baseUrl}/auth/profile/unpopulated/`, withHeaders())
+  return axios.get(`${baseUrl}auth/profile/unpopulated/`, withHeaders())
 }
 
 export const getArtistProfile = (pk) => {
-  return axios.get(`${baseUrl}auth/artists/${pk}`)
+  return axios.get(`${baseUrl}auth/artists/${pk}/`)
 }
 
 export const editProfile = data => {
@@ -51,7 +51,7 @@ export const getSingleArt = (pk) => {
 }
 
 export const deleteArt = (pk) => {
-  return axios.delete(`${baseUrl}arts/${pk}`, withHeaders())
+  return axios.delete(`${baseUrl}arts/${pk}/`, withHeaders())
 }
 
 // Enquiry Requests
