@@ -40,7 +40,8 @@ Artly has been curated as a platform to uplift and support small female and non-
 <br><br />
 
 2.	Artist Side - If you click to go through to the artist side you are prompted to login (or register), then directed to your profile. On your profile you have a profile picture and a cover photo and can add/display/edit art and link your page to you instagram. Note when you sign up you are asked if you would like to have an artist account or a viewer account and have an artist account allows you post art.
-#Login
+
+### Login
 ![Login](WebsiteScreenshots/Login-in-form.png)
 ### Register
 ![Register](WebsiteScreenshots/Register-form.png)
