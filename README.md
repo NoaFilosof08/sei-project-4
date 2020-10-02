@@ -16,10 +16,6 @@
 •	Axios | Http Proxy Middleware | React-Notify-Toast | React-Router-Doms | React-Responsive-Carousel
 <br><br />
 
-## Installation
-1.	FILL IN THESE STEPS...
-<br><br />
-
 ## Project - Artly
 
 You can find a hosted version here ----> https://artly-seir4.herokuapp.com/
