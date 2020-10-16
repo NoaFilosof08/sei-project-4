@@ -89,6 +89,26 @@ The starting point for this website was planning our website layout and the mode
 ![Website Layout Wireframes](WebsiteScreenshots/wireframes.png)
 <br><br />
 We then focused on creating the models in the back end in Django, using Insomnia and TablePlus to check our work as we went along. To create the Back-End, we mostly spent our time pair-coding to make sure when one of us had to refer to the models later on we were both very clear on the terms used and the structures built.
+
+``` python
+class ArtListView(APIView):
+
+    permission_classes = (IsAuthenticatedOrReadOnly, ) # you have to have to be logged in to view these
+
+    def get(self, _request):
+        arts = Art.objects.all() # gets all the art objects
+        serialized_arts = PopulatedArtSerializer(arts, many=True) # uses the serializer to read the model
+        return Response(serialized_arts.data, status=status.HTTP_200_OK) # returns the serializer in the response with a status
+
+    def post(self, request):
+        request.data['owner'] = request.user.id # assigns the owner as the person who made the request (getting it from the id)
+        new_art = ArtSerializer(data=request.data) # gets the info from the serializer
+        if new_art.is_valid():
+            new_art.save() # if it is valid then save the art
+            return Response(new_art.data, status=status.HTTP_201_CREATED) # return the new art in the response with the status that its been created
+        return Response(new_art.errors, status=status.HTTP_422_UNPROCESSABLE_ENTITY) # return errors as well as unprocessable entity status
+```
+
 <br><br />
 Once the Backend was built, we turned our attention to building our React.js Frontend app. We started by creating common elements that would be required by all the pages like the Navbar, the home page and the 404 page.
 We split up the workload on the front end more; I took control of creating the forms and error handling for the forms (there are a lot forms!), and Eliza took on the role of making the profile page/the artist view page and the functionality that entailed. We split up the rest of the front end pretty similarly, jumping and helping each other whenever two brains were required.
